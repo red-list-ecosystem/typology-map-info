@@ -1,0 +1,32 @@
+---
+execute: 
+ eval: false
+---
+# We built this site...
+
+on [Rock and Roll](https://web.archive.org/web/20050124091143/http://www.blender.com/guide/articles.aspx?id=819)!... and [Quarto](https://quarto.org), [RStudio](https://posit.co/download/rstudio-desktop/), [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/), [git](https://git-scm.com), [zsh](https://www.zsh.org)/[bash](https://www.gnu.org/software/bash/Rstudio) lots of packages and modules, and immoderate amounts of coffee.
+
+Here are the basics to get started. 
+Once this site is up and running, you can follow the git log history to see all the additional steps  went into creating this amazing and wonderful website.
+
+## Create quarto website project
+
+```{.bash filename="Terminal"}
+cd $PROJECTDIR/
+quarto create project website typology-map-info
+```
+
+## git it!
+
+```{.bash filename="Terminal"}
+cd $PROJECTDIR/typology-map-info
+git init
+```
+
+## Activate Jupyter Lab
+
+For editing jupyter notebooks activate a python environment with jupyter modules installed. For example, using `venv`:
+
+```{.bash filename="Terminal"}
+source ~/venv/jptr/bin/activate
+```

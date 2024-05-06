@@ -1,0 +1,12 @@
+---
+listing: 
+ contents: map-info
+ type: table
+ sort: "title asc"
+ categories: true
+ sort-ui: [title, date]
+---
+
+# Map information
+
+For all these maps

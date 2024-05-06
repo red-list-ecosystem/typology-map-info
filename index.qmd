@@ -1,5 +1,6 @@
 ---
-title: "Typology-map-info"
+title: "Ecosystem functional groups maps"
+subtitle: "Documentation for indicative maps of the IUCN Global Ecosystem Typology"
 ---
 
 This is a Quarto website.
