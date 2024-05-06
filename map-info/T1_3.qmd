@@ -1,7 +1,8 @@
 ---
-title: "T1.3"
+title: "T1.3 Tropical/Subtropical montane rainforests"
+date: 6 May 2024
 categories:
- - T1.3
+ - T1
  - valid
 format:
  html: 
@@ -16,17 +17,25 @@ execute:
 #| message: false
 library(xml2)
 library(terra)
+library(magick)
 
 here::i_am("map-info/T1_3.qmd")
-out_folder <- here::here("gisdata", "indicative-maps","latest")
+out_folder <- here::here("gisdata", "indicative-maps-bundle","latest")
 
 map_details_file <- paste(out_folder, "map-details.xml", sep = "/")
 # file.exists(map_details_file)
 map_details <- read_xml(map_details_file)
 map_info <- map_details |> xml_find_first("//Map[@efg_code='T1.3']")
 map_attrs <- map_info |> xml_attrs()
+ds_doi <- map_info |> xml_find_first("Dataset-doi") |> xml_text()
+downloaded_copy <- here::here("gisdata", "indicative-maps", ds_doi)
+efg_details <- read_xml(dir(downloaded_copy,"xml", full.names = TRUE))
 ```
 
+```{r}
+#| output: asis
+efg_details |> xml_find_first("//Short-description") |> xml_text() |> cat()
+```
 
 ```{r}
 #| output: asis
@@ -36,12 +45,20 @@ markdown_text <- sprintf("## Map description\n\n ***%1$s***\n\n%2$s.\n\n **Map c
     map_info |> xml_find_first("Description") |> xml_text(),
         map_attrs["map_code"],
         map_attrs["map_version"],
-       map_info |> xml_find_first("Dataset-doi") |> xml_text() 
+       ds_doi 
 )
 
 cat(markdown_text)
 ```
 
+
+## Thumbnail map
+
+```{r}
+thmbmap <- dir(downloaded_copy,"png", full.names = TRUE)
+raw_img <- image_read(thmbmap)
+image_ggplot(raw_img)
+```
 
 
 
@@ -62,19 +79,13 @@ raster_name <-
         map_attrs["map_version"])
 ```
 
-Now we create a temporary directory for the uncompressed data.
-
-```{r}
-workdir <- tempdir()
-```
-
 ```{r}
 #| eval: true
 #| echo: false
 
 # we use this internally to speed up some steps:
 workdir <- here::here("sandbox", "latest")
-if (!exists(workdir))
+if (!dir.exists(workdir))
     dir.create(workdir, recursive = TRUE)
 ```
 

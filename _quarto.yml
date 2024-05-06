@@ -9,6 +9,7 @@ website:
         text: Home
       - about.qmd
       - how2/this-site.qmd
+      - how2/download-with-R.qmd
       - text: "Map information"
         href: map-info.qmd
 

@@ -1,0 +1,258 @@
+---
+title: Data download with R
+execute: 
+ eval: true
+---
+
+### Set up work directory
+
+We use library `here` to define relative paths
+```{r}
+here::i_am("how2/download-with-R.qmd")
+```
+
+
+## Profile information from OSF
+
+Workbook with profile content for Ecosystem Functional Groups of the IUCN Global Ecosystem Typology (Level 3 units) available at https://osf.io/4dcea
+
+We will create a folder for data download from OSF :
+
+```{r}
+out_folder <- here::here("gisdata", "profiles")
+if (!dir.exists(out_folder))
+    dir.create(out_folder, recursive = TRUE)
+```
+
+And now download the file there
+
+```{r}
+data_url <- "https://osf.io/download/4dcea/"
+dest_file <- here::here(out_folder,  "IUCN-GET-profiles-exported.xlsx")
+if (!exists(dest_file))
+    download.file(data_url, dest = dest_file)
+```
+
+## Indicative map data download from zenodo
+
+Indicative maps are available from different Zenodo repositories.
+
+We will use libraries `zen4R` and `parallel`:
+
+```{r}
+library(zen4R)
+library(parallel)
+```
+
+### Bundle of indicative maps
+
+One repository holds the bundle of maps in compressed tar archives. This DOI (digital object identifier) automatically resolves to the latest version, but we need to be explicit when we use the parallel download (otherwise it could get stuck in the _first_ DOI):
+
+```{r}
+doi = "10.5281/zenodo.3546513"
+ZR <- get_zenodo(doi=doi)
+(newest_doi <- ZR$getLastDOI())
+```
+
+We will create a folder for this direct download from zenodo for the latest version of the bundle:
+
+```{r}
+out_folder <- here::here("gisdata", "indicative-maps-bundle","latest")
+if (!dir.exists(out_folder))
+    dir.create(out_folder, recursive = TRUE)
+```
+
+This can be used to download directly to the output folder. Using `options(timeout=500)` will get overwritten by argument, so it is needed to specify an appropriate timeout as an argument.
+For some reason the parallel download does not work with the `path` argument, so this workaround uses `getwd` and `setwd`:
+
+```{r filename="output not shown"}
+#| eval: false
+oldwd <- getwd()
+setwd(out_folder)
+download_zenodo(doi=newest_doi,
+    parallel = TRUE, 
+    parallel_handler = parLapply, 
+    cl = makeCluster(4),
+    timeout = 5000
+)
+setwd(oldwd)
+```
+
+We extract maps from the tar archives in a sandbox folder:
+
+```{r}
+workdir <- here::here("sandbox","latest")
+if (!dir.exists(workdir))
+    dir.create(workdir)
+```
+
+```{r}
+#| eval: false
+rast_tar <- here::here(out_folder, "all-maps-raster-geotiff.tar.bz2")
+rast_list <- untar(rast_tar, list = TRUE)
+untar(rast_tar, exdir = workdir)
+
+```
+
+And similarly for the vector data:
+
+```{r}
+#| eval: false
+vect_tar <- here::here(out_folder, "all-maps-vector-geojson.tar.bz2")
+untar(vect_tar , exdir = workdir)
+```
+
+### Repositories for single EFG maps
+
+Map details are stored in a xml file that is part of the map bundle zenodo download.
+
+Check the file was downloaded:
+
+```{r}
+map_details_file <- paste(out_folder, "map-details.xml", sep = "/")
+
+file.exists(map_details_file)
+```
+
+We'll use the `xml2` library to read the xml file
+
+```{r}
+library(xml2)
+map_details <- read_xml(map_details_file)
+```
+
+We can query map details for an specific map:
+```{r}
+map_details |> xml_find_first("//Map[@efg_code='T1.1']")
+```
+
+The field with doi for the individual map are stored in the `Dataset-doi` tag. We can run a query for all elements containing this tag:
+
+```{r}
+all_dois <- xml_find_all(map_details, "//Dataset-doi") |> xml_text()
+```
+
+Now we use this list of DOIs to download a copy of each of the repositories containing files for each ecosystem functional group:
+
+```{r filename="output not shown"}
+#| eval: false
+oldwd <- getwd()
+for (doi in all_dois) {
+    out_folder <- here::here("gisdata", "indicative-maps", doi)
+    if (!dir.exists(out_folder))
+        dir.create(out_folder, recursive = TRUE)
+    setwd(out_folder)
+    mycl <- makeCluster(4)
+    download_zenodo(doi=doi,
+        parallel = TRUE, 
+        parallel_handler = parLapply, 
+        cl = mycl,
+    timeout = 5000
+    )
+    #stopCluster(cl = mycl)
+    setwd(oldwd)
+}
+```
+
+### Compare downloaded files
+
+Now we have two copies of each map file, one in the sandbox folder (extracted from the map bundle), and one downloaded directly from the corresponding record.
+
+Map version is described in the map attributes in the xml file:
+
+```{r}
+map_info <-  map_details |> xml_find_first("//Map[@efg_code='T1.3']")
+map_info |> xml_attrs() 
+```
+
+The file extracted from the tar archive uses the same code for the file name:
+```{r}
+efg_code <- map_info |> xml_attr("efg_code")
+match_pattern <- sprintf("^%s", efg_code)
+dir(workdir, pattern = match_pattern)
+```
+
+As well as the file downloaded from the specific repository:
+```{r}
+ds_doi <- map_info |> xml_find_first("Dataset-doi") |> xml_text()
+downloaded_copy <- here::here("gisdata", "indicative-maps", ds_doi)
+dir(downloaded_copy)
+```
+
+#### Raster maps
+
+Let's double-check, this is the expected file name:
+
+```{r }
+raster_name <- 
+    sprintf("%s_%s.tif",
+        map_info |> xml_attr("map_code"),
+        map_info |> xml_attr("map_version"))
+```
+
+
+We'll use the terra library to read the raster file
+```{r }
+library(terra)
+rast1 <- terra::rast(paste(workdir, raster_name, sep = "/"))
+rast2 <- terra::rast(paste(downloaded_copy, raster_name, sep = "/"))
+
+```
+
+Summary of the raster layer for the first copy:
+
+```{r}
+rast1
+```
+
+Summary of the raster layer for the second copy:
+
+```{r}
+rast2
+```
+
+The raster looks like this:
+
+```{r }
+plot(rast1)
+```
+
+Compare this with the thumbnail downloaded from Zenodo: 
+
+```{r}
+library(magick)
+thmbmap <- dir(downloaded_copy,"png", full.names = TRUE)
+raw_img <- image_read(thmbmap)
+image_ggplot(raw_img)
+```
+
+
+#### Vector map
+
+We follow similar steps for the vector files. 
+
+We select the map for this functional group using the map_code and map_version from the map details xml:
+
+```{r}
+vector_name <- 
+    sprintf("%s_%s.json",
+        map_info |> xml_attr("map_code"),
+        map_info |> xml_attr("map_version"))
+```
+
+We can read both directly from the respective folder:
+```{r}
+vect1 <- terra::vect(paste(workdir, vector_name, sep = "/"))
+vect2 <- terra::vect(paste(downloaded_copy, vector_name, sep = "/"))
+```
+
+But notice some differences in the summaries:
+```{r}
+vect1
+```
+
+```{r}
+vect2
+```
+
+## Indicative map data download from zenodo
