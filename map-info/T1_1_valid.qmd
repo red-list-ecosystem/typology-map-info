@@ -1,0 +1,137 @@
+---
+title: "Valid map for EFG T1.1"
+date: 2024 May 6
+categories:
+ - T1
+ - valid
+format:
+ html: 
+  code-tools:
+   source: true
+---
+
+Here comes the information about the valid indicative distribution map for T1.1
+
+```{r}
+efg_code <- "T1.1"
+```
+
+```{r setup}
+#| warning: false
+#| message: false
+library(xml2)
+library(terra)
+library(magick)
+
+here::i_am(
+    sprintf("map-info/%s_valid.qmd", gsub("\\.","_", efg_code))
+    )
+out_folder <- here::here("gisdata", "indicative-maps-bundle","latest")
+
+map_details_file <- paste(out_folder, "map-details.xml", sep = "/")
+# file.exists(map_details_file)
+map_details <- read_xml(map_details_file)
+map_info <- map_details |> xml_find_first(sprintf("//Map[@efg_code='%s']", efg_code))
+map_attrs <- map_info |> xml_attrs()
+ds_doi <- map_info |> xml_find_first("Dataset-doi") |> xml_text()
+downloaded_copy <- here::here("gisdata", "indicative-maps", ds_doi)
+efg_details <- read_xml(dir(downloaded_copy,"xml", full.names = TRUE))
+```
+
+
+
+## Raster map
+
+We check the list of map files in the compressed raster archive:
+
+```{r}
+rast_tar <- here::here(out_folder, "all-maps-raster-geotiff.tar.bz2")
+```
+
+Or, more directly, using map code and map version attributes:
+
+```{r}
+raster_name <- 
+    sprintf("%s_%s.tif",
+        map_attrs["map_code"],
+        map_attrs["map_version"])
+```
+
+```{r}
+#| eval: true
+#| echo: false
+
+# we use this internally to speed up some steps:
+workdir <- here::here("sandbox", "latest")
+if (!dir.exists(workdir))
+    dir.create(workdir, recursive = TRUE)
+```
+
+Extract the data here (unless it already exists)
+```{r}
+if (!raster_name %in% dir(workdir))
+    untar(rast_tar, files = raster_name, exdir = workdir)
+```
+
+
+We'll use the terra library to read the raster file
+```{r}
+selected_raster <- terra::rast(paste(workdir, raster_name, sep = "/"))
+
+```
+
+Summary of the raster layer according to `terra::rast`:
+
+```{r}
+selected_raster
+```
+
+```{r}
+plot(selected_raster)
+```
+
+
+## Vector map
+
+We follow similar steps for the vector files. 
+
+We vector archive is here:
+
+```{r}
+vect_tar <- here::here(out_folder, "all-maps-vector-geojson.tar.bz2")
+```
+
+We select the map for this functional group using the map_code and map_version from the map details xml:
+
+```{r}
+vector_name <- 
+    sprintf("%s_%s.json",
+        map_info |> xml_attr("map_code"),
+        map_info |> xml_attr("map_version"))
+```
+
+We uncompress this into the tempdir
+
+```{r}
+print(workdir)
+if (!vector_name %in% dir(workdir))
+    untar(vect_tar, files = vector_name, exdir = workdir)
+```
+
+```{r}
+#| eval: true
+selected_vector <- terra::vect(paste(workdir, vector_name, sep = "/"))
+
+```
+
+Summary of the raster layer according to `terra::vect`:
+
+```{r}
+#| eval: true
+selected_vector
+```
+
+```{r}
+#| eval: false
+plot(selected_vector)
+```

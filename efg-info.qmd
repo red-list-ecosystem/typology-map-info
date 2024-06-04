@@ -1,0 +1,17 @@
+---
+listing: 
+ contents: efg-info
+ type: table
+ categories: true
+ sort-ui: [title, subtitle]
+ fields: [title, subtitle]
+ field-display-names:
+  title: "Ecosystem functional group"
+  subtitle: "Biome"
+ sort:
+  - "subtitle"
+  - "title"
+---
+
+# Ecosystem functional groups
+

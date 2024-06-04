@@ -1,0 +1,68 @@
+---
+title: Map information in database
+execute: 
+ eval: true
+---
+
+We will query some information regarding map versions and metadata that is stored in our internal database. 
+
+## Set up work directory
+
+We use library `here` to define relative paths
+```{r}
+here::i_am("how2/additional-map-details.qmd")
+```
+
+## Database
+
+### Database connection
+
+We store databse credentials in the `_environment.local` file in the project directory. See file `_environment.required` for the format. 
+
+```{r}
+#| warning: false
+#| message: false
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(lubridate)
+library("RPostgreSQL")
+
+drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
+
+con <- dbConnect(drv, 
+                 dbname = Sys.getenv("DBNAME"),
+                 host = Sys.getenv("DBHOST"),
+                 port = Sys.getenv("DBPORT"),
+                 user = Sys.getenv("DBUSER"))
+
+```
+ 
+### Queries
+
+
+```{r}
+
+qry <- "
+SELECT code, map_code, map_version, license 
+FROM map_evaluation 
+LEFT JOIN map_metadata 
+USING(map_code, map_version) 
+WHERE status = 'valid'
+AND map_type = 'Indicative Map'
+ORDER BY license, map_code;
+"
+maps_licenses <- dbGetQuery(con,qry)
+
+maps_licenses |> 
+  mutate(biome = str_extract(code, "[MFST0-9]+")) |> 
+  group_by(biome, license) |> 
+  summarise(total = n_distinct(code), .groups = 'drop') |> 
+  pivot_wider(names_from=license,values_from = total) |>
+  DT::datatable()
+```
+
+### Close connection
+```{r}
+dbDisconnect(con)
+```

@@ -2,3 +2,4 @@ gisdata
 sandbox
 /.quarto/
 _site
+/_*.local

@@ -1,8 +1,10 @@
 ---
 title: "Ecosystem functional groups maps"
-subtitle: "Documentation for indicative maps of the IUCN Global Ecosystem Typology"
+subtitle: "Documentation for indicative distribution maps of the IUCN Global Ecosystem Typology"
 ---
 
-This is a Quarto website.
+This is an information site for users of the IUCN Global Ecosystem Typology (IUCN GET). 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+You can explore the ecosystems of the world in our webapp [//global-ecosystems.org](https://global-ecosystems.org).
+
+In this site we share information about how we build the maps, some important technical details, and tips about how to use them in (y)our favourite GIS apps.

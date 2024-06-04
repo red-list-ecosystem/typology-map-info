@@ -1,5 +1,5 @@
 ---
-title: Data download with R
+title: Download data with R
 execute: 
  eval: true
 ---
@@ -254,5 +254,3 @@ vect1
 ```{r}
 vect2
 ```
-
-## Indicative map data download from zenodo

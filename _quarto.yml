@@ -7,15 +7,21 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - how2/this-site.qmd
-      - how2/download-with-R.qmd
+      - text: "Functional groups"
+        href: efg-info.qmd
       - text: "Map information"
         href: map-info.qmd
-
+    right:
+      - text: "About"
+        menu:
+          - about.qmd
+          - how2/this-site.qmd
+          - how2/download-with-R.qmd
+          - how2/additional-map-details.qmd
+ 
 format:
   html:
-    theme: cosmo
+    theme: mint
     css: styles.css
     highlight-style: solarized
     toc: true

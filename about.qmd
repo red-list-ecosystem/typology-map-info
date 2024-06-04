@@ -1,5 +1,11 @@
 ---
-title: "About"
+title: "What is IUCN GET?"
 ---
 
-About this site
+This is an information site for users of the IUCN Global Ecosystem Typology (IUCN GET). 
+
+You can explore the ecosystems of the world in our webapp [//global-ecosystems.org](https://global-ecosystems.org).
+
+In this site we share information about how we build the maps, some important technical details, and tips about how to use them in (y)our favourite GIS apps.
+
+
