@@ -1,0 +1,17 @@
+{
+  "hash": "0480202b7dcedd12887ccce43c91f38d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"FM1.1 Deepwater coastal inlets\"\nsubtitle: \"FM1. Semi-confined transitional waters biome\"\nparams:\n efgcode: FM1.1\ncategories:\n - FM1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nEcosystems in these deep, narrow inlets were mostly formed by glaciers and subsequently flooded (e.g. fjords). They have some features of open oceans, but are strongly influenced by freshwater inflows and the surrounding coast. Productivity by phytoplankton is seasonal and limited by cold, dark winters. Oxygen may be limited in the deepest parts of these systems. The diverse biota includes invertebrates and fish, such as jellyfish and salmon, and predatory marine mammals such as killer whales.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/FM1.1>{target=\"webapp\"}\n\n## Map description\n***FM1.1 Deepwater coastal inlets***\n\nKnown locations of fjords where selected from a global geographical gazetteer (GeoNames 2020) and the composite gazetteer of Antarctica (SCAR 1992-2020). We further selected related coastal areas from a global coastal typology (Type IV in Dürr et al. 2011) and the adjacent marine shelves to 2000 meter depth (Becker et al 2009). A composite map was created at 30 arc seconds spatial resolution in geographic projection, occurrences were then aggregated to half degree spatial resolution and reclassified as major occurrences (cells with at least one known occurrence) and minor occurrences (cells with > 5% occurrence of coastal/marine shelf areas). Minor occurrences were clipped to a 10km buffer along the coast to remove inland and oceanic areas..\n\n **Map code and version**: FM1.1.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091013](https://doi.org/10.5281/zenodo.5091013)\n\n::: {.cell}\n::: {.cell-output-display}\n![](FM1_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/FM1_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/FM1_1_history.qmd).\n\n",
+    "supporting": [
+      "FM1_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

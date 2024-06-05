@@ -1,0 +1,17 @@
+{
+  "hash": "d75dcf1226678efb12a0b553defe0038",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"MT3.1 Artificial shorelines\"\nsubtitle: \"MT3. Anthropogenic shorelines biome\"\nparams:\n efgcode: MT3.1\ncategories:\n - MT3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nConstructed sea walls, breakwaters, piers, docks, tidal canals, islands and other coastal infrastructure create habitat for marine plants and animals around ports, harbours, and other intensively settled coastal areas. The waters may be polluted by urban runoff or industrial outflows. Opportunities for introduction of invasive species e.g. through shipping mean that non-native species are common. Foodwebs are simple and dominated by species able to opportunistically colonise these structures through dispersal of eggs, larvae and spores.  Commonly, these include algae and bacteria, and filter-feeders like sea-squirts and barnacles.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/MT3.1>{target=\"webapp\"}\n\n## Map description\n***MT3.1 Artificial shorelines***\n\nMarine ecoregions (Spalding et al. 2008) containing major and minor occurrences of urbanized shorelines were identified from the map of night lights (see T7.4), imagery available on Google Earth and expertise of authors. Occurrences were aggregated to 1 degree spatial resolution and intersected with the coastline to exclude areas inland and in the open ocean..\n\n **Map code and version**: MT3.1.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091115](https://doi.org/10.5281/zenodo.5091115)\n\n::: {.cell}\n::: {.cell-output-display}\n![](MT3_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/MT3_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/MT3_1_history.qmd).\n\n",
+    "supporting": [
+      "MT3_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

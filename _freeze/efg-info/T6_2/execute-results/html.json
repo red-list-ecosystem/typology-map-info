@@ -1,0 +1,17 @@
+{
+  "hash": "ad544301248747e35660765cfad8c564",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T6.2 Polar/alpine cliffs, screes, outcrops and lava flows\"\nsubtitle: \"T6. Polar/alpine (cryogenic) biome\"\nparams:\n efgcode: T6.2\ncategories:\n - T6\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nPolar-alpine rocky outcrops occur in permanently ice-free areas of polar regions and high mountains. Productivity and biomass are limited by extreme cold, rocky substrate and strong winds. Algae, lichens, mosses and bacteria support a short and simple foodweb in the summer months, with cold-tolerant invertebrates such as tardigrades. Some rocky sites provide nesting sites for birds in summer. Substrate weathering and guano are major nutrient inputs. These systems are periodically disturbed as accumulated snow and ice collapses down steep slopes.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T6.2>{target=\"webapp\"}\n\n## Map description\n***T6.2 Polar/alpine cliffs, screes, outcrops and lava flows***\n\nKnown locations of prominent ice-free rock in glacial and alpine environments were selected from global geographical gazeteers (GeoNames 2020), glacier inventories (Raup et al 2007; GLIMS and NSIDC 2005-2018) and the Antarctic Land Cover map for 2000 (Hui et al. 2017). Further areas with mixed occurrence of barren and snow/ice cover were identified from the Circumpolar Arctic Vegetation Map (Raynolds et al. 2019), the USGS EROS LandCover GLCCDB, version 2 (Loveland et al. 2000) and a 1km consensus land-cover map (Tuanmu et al. 2014). A composite map was created at 30 arc seconds spatial resolution in geographic projection, occurrences were then aggregated to half degree cells.  Cells containing at least one known location were designated as major occurrences, while those mapped as mixed barren and snow/ice cover were designated as minor occurrences if snow/ice covered at least 2.5% of the cell area..\n\n **Map code and version**: T6.2.web.alt v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091073](https://doi.org/10.5281/zenodo.5091073)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T6_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T6_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T6_2_history.qmd).\n\n",
+    "supporting": [
+      "T6_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

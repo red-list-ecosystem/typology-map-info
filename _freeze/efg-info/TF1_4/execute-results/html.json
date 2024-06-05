@@ -1,0 +1,17 @@
+{
+  "hash": "24b46a60c900f939eb240e72b4ec7bf2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"TF1.4 Seasonal floodplain marshes\"\nsubtitle: \"TF1. Palustrine wetlands biome\"\nparams:\n efgcode: TF1.4\ncategories:\n - TF1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nSeasonal flooding and drying regimes characterise high productivity floodplain marshes in the seasonal tropics and subhumid temperate regions. Typically, different plants respond to the mosaic of variable flooding regimes, supporting complex networks of invertebrates, waterbirds, reptiles, and mammals. Prey concentrate as the wetlands dry, and many plants and animals use specialised adaptations such as seed banks or egg banks, to survive drying.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/TF1.4>{target=\"webapp\"}\n\n## Map description\n***TF1.4 Seasonal floodplain marshes***\n\nMajor occurrences of freshwater marshes and floodplains were taken from the Global Lakes and Wetlands Database (Lehner and Döll 2004). Occurrences in boreal and polar climates were excluded by removing KoeppnGeiger_classes>26 in Beck et al. (2018). Additional areas with minor occurrences identified in selected freshwater ecoregions (Abell et al. 2008). Ecoregions were selected if: i) their descriptions mentioned features consistent with those identifed in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: TF1.4.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091058](https://doi.org/10.5281/zenodo.5091058)\n\n::: {.cell}\n::: {.cell-output-display}\n![](TF1_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/TF1_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/TF1_4_history.qmd).\n\n",
+    "supporting": [
+      "TF1_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

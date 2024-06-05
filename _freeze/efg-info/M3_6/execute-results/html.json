@@ -1,0 +1,17 @@
+{
+  "hash": "32763c2f3369a304c4e5880e0d85097d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M3.6 Hadal trenches and troughs\"\nsubtitle: \"M3. Deep sea floors biome\"\nparams:\n efgcode: M3.6\ncategories:\n - M3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThe deepest ocean trenches, up to 11 km beneath the surface, are the least explored marine ecosystems.  They are also one of the most extreme, with no sunlight, low temperatures, nutrient scarcity and hydrostatic pressures of 600 to 1100 atmospheres, extending beyond the limits to vertebrate life. The major sources of nutrients and carbon are fallout from upper layers, drifts of fine sediment and landslides. Most organisms are scavengers and detrivores, like the supergiant amphipod, with abundance of predatory fish and crustaceans diminishing with depth.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M3.6>{target=\"webapp\"}\n\n## Map description\n***M3.6 Hadal trenches and troughs***\n\nMajor occurrences of Hadal trenches and troughs was based on the ‘hadal’ and ‘trenches’ geomorphic units of Harris et al. (2014b). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M3.6.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090986](https://doi.org/10.5281/zenodo.5090986)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M3_6_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M3_6_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M3_6_history.qmd).\n\n",
+    "supporting": [
+      "M3_6_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

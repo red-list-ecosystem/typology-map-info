@@ -1,0 +1,17 @@
+{
+  "hash": "e60883a36aedf21ad041f40bdf735d41",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M2.1 Epipelagic ocean waters\"\nsubtitle: \"M2. Pelagic ocean waters biome\"\nparams:\n efgcode: M2.1\ncategories:\n - M2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThis uppermost ocean layer (0-200m depth) is the most influenced by the atmosphere, and is defined and structured by light availability. Photosynthesis in these ecosystems accounts for half of all global carbon fixation. That productivity supports diverse marine life, including many visual predators, like tuna, that rely on the high light environment. Migration is a common life history trait across all groups: either vertical – rising from the depths to feed at the surface at night to evade daytime predators; or horizontal – between breeding and feeding grounds. Detritus from this zone is an important nutrient source for lower oceanic layers.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M2.1>{target=\"webapp\"}\n\n## Map description\n***M2.1 Epipelagic ocean waters***\n\nIndicative distributions of these marine pelagic ecosystem functional groups were derived from bathymetric spatial data obtained from Becker et al. (2009) using depth range thresholds cited in respective descriptive profiles for each functional group. Occurrences were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: M2.1.web.orig v2.1. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090912](https://doi.org/10.5281/zenodo.5090912)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M2_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M2_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M2_1_history.qmd).\n\n",
+    "supporting": [
+      "M2_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

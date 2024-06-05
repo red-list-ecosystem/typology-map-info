@@ -1,0 +1,17 @@
+{
+  "hash": "62d87e6541dc553042fbd5823a485b57",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T1.1 Tropical/Subtropical lowland rainforests\"\nsubtitle: \"T1. Tropical-subtropical forests biome\"\nparams:\n efgcode: T1.1\ndate: 2024 May 6\ncategories:\n - T1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nA huge diversity of species occupy niches within a complex vertically-layered structure of plant forms. High productivity is fuelled by rapid-growing plants including buttressed trees, bamboos, epiphytes, lianas and ferns. Forest canopies sustain moist soils and abundant leaf litter decomposed by fungi and bacteria. High diversity of invertebrates at all levels of the forest supports diverse vertebrate life forms, particularly mammals and birds, which play critical roles in plant dispersal and pollination. Conditions near the equator are stable and humid year-round (up to 6000 mm rain per annum), but become more seasonal with mild winter frosts in the subtropics.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T1.1>{target=\"webapp\"}\n\n## Map description\n***T1.1 Tropical/Subtropical lowland rainforests***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017; DAWE 2012) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T1.1.web.mix v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090450](https://doi.org/10.5281/zenodo.5090450)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T1_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T1_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T1_1_history.qmd).\n\n",
+    "supporting": [
+      "T1_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

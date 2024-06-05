@@ -1,0 +1,17 @@
+{
+  "hash": "0e077d5b49fa77228ee54f1c76cc4c9e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T5.1 Semi-desert steppe\"\nsubtitle: \"T5. Deserts and semi-deserts biome\"\nparams:\n efgcode: T5.1\ncategories:\n - T5\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nSemi-desert steppes on all continents are dominated by perennial shrubs, often with semi-fleshy or velvety foliage, and tussock grasses interspersed with bare ground. Low variable rainfall and extreme temperatures favour flora and fauna with drought and stress-tolerance adaptations, such as deep roots and nomadism. Growth and reproduction of shrubs and grasses is varies with rainfall, the cover of grass diminishing to near zero in extended droughts. Grass cover also depends on soil fertility and grazing animals, which may also limit shrub recruitment and growth. These steppes are among the most productive of desert ecosystems, with relatively abundant small and large herbivorous and seed-eating mammals supporting bird and mammal predators and scavengers.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T5.1>{target=\"webapp\"}\n\n## Map description\n***T5.1 Semi-desert steppe***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T5.1.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091003](https://doi.org/10.5281/zenodo.5091003)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T5_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T5_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T5_1_history.qmd).\n\n",
+    "supporting": [
+      "T5_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

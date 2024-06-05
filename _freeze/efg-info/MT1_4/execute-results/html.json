@@ -1,0 +1,17 @@
+{
+  "hash": "683a32a3a4f80f2577afe0b9e1cbf430",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"MT1.4 Boulder and cobble shores\"\nsubtitle: \"MT1. Shorelines biome\"\nparams:\n efgcode: MT1.4\ncategories:\n - MT1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nCobbled and boulder shores are exposed to wave action and tides, and are periodically restructured by high-energy storm events. Drift seaweed and local algae support communities of organisms adapted to regular disturbance and grinding of rocks and cobbles, as well as the high temperatures and desiccation common to all shorelines. For example, many live largely below the surface layers. Stability of the substrate, and hence the biota, depends on the size of the cobbles and boulders. Some encrusting species or algae like cordgrass can stabilise these shores and allow a wider range of plants and animals to establish.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/MT1.4>{target=\"webapp\"}\n\n## Map description\n***MT1.4 Boulder and cobble shores***\n\nMarine ecoregions (Spalding et al. 2008) containing rocky shorelines and boulder and cobble shorelines, respectively, were identified by consulting regional substrate maps, imagery available in Google Earth (to exclude ecoregions with extensive sandy or muddy shores) and expertise of authors, proofed by specialist reviewers..\n\n **Map code and version**: MT1.4.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091095](https://doi.org/10.5281/zenodo.5091095)\n\n::: {.cell}\n::: {.cell-output-display}\n![](MT1_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/MT1_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/MT1_4_history.qmd).\n\n",
+    "supporting": [
+      "MT1_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

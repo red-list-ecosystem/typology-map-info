@@ -1,0 +1,17 @@
+{
+  "hash": "ec613cfd65f4ff1c12d0825aeff81435",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T6.5 Tropical alpine grasslands and herbfields\"\nsubtitle: \"T6. Polar/alpine (cryogenic) biome\"\nparams:\n efgcode: T6.5\ncategories:\n - T6\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nTropical alpine grasslands and herbfields are limited to a few mountainous areas of Africa, the Americas and southeast Asia. Productivity is low, limited by dry conditions, rocky substrate and nightly cold, but is not strongly seasonal. Snow and fog are common. Typical flora includes mosses, lichens, and flowering plants including distinctive megaherbs and low shrubs. Plant species have adaptations for cold dry conditions, such as tiny leaves, cushion and rosette growth forms and slow growth. Plant composition is affected by competition and facilitation between species, as well as grazing and occasional fires. Simple foodwebs include invertebrates, small mammals and reptiles, along with visiting predators and occasional herbivores from lowland savannas.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T6.5>{target=\"webapp\"}\n\n## Map description\n***T6.5 Tropical alpine grasslands and herbfields***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T6.5.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091079](https://doi.org/10.5281/zenodo.5091079)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T6_5_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T6_5_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T6_5_history.qmd).\n\n",
+    "supporting": [
+      "T6_5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

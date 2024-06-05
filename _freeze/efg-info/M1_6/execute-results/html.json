@@ -1,0 +1,17 @@
+{
+  "hash": "81f0f9b28c41f027f4ae31af4f8e8b30",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M1.6 Subtidal rocky reefs\"\nsubtitle: \"M1. Marine shelf biome\"\nparams:\n efgcode: M1.6\ncategories:\n - M1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese rocky subtidal ecosystems are widespread globally on  ocean shelves . They are distinguished from kelp forests (M1.2) by their lack of a dense macroalgal canopy. Indeed, their complex habitat structure is derived mostly from irregular rock forms, rather than biogenic features, and supports a diverse epibenthic fauna, with a range of mobile benthic animals (e.g. anemones), while truly sessile organisms tend to be small (e.g. turf algae, barnacles). Community structure depends on depth, wave action, currents and light: for example, turbulence specialists like barnacles are more prolific on shallower, higher energy reefs. Storms impact structure by shifting sand and dislodging larger organisms episodically.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M1.6>{target=\"webapp\"}\n\n## Map description\n***M1.6 Subtidal rocky reefs***\n\nThese are ecosystem functional groups that are widespread through the global extent of the marine shelf biome. Reliable data on their precise distribution are limited. To represent regional uncertainty, their indicative distributions were mapped in as minor occurrences through the full extent of the marine ‘shelf’ base layer as mapped by Harris et al. (2014b). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M1.6.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090935](https://doi.org/10.5281/zenodo.5090935)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M1_6_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M1_6_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M1_6_history.qmd).\n\n",
+    "supporting": [
+      "M1_6_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "627078a5c173c5a92fc4cf622ff90a25",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F3.1 Large reservoirs\"\nsubtitle: \"F3. Artificial wetlands biome\"\nparams:\n efgcode: F3.1\ncategories:\n - F3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nLarge dams or reservoirs occur in humid, populated areas of the world. Their biological productivity and diversity is generally limited due to their depth and frequent and large changes in water level. Shallow zones have the highest diversity, with simple food webs of algae, waterbugs, birds, frogs and aquatic plants, often supporting introduced fish species.  Plankton live at the surface, but life is scarce in the depths. Algal blooms may be common if there are high nutrient inputs from rivers.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F3.1>{target=\"webapp\"}\n\n## Map description\n***F3.1 Large reservoirs***\n\nPoint locations of large reservoirs were obtained from water bodies tagged as 'reservoirs' in \"reservoirs\" in vector layers GLWD1 and GLWD2 of Lehner & Döll (2004). These were mapped with a spatial buffer of 15 minutes, enabling reservoirs to be represented in 0.5 degree grid cells..\n\n **Map code and version**: F3.1.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090993](https://doi.org/10.5281/zenodo.5090993)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F3_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F3_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F3_1_history.qmd).\n\n",
+    "supporting": [
+      "F3_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "e56519cce78482e78a9cbd056e3abd85",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"SF1.2 Groundwater ecosystems\"\nsubtitle: \"SF1. Subterranean freshwaters biome\"\nparams:\n efgcode: SF1.2\ncategories:\n - SF1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nLow productivity ecosystems occur within water-saturated permeable rock strata or layers of buried unconsolidated sediments. Life in these dark, confined or connected ecosystems is almost completely comprised of microbial and small invertebrate detritivores and their protozoan consumers. Diversity and productivity decline with depth and connectivity to surface waters. Although groundwater ecosystems occur almost everywhere in the near surface crust, they are prominent below surface water and in artesian basins.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/SF1.2>{target=\"webapp\"}\n\n## Map description\n***SF1.2 Groundwater ecosystems***\n\nIndicative global maps of Groundwater aquifers were based on Bundesanstalt für Geowissenschaften und Rohstoffe & UNESCO (2012) with colour ramp showing type of aquifer by recharge rate, only in major groundwater basins (type 11 (minor occurrences) to type 15 (major occurrences))..\n\n **Map code and version**: SF1.2.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091045](https://doi.org/10.5281/zenodo.5091045)\n\n::: {.cell}\n::: {.cell-output-display}\n![](SF1_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/SF1_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/SF1_2_history.qmd).\n\n",
+    "supporting": [
+      "SF1_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

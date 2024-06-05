@@ -1,0 +1,17 @@
+{
+  "hash": "c62f4b82345d93cb0a6adfbc2d7cd8b0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M1.2 Kelp forests\"\nsubtitle: \"M1. Marine shelf biome\"\nparams:\n efgcode: M1.2\ncategories:\n - M1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nKelps (large, brown macroalgae up to 30m in length) form the basis of these highly productive systems found on shallow, subtidal rocky reefs around cold temperate and polar coastlines. Their forest-like structure and vertical habitat supports diverse epiflora and –fauna living on the kelp itself, as well as rich communities of invertebrates, fish and marine birds and mammals living and foraging in and around these ecosystems.  High nutrient requirements mean these ecosystems are often associated with upwelling water, while wave action and currents are important for replenishing oxygen.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M1.2>{target=\"webapp\"}\n\n## Map description\n***M1.2 Kelp forests***\n\nEcoregions with major and minor occurrences of Kelp forests were identified by overlaying a global map of kelp systems (Wernberg and Filbee-Dexter 2019) on marine ecoregions (Spalding et al. 2008), and then clipping to bathymetry with <80m depth (Becker et al. 2009). Clipped ecoregions were assigned to major and minor occurrences based on information in Wernberg and Filbee-Dexter (2019) and author expertise, and proofed by specialist reviewers. Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M1.2.web.orig v2.2. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090927](https://doi.org/10.5281/zenodo.5090927)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M1_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M1_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M1_2_history.qmd).\n\n",
+    "supporting": [
+      "M1_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

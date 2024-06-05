@@ -1,0 +1,17 @@
+{
+  "hash": "299b22aadd8398914a949d2f0fb8d572",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T4.1 Trophic savannas\"\nsubtitle: \"T4. Savannas and grasslands biome\"\nparams:\n efgcode: T4.1\ncategories:\n - T4\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nAn unparalleled abundance and diversity of large herbivores maintain an open structure of these tree-grass ecosystems in the seasonal tropics of Africa and south Asia. Large herbivores are pivotal in maintaining short rhizomatous and tussock grasses, limiting recruitment of trees, cycling nutrients, sustaining complex food webs of invertebrate detritivores and diverse assemblages of mammalian and avian predators and scavengers. Seasonally high productivity coincides with the summer rainy season. Fires occur in some years, but are less influential than herbivores on ecosystem function. Trees and grasses have adaptations to seasonal drought and heavy browsing, such as rhizomes and stolons that allow grasses to spread under grazing pressure.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T4.1>{target=\"webapp\"}\n\n## Map description\n***T4.1 Trophic savannas***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T4.1.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091019](https://doi.org/10.5281/zenodo.5091019)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T4_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T4_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T4_1_history.qmd).\n\n",
+    "supporting": [
+      "T4_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

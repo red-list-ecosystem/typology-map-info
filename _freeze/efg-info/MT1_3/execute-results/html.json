@@ -1,0 +1,17 @@
+{
+  "hash": "979b836257614e03e8261c4b840f44f6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"MT1.3 Sandy Shorelines\"\nsubtitle: \"MT1. Shorelines biome\"\nparams:\n efgcode: MT1.3\ncategories:\n - MT1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nBeaches, sand bars and spits are exposed to waves and tides on moderate-high energy coasts, and rely on drift seaweed and surf-zone phytoplankton for nutrients. Polychaete worms, bivalve shellfish and a range of smaller invertebrates burrow in the shifting sediments, while larger vertebrate animals like seabirds, egg-laying turtles and scavenging foxes can also be found at various times.  Storm tides and waves periodically restructure the sediments and profoundly influence the traits of the organisms living in these highly dynamic systems.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/MT1.3>{target=\"webapp\"}\n\n## Map description\n***MT1.3 Sandy Shorelines***\n\nThe indicative map of Sandy shorelines was based on point records of sandy coastlines mapped by Vousdoukas et al. (2020) aggregated to 1 degree spatial resolution. Cells with >50 points were reclassified as major occurrences, and those with 1-50 points were reclassified as minor occurrences. These were clipped to the coastline..\n\n **Map code and version**: MT1.3.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091093](https://doi.org/10.5281/zenodo.5091093)\n\n::: {.cell}\n::: {.cell-output-display}\n![](MT1_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/MT1_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/MT1_3_history.qmd).\n\n",
+    "supporting": [
+      "MT1_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

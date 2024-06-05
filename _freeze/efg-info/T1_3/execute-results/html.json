@@ -1,0 +1,17 @@
+{
+  "hash": "08138ee17f8966a2ee50cdf2d65ee71d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T1.3 Tropical/Subtropical montane rainforests\"\nsubtitle: \"T1. Tropical-subtropical forests biome\"\nparams:\n efgcode: T1.3\ncategories:\n - T1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese mountain rainforests are characterised by a single-layered tree canopy, with epiphytic ferns, bryophytes, lichens, orchids, and bromeliads draping tree branches. Grasses are rare or absent. At high altitude forest structure becomes less complex, with dwarf tree forms. Although rainfall is abundant (up to 6000 mm per year), productivity is limited by cool temperatures, wind exposure and shallow soils, although under the canopy a moist shady microclimate provides stable habitat for a frog, bird, plant and invertebrate species that are found nowhere else.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T1.3>{target=\"webapp\"}\n\n## Map description\n***T1.3 Tropical/Subtropical montane rainforests***\n\nThe distribution of tropical montane rainforest was approximated from a model of environmental suitability based on climatic variables and cloud cover (Wilson and Jetz, 2016, Karger et al. 2021). Occurrences were aggregated to half degree spatial resolution and cells reclassified as major occurrences (>25% of cell area) and minor occurrences (< 25% of cell area)..\n\n **Map code and version**: T1.3.WM.nwx v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.10030977](https://doi.org/10.5281/zenodo.10030977)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T1_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T1_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T1_3_history.qmd).\n\n",
+    "supporting": [
+      "T1_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

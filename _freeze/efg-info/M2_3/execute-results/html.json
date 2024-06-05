@@ -1,0 +1,17 @@
+{
+  "hash": "189f3a4072561cd147f94725efd76ba6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M2.3 Bathypelagic ocean waters\"\nsubtitle: \"M2. Pelagic ocean waters biome\"\nparams:\n efgcode: M2.3\ncategories:\n - M2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese deep (~1000-3000m depth), open-ocean ecosystems receive no sunlight and rely on detritus from upper layers for nutrients. Other resources such as oxygen are replenished via the ‘global ocean conveyer belt’ (thermohaline circulation) that starts when distant, polar surface waters cool and sink.  With no primary producers, life is limited to groups like zooplankton, jellyfish, crustaceans, cephalopods and fish like the gulper eel. Common adaptations that enable animals to live under high pressure and no light include slow metabolism, long generation lengths and low density bodies.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M2.3>{target=\"webapp\"}\n\n## Map description\n***M2.3 Bathypelagic ocean waters***\n\nIndicative distributions of these marine pelagic ecosystem functional groups were derived from bathymetric spatial data obtained from Becker et al. (2009) using depth range thresholds cited in respective descriptive profiles for each functional group. Occurrences were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: M2.3.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090916](https://doi.org/10.5281/zenodo.5090916)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M2_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M2_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M2_3_history.qmd).\n\n",
+    "supporting": [
+      "M2_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

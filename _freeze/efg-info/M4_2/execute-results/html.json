@@ -1,0 +1,17 @@
+{
+  "hash": "7a6796dc8e55e917fa31f6c840434bc8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M4.2 Marine aquafarms\"\nsubtitle: \"M4. Anthropogenic marine biome\"\nparams:\n efgcode: M4.2\ncategories:\n - M4\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nHigh-productivity marine aquafarms are enclosed areas for the breeding, rearing, and harvesting of marine plants and animals, including finfish like salmon, molluscs, crustaceans, and algae. These low-diversity communities are dominated by the harvested species, maintained at a high densities. Non-harvested species may be controlled as pests, using antibiotics, herbicides, or culling. Aquafarms in coastal or open ocean waters are exposed to associated physical processes, but on land they are in environmentally controlled tanks and ponds.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M4.2>{target=\"webapp\"}\n\n## Map description\n***M4.2 Marine aquafarms***\n\nMarine ecoregions (Spalding et al. 2008) containing marine aquafarms were identified by consulting global and regional reviews, suitability maps (Gentry et al. 2017) and expertise of authors, proofed by specialist reviewers. These were clipped to the extent of the marine ‘shelf’ base layer as mapped by Harris et al. (2014b) and converted to 30 arc second spatial resolution. Occurrences were aggregated to half degree spatial resolution..\n\n **Map code and version**: M4.2.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091041](https://doi.org/10.5281/zenodo.5091041)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M4_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M4_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M4_2_history.qmd).\n\n",
+    "supporting": [
+      "M4_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

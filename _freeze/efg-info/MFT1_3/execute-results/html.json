@@ -1,0 +1,17 @@
+{
+  "hash": "dbed6a630242630ecdf943cd9a6299f2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"MFT1.3 Coastal saltmarshes and reedbeds\"\nsubtitle: \"MFT1. Brackish tidal biome\"\nparams:\n efgcode: MFT1.3\ncategories:\n - MFT1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nCoastal salt marshes and reedbeds are mosaics of salt-tolerant grasses and low, typically succulent shrubs. structured by strong gradients of salinity and tidal influence. Salts may approach hypersaline levels near the limit of high spring tides, especially in the tropics. As well as larger plants, algal mats and phytoplankton contribute to productivity, while freshwater run-off and tides bring organic material and nutrients. Bacteria and fungi decompose biomass in oxygen-poor subsoils, and support a range of crustaceans, worms, snails and small fish. Shorebirds breed and forage in saltmarshes, with migratory species dispersing plants and animals.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/MFT1.3>{target=\"webapp\"}\n\n## Map description\n***MFT1.3 Coastal saltmarshes and reedbeds***\n\nThe indicative map for for coastal saltmarshes and reedbeds (MFT1.3) was developed by resampling known distribution records summarised by McOwen et al. (2017). We used a buffer of 1km around the distribution data and a 30 arc second grid, thus large aggregations (> 1km<sup>2</sup>) are depicted as major occurrences, and the buffer areas with small occurrences are shown as minor occurrences. The original data is available at [UNEP-WCMC](http://data.unep-wcmc.org/datasets/43)..\n\n **Map code and version**: MFT1.3.web.orig v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091029](https://doi.org/10.5281/zenodo.5091029)\n\n::: {.cell}\n::: {.cell-output-display}\n![](MFT1_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/MFT1_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/MFT1_3_history.qmd).\n\n",
+    "supporting": [
+      "MFT1_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

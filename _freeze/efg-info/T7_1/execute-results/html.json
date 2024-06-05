@@ -1,0 +1,17 @@
+{
+  "hash": "a99972dbbb9f334159515ca906446e12",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T7.1 Annual croplands\"\nsubtitle: \"T7. Intensive land-use biome\"\nparams:\n efgcode: T7.1\ncategories:\n - T7\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nCroplands are intensively managed agricultural ecosystems maintained by supplementation of nutrients and water, sowing and harvesting, soil cultivation and control of non-target plants and animals (weeds and pests). They currently cover 11% of the world’s land surface. Some systems of management include domestic herbivores introduced on harvested stubble or in ‘fallow’ years. These are structurally simple, very low-diversity, high-productivity systems, dominated by one or few non-woody, shallow-rooted annual plant species such as grains (mostly C3 grasses), vegetables, ‘cut flowers’, legumes, or fibre plants harvested annually by humans for commercial or subsistence production of food, materials, or ornamental displays.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T7.1>{target=\"webapp\"}\n\n## Map description\n***T7.1 Annual croplands***\n\nMajor occurrences of croplands were taken from the map of Habitat type 14.1 by Jung et al. (2020) based on the IUCN Habitats Classification Scheme v3.1 (IUCN 2012). We compared this to cropping areas in consensus land-cover maps (Tuanmu et al., 2014) and found that maps of Jung et al. (2020) more closely matched the concept of T7.1..\n\n **Map code and version**: T7.1.web.alt v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090454](https://doi.org/10.5281/zenodo.5090454)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T7_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T7_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T7_1_history.qmd).\n\n",
+    "supporting": [
+      "T7_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

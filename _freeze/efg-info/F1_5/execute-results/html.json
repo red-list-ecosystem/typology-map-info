@@ -1,0 +1,17 @@
+{
+  "hash": "3c6cceabf7a7f52b9e438f052d446f31",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F1.5 Seasonal lowland rivers\"\nsubtitle: \"F1. Rivers and streams biome\"\nparams:\n efgcode: F1.5\ncategories:\n - F1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese medium to large rivers in tropical, subtropical and temperate lowlands have markedly seasonal flows due to seasonal water supply in the catchments. Their single or multi-channelled forms link to floodplain wetlands, and transport large floods during wet seasons: summer in the tropics or winter-spring in temperate latitudes. Productivity is high, both within channels and on connected floodplains, with algae and aquatic plants supporting complex food webs, and providing seasonal nurseries for breeding animals.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F1.5>{target=\"webapp\"}\n\n## Map description\n***F1.5 Seasonal lowland rivers***\n\nFreshwater ecoregions (Abell et al. 2008) were identified as containing occurrences of these functional groups if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile. Within these areas, major occurrences were mapped using stream orders 4-9 taken from the RiverATLAS (v1.0) database (Linke et al.2019) combined with global estimates of surface water phenology (classes 1, 2 and 7 from Pekel et al. 2016). The remaining area of selected ecoregions was designated as minor occurrences..\n\n **Map code and version**: F1.5.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090970](https://doi.org/10.5281/zenodo.5090970)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F1_5_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F1_5_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F1_5_history.qmd).\n\n",
+    "supporting": [
+      "F1_5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

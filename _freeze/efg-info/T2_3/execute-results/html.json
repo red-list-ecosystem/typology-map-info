@@ -1,0 +1,17 @@
+{
+  "hash": "51f0012518cd6c16af1dd86b79007a74",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T2.3 Oceanic cool temperate rainforests\"\nsubtitle: \"T2. Temperate-boreal forests and woodlands biome\"\nparams:\n efgcode: T2.3\ncategories:\n - T2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nOceanic cool temperate rainforests have evergreen or semi-deciduous, small-leaved trees, with conifers in some regions. These forests occupy a cooler, wetter climate than warm temperate forests (T2.4), but ocean influence promotes very high precipitation and limits persistence of winter snow (compared with T2.1 or T2.2). Tree diversity is low, but abundant epiphytic and terrestrial mosses and liverworts, ferns, lichens, and conspicuous fungi contribute to seasonal productivity. Foodwebs are simple, with low vertebrate diversity and fewer large herbivores and predators than T2.1 and T2.2, but with many species found nowhere else.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T2.3>{target=\"webapp\"}\n\n## Map description\n***T2.3 Oceanic cool temperate rainforests***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: T2.3.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091101](https://doi.org/10.5281/zenodo.5091101)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T2_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T2_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T2_3_history.qmd).\n\n",
+    "supporting": [
+      "T2_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

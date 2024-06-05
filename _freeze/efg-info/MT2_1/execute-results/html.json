@@ -1,0 +1,17 @@
+{
+  "hash": "d85c356215b597f128e2b20e61bc5380",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"MT2.1 Coastal shrublands and grasslands\"\nsubtitle: \"MT2. Supralittoral coastal biome\"\nparams:\n efgcode: MT2.1\ncategories:\n - MT2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nA low diversity of specialised plants and animals live in grasslands, shrublands, and low forests on coastlines above the high tide mark where they are exposed to harsh conditions of salt influx, desiccating winds and sunshine, and disturbances associated with storms or unstable substrates (e.g. cliffs and dunes). Plants, for example, exhibit traits such as succulence and rhizomes to promote persistence in these conditions, and many organisms are widely dispersed by winds or ocean currents. Consumers like seabirds or seals move between terrestrial and marine environments.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/MT2.1>{target=\"webapp\"}\n\n## Map description\n***MT2.1 Coastal shrublands and grasslands***\n\nCoastlines were mapped with a 5 km buffer applied between 60°S and 60°N..\n\n **Map code and version**: MT2.1.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091113](https://doi.org/10.5281/zenodo.5091113)\n\n::: {.cell}\n::: {.cell-output-display}\n![](MT2_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/MT2_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/MT2_1_history.qmd).\n\n",
+    "supporting": [
+      "MT2_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

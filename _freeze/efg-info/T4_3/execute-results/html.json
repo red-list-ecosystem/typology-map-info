@@ -1,0 +1,17 @@
+{
+  "hash": "c885f2c57f231b43d4e122651804ae6d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T4.3 Hummock savannas\"\nsubtitle: \"T4. Savannas and grasslands biome\"\nparams:\n efgcode: T4.3\ncategories:\n - T4\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nFound only in northern Australia, hummock savannas are distinguished by a ground layer of slow-growing, domed hummock grasses interspersed with bare ground and some trees and shrubs. These habitats are less strongly seasonal than other savannas, but still with winter droughts and summer rains, and many plant adaptations to seasonal drought. Recurring fires are an important factor promoting patchiness of vegetation, but post-fire recovery is slower than other savanna ecosystems. Rocky coarse-textured substrates are low in nutrients. Foodwebs are correspondingly simple, with large numbers of invertebrates and low numbers of mammalian herbivores and vertebrate predators.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T4.3>{target=\"webapp\"}\n\n## Map description\n***T4.3 Hummock savannas***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: T4.3.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091023](https://doi.org/10.5281/zenodo.5091023)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T4_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T4_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T4_3_history.qmd).\n\n",
+    "supporting": [
+      "T4_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

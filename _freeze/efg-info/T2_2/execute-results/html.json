@@ -1,0 +1,17 @@
+{
+  "hash": "fe8f15dc51bbef137a56f5a0b2f3452d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T2.2 Deciduous temperate forests\"\nsubtitle: \"T2. Temperate-boreal forests and woodlands biome\"\nparams:\n efgcode: T2.2\ncategories:\n - T2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nAt cool temperate latitudes in the Northern hemisphere, fertile soils and high precipitation support forests dominated by broadleaf deciduous trees, although evergreen needleleaf trees may account for up to one-third of the canopy. Cold snow-prone winters punctuate a limited but highly productive growing season. Fungi and bacteria play vital roles in decomposition of the seasonal leaf fall on the forest floor, with insects and browsing herbivores important in carbon and nutrient cycling. Herbivores such as deer and hares are prey to feline, canine and avian predators. Winter dormancy, hibernation and migration are key strategies enabling survival of plants and animals.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T2.2>{target=\"webapp\"}\n\n## Map description\n***T2.2 Deciduous temperate forests***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T2.2.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091099](https://doi.org/10.5281/zenodo.5091099)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T2_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T2_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T2_2_history.qmd).\n\n",
+    "supporting": [
+      "T2_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

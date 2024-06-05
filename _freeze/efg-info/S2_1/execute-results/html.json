@@ -1,0 +1,17 @@
+{
+  "hash": "c91427bd82901a14c659516628a15d4b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"S2.1 Anthropogenic subterranean voids\"\nsubtitle: \"S2. Anthropogenic subterranean voids biome\"\nparams:\n efgcode: S2.1\ncategories:\n - S2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nIndustrial excavations create artificial voids that resemble caves. Like caves, they lack inputs of solar energy, and plants and herbivores are absent, except at their openings or around artificial lighting. They are colonised by opportunistic invertebrates and vertebrates, and microbes from the rock matrix or imported materials. Diversity is low, but depends on proximity to openings, human activity during occupation and time since excavation.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/S2.1>{target=\"webapp\"}\n\n## Map description\n***S2.1 Anthropogenic subterranean voids***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: S2.1.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091119](https://doi.org/10.5281/zenodo.5091119)\n\n::: {.cell}\n::: {.cell-output-display}\n![](S2_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/S2_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/S2_1_history.qmd).\n\n",
+    "supporting": [
+      "S2_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

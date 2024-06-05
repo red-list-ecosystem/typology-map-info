@@ -1,0 +1,17 @@
+{
+  "hash": "146b96128780dea38582122ef4eb35ef",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T1.2 Tropical/Subtropical dry forests and thickets\"\nsubtitle: \"T1. Tropical-subtropical forests biome\"\nparams:\n efgcode: T1.2\ncategories:\n - T1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nTropical-subtropical dry forests and thickets are characterised by fertile substrates and seasonally dry conditions (~1800 mm per year, with a period of 3 to 6 months receiving less than 100 mm per month) that drive markedly seasonal patterns of productivity. Tree-diversity is high, with a variable mixture of evergreen and drought-deciduous trees, with abundant vines, but fewer epiphytes, ferns, mosses, and forbs, limited by seasonal drought. Abundant leaf litter is decomposed by fungi and microbes within complex foodwebs dominated by vertebrates of all kinds.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T1.2>{target=\"webapp\"}\n\n## Map description\n***T1.2 Tropical/Subtropical dry forests and thickets***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T1.2.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091123](https://doi.org/10.5281/zenodo.5091123)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T1_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T1_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T1_2_history.qmd).\n\n",
+    "supporting": [
+      "T1_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

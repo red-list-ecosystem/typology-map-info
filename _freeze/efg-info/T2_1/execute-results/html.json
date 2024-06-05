@@ -1,0 +1,17 @@
+{
+  "hash": "cc9062627093f38cd96a0d1ed23ecea2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T2.1 Boreal and temperate high montane forests and woodlands\"\nsubtitle: \"T2. Temperate-boreal forests and woodlands biome\"\nparams:\n efgcode: T2.1\ncategories:\n - T2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nIn boreal and mountainous cold, seasonally snow-prone climates, acid soils support structurally simple forests made up of needle-leaf conifer trees, sometimes with broad-leaf deciduous trees. Large forest trees provide habitat for fungi, mosses and liverworts. Seasonal understorey growth sustains high densities of herbivores such as bear, deer, and a variety of insects, with predators such as lynx, wolves and raptors. Plants and animals survive cold winters through freeze-tolerant organs, hibernation or migratory movements.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T2.1>{target=\"webapp\"}\n\n## Map description\n***T2.1 Boreal and temperate high montane forests and woodlands***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T2.1.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091097](https://doi.org/10.5281/zenodo.5091097)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T2_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T2_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T2_1_history.qmd).\n\n",
+    "supporting": [
+      "T2_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

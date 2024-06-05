@@ -1,0 +1,17 @@
+{
+  "hash": "1c3a99432502e0902e4cd6269fdfefd4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"TF1.1 Tropical flooded forests and peat forests\"\nsubtitle: \"TF1. Palustrine wetlands biome\"\nparams:\n efgcode: TF1.1\ncategories:\n - TF1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese tropical swamps have closed forest canopies and experience high rainfall and consistent temperatures all year. In some, peat accumulates in anaerobic black water conditions, while others are highly productive white-water systems, with frequent refilling and turnover of nutrients. Trees and other plants, such as palms, pitcher plants, epiphytic mosses and ferns grow in soils that are waterlogged or periodically inundated.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/TF1.1>{target=\"webapp\"}\n\n## Map description\n***TF1.1 Tropical flooded forests and peat forests***\n\nMajor occurrences of swamp and flooded forest were taken from the Global Lakes and Wetlands Database (Lehner and Döll 2004). Additional areas with minor occurrences identified in selected terrestrial ecoregions (Dinerstein et al. 2017). Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile. .\n\n **Map code and version**: TF1.1.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091052](https://doi.org/10.5281/zenodo.5091052)\n\n::: {.cell}\n::: {.cell-output-display}\n![](TF1_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/TF1_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/TF1_1_history.qmd).\n\n",
+    "supporting": [
+      "TF1_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

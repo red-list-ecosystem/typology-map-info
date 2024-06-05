@@ -1,0 +1,17 @@
+{
+  "hash": "a95621c96f4ae8f86e369ca9446bd5ef",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T4.4 Temperate woodlands\"\nsubtitle: \"T4. Savannas and grasslands biome\"\nparams:\n efgcode: T4.4\ncategories:\n - T4\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nTemperate woodlands are structurally simple, with widely-spaced trees and a ground layer of grasses with scattered shrubs. They are globally distributed in temperate climates with warm-season droughts. Tree foliage is typically evergreen, but may be deciduous in cold dry climates. During warm summers, productive grasses on fertile soils sustain a complex foodweb of insects, reptiles, birds and mammals. The ground flora varies with rainfall and tree cover, which creates diverse microhabitats beneath. Large herbivores and their predators are important to maintaining woodland composition, with burrowing mammals influencing soil and nutrient cycling. Fires occur periodically, but have less influence than in pyric savannas (T4.2) or forests (T2.6).\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T4.4>{target=\"webapp\"}\n\n## Map description\n***T4.4 Temperate woodlands***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: T4.4.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090438](https://doi.org/10.5281/zenodo.5090438)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T4_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T4_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T4_4_history.qmd).\n\n",
+    "supporting": [
+      "T4_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "1901c6f67f9575ba3487d4dc518be666",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M3.7 Chemosynthetic-based-ecosystems (CBE)\"\nsubtitle: \"M3. Deep sea floors biome\"\nparams:\n efgcode: M3.7\ncategories:\n - M3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nIn these very deep, high pressure ecosystems, primary productivity is fuelled by chemical compounds as energy sources instead of light (chemoautotrophy). This group of productive deep sea ecosystems include: 1) hydrothermal vents on mid-ocean ridges and volcanically active seamounts, where temperatures may reach 400°C; 2) cold seeps typically on continental slopes; and 3) large organic falls of whales or wood. These specialised environments have high biomass but low diversity of organisms including microbes, tubeworms and shrimps, many of which are locally unique.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M3.7>{target=\"webapp\"}\n\n## Map description\n***M3.7 Chemosynthetic-based-ecosystems (CBE)***\n\nMajor occurrences of Chemosynthetic-based ecosystems was based on the distribution of hydrothermal vents on spreading plate boundaries mapped in ‘Plate lines and polygons’ data by USGS/ESRI. Occurrences were converted to 30 arc second spatial resolution. The distribution of cold seeps is poorly known and was not mapped..\n\n **Map code and version**: M3.7.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090988](https://doi.org/10.5281/zenodo.5090988)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M3_7_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M3_7_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M3_7_history.qmd).\n\n",
+    "supporting": [
+      "M3_7_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

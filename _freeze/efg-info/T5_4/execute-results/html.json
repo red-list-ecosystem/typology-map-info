@@ -1,0 +1,17 @@
+{
+  "hash": "a26867bd1d0ebc82efc7afed9592738b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T5.4 Cool deserts and semi-deserts\"\nsubtitle: \"T5. Deserts and semi-deserts biome\"\nparams:\n efgcode: T5.4\ncategories:\n - T5\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nCool deserts and semi-deserts occur on cool temperate plains and plateaus in central Eurasia and temperate parts of the Americas from sea level up to 4,000 m. Strong winds and freezing temperatures prevail, with low annual precipitation falling as winter snow or sleet. Productivity is low on infertile sandy and clay soils, often with high salinity. Vegetation comprises a sparse cover of low grasses and dwarf shrubs, interspersed with bare patches, with some areas having only lichens and mosses or no vegetation at all. Fauna includes large nomadic herbivores including antelopes, wild horses and camels, which control composition of vegetation. Predators include raptors, snakes, bears, and cats.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T5.4>{target=\"webapp\"}\n\n## Map description\n***T5.4 Cool deserts and semi-deserts***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T5.4.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091009](https://doi.org/10.5281/zenodo.5091009)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T5_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T5_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T5_4_history.qmd).\n\n",
+    "supporting": [
+      "T5_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "65c192d68997b85e0bee5deb016752d5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F1.6 Episodic arid rivers\"\nsubtitle: \"F1. Rivers and streams biome\"\nparams:\n efgcode: F1.6\ncategories:\n - F1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese desert rivers occur mostly in flat areas of arid and semi-arid mid-latitudes. Channels are typically broad, flat, and often branching, with soft sandy sediments. They are dry most of the time, but punctuated by high-volume, short duration flows that transport nutrients and stimulate high productivity by algae and zooplankton. Plants and animals can either tolerate or avoid long, dry periods and then exploit short pulses of abundant resources, producing hotspots of biodiversity and ecological activity in arid landscapes.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F1.6>{target=\"webapp\"}\n\n## Map description\n***F1.6 Episodic arid rivers***\n\nFreshwater ecoregions (Abell et al. 2008) were identified as containing occurrences of these functional groups if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile. Within the selected ecoregions, remote sensing estimates of ephemeral surface water (classes 4, 5 and 8 from Pekel et al. 2016) were used to identify major occurrences. The remaining areas of selected ecoregions were mapped as minor occurrences..\n\n **Map code and version**: F1.6.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090972](https://doi.org/10.5281/zenodo.5090972)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F1_6_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F1_6_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F1_6_history.qmd).\n\n",
+    "supporting": [
+      "F1_6_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

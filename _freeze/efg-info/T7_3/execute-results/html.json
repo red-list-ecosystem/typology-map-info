@@ -1,0 +1,17 @@
+{
+  "hash": "b184550496db9546f59abe78d50cf45e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T7.3 Plantations\"\nsubtitle: \"T7. Intensive land-use biome\"\nparams:\n efgcode: T7.3\ncategories:\n - T7\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nPlantations are generally long-rotation perennial woody crops established and maintained for a variety of food and materials. The harvested products include wood, various fruits, tea, coffee, palm oil and other food additives, materials such as rubber, ornamental materials (cut flowers), etc. The vegetation of most plantations comprises at least two vertical strata (the managed woody species and a ruderal ground layer), although mixed plantings may be more complex and host a relatively diverse flora and fauna if managed to promote habitat features. Fertilisers and water subsidies are applied, and harvesting occurs at intervals depending on the crop.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T7.3>{target=\"webapp\"}\n\n## Map description\n***T7.3 Plantations***\n\nMajor occurrences of plantations were taken from the map of Habitat type 14.3 by Jung et al. (2020) based on the IUCN Habitats Classification Scheme v3.1 (IUCN 2012). We compared this to cropping areas in consensus land-cover maps (Tuanmu et al., 2014) and found that maps of Jung et al. (2020) more closely matched the concept of T7.3..\n\n **Map code and version**: T7.3.web.alt v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091083](https://doi.org/10.5281/zenodo.5091083)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T7_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T7_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T7_3_history.qmd).\n\n",
+    "supporting": [
+      "T7_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

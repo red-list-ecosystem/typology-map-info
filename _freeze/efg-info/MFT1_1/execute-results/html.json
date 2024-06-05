@@ -1,0 +1,17 @@
+{
+  "hash": "649b974462a882f734da4819d65a09d6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"MFT1.1 Coastal river deltas\"\nsubtitle: \"MFT1. Brackish tidal biome\"\nparams:\n efgcode: MFT1.1\ncategories:\n - MFT1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nAt the convergence of terrestrial, freshwater and marine realms, coastal river deltas are shaped by river inflows that deposit sediment and ocean tides and currents that disperse it. Gradients of salinity and submergence and dynamic substrates create shifting mosaics of channels, islands, floodplains, intertidal and subtidal mud plains and sand beds that may be regarded as embedded patches of other functional groups. The dynamic mosaics support complex foodwebs. Planktonic algae, aquatic plants and river inflows contribute detritus for in-sediment fauna. Fish and zooplankton are diverse and abundant in the water column, providing food for wading and fishing birds and marine and terrestrial predators.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/MFT1.1>{target=\"webapp\"}\n\n## Map description\n***MFT1.1 Coastal river deltas***\n\nThe extent of major coastal deltas was taken directly from Tessler et al. (2015), which was checked for completeness against point locations shown in Fig. 1 of Goodbred & Saito (2012) and found to be inclusive of major occurrences. Represented at a spatial resolution of 30 arc-seconds. Original map at [Deltas at risk](http://www.globaldeltarisk.net/)..\n\n **Map code and version**: MFT1.1.map.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091025](https://doi.org/10.5281/zenodo.5091025)\n\n::: {.cell}\n::: {.cell-output-display}\n![](MFT1_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/MFT1_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/MFT1_1_history.qmd).\n\n",
+    "supporting": [
+      "MFT1_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

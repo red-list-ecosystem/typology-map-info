@@ -1,0 +1,17 @@
+{
+  "hash": "93faf2781e26b61912a5148a0a13f8e1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F3.3 Rice paddies\"\nsubtitle: \"F3. Artificial wetlands biome\"\nparams:\n efgcode: F3.3\ncategories:\n - F3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nRice paddies cover more than a million square kilometres mostly in tropical to warm temperate climates, especially Southeast Asia. They are filled by rainfall or river water diversions. Their levees and channels retain shallow water areas, with nutrients inputs from inflows and fertilisers. Planting and harvest establishes a regular cycle of disturbance, with many paddies also supporting production of fish and crustaceans, Their simple foodwebs are adapted to temporary flooding and the harvest cycle, including algae and plankton, waterbugs, frogs and waterbirds.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F3.3>{target=\"webapp\"}\n\n## Map description\n***F3.3 Rice paddies***\n\nThe distribution of rice paddies was estimated from the percentage of rice cover at a 5 arc minute  resolution based on Monfreda et al. (2008). Cells with > 10% rice cover were designated as major occurrences, and those with 1-10% rice cover were designated as minor occurrences..\n\n **Map code and version**: F3.3.web.alt v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090997](https://doi.org/10.5281/zenodo.5090997)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F3_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F3_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F3_3_history.qmd).\n\n",
+    "supporting": [
+      "F3_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

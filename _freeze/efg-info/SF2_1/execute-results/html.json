@@ -1,0 +1,17 @@
+{
+  "hash": "0d343a7beca5b2ff46edc1a96375c12b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"SF2.1 Water pipes and subterranean canals\"\nsubtitle: \"SF2. Anthropogenic subterranean freshwaters biome\"\nparams:\n efgcode: SF2.1\ncategories:\n - SF2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nWaters flowing rapidly through artificial conduits are typically bereft of their own primary producers in the absence of light and rely on imported algae and detritus as sources of energy. These support simple bacterial and fungal communities in biofilms and largely itinerant invertebrates. Diversity, abundance and productivity are low, but filter feeders may colonise and productivity may be higher if source waters supply nutrients and organic carbon.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/SF2.1>{target=\"webapp\"}\n\n## Map description\n***SF2.1 Water pipes and subterranean canals***\n\nFreshwater ecoregions (Abell et al. 2008) containing urban and industrialised areas with water transfer infrastructure were identified by consulting available ecoregion descriptions (http://www.feow.org/), maps of irrigation and other water infrastructure, and expertise of authors. Due to uncertainty and limited verification and likely limited spatial extent within mapped areas, all inferred occurrences were shown as minor at 30 arc seconds spatial resolution..\n\n **Map code and version**: SF2.1.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091048](https://doi.org/10.5281/zenodo.5091048)\n\n::: {.cell}\n::: {.cell-output-display}\n![](SF2_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/SF2_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/SF2_1_history.qmd).\n\n",
+    "supporting": [
+      "SF2_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

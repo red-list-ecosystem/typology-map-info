@@ -1,0 +1,17 @@
+{
+  "hash": "c5c9f2f4b5b88dd253e9b0a3341e5ab7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F2.7 Ephemeral salt lakes\"\nsubtitle: \"F2. Lakes biome\"\nparams:\n efgcode: F2.7\ncategories:\n - F2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nEphemeral salt lakes in semi-arid and arid regions are shallow, with extreme variation in salinity during wet-dry cycles that limits life to a low diversity of specialised salt-tolerant species. The lakes are dry and salt-encrusted most of the time, but episodic inundation dilutes salt, allowing high growth of algae and larger plants which support crustaceans, insect larvae, fish and specialist waterbirds. These species use dormant life stages to survive drying, or disperse rapidly to other habitats when the lake dries.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F2.7>{target=\"webapp\"}\n\n## Map description\n***F2.7 Ephemeral salt lakes***\n\nLocation of ephemeral lakes was taken from global lake databases (Lehner and Döll 2004; types 1 and 3 from Messager et al. 2016), intersected with estimates of ephemeral surface water (classes 9 and 10 from Pekel et al. 2016) and the distribution of arid and semi-arid, endorheic basins (Linke et al. 2019). Occurrences were aggregated to 10 minutes spatial resolution. Occurrences were aggregated to 10 minutes spatial resolution..\n\n **Map code and version**: F2.7.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090956](https://doi.org/10.5281/zenodo.5090956)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F2_7_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F2_7_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F2_7_history.qmd).\n\n",
+    "supporting": [
+      "F2_7_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

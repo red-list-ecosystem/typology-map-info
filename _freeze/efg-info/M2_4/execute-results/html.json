@@ -1,0 +1,17 @@
+{
+  "hash": "99e77c2320e6069b76d3fa7469ad36d4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M2.4 Abyssopelagic ocean waters\"\nsubtitle: \"M2. Pelagic ocean waters biome\"\nparams:\n efgcode: M2.4\ncategories:\n - M2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nAt greater depths (~3,000-6,000m) than bathypelagic systems, these very deep open ocean ecosystems receive no light and rely solely on debris from upper layers for nutrients. Other resources such as oxygen are replenished via the ‘global ocean conveyer belt’ (thermohaline circulation) that starts when distant, polar surface waters cool and sink. There is a low diversity and low density of life, largely planktonic detritivores, along with some gelatinous invertebrates and scavenging or predatory fish like the anglerfish. Life histories body structures and physiological traits are adapted to the very high pressure and lack of light (e.g. non-visual sensory organs, specialised metabolic proteins, and low density body structures).\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M2.4>{target=\"webapp\"}\n\n## Map description\n***M2.4 Abyssopelagic ocean waters***\n\nIndicative distributions of these marine pelagic ecosystem functional groups were derived from bathymetric spatial data obtained from Becker et al. (2009) using depth range thresholds cited in respective descriptive profiles for each functional group. Occurrences were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: M2.4.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090918](https://doi.org/10.5281/zenodo.5090918)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M2_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M2_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M2_4_history.qmd).\n\n",
+    "supporting": [
+      "M2_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

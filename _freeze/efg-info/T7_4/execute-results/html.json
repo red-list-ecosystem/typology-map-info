@@ -1,0 +1,17 @@
+{
+  "hash": "3c4663d2766089da39949addd1556fcb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T7.4 Urban and industrial ecosystems\"\nsubtitle: \"T7. Intensive land-use biome\"\nparams:\n efgcode: T7.4\ncategories:\n - T7\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nCities, smaller settlements and industrial areas are structurally complex ecosystems and characterised by their highly dynamic spatial structure. Diverse patch types include buildings, paved surfaces, transport infrastructure, parks and gardens; excavations, bare ground and refuse areas. Patches undergo periodic destruction and renewal. Human population density is high, relative to other ecosystems, and dependent on large subsidies of imported resources (particularly water, nutrients and food). Interactions among patch types and human social behaviours produce emergent properties and complex feedbacks among ecosystem components.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T7.4>{target=\"webapp\"}\n\n## Map description\n***T7.4 Urban and industrial ecosystems***\n\nThe indicative distribution of Urban and infrastructure lands was estimated using spatial data for night light brightness (values >0 in NCEI 2019; Cinzano, et al.  2019).\n\n **Map code and version**: T7.4.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091085](https://doi.org/10.5281/zenodo.5091085)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T7_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T7_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T7_4_history.qmd).\n\n",
+    "supporting": [
+      "T7_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

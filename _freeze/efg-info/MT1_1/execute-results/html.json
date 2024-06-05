@@ -1,0 +1,17 @@
+{
+  "hash": "70ccef34ae22e115f1f9525711e63f51",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"MT1.1 Rocky Shorelines\"\nsubtitle: \"MT1. Shorelines biome\"\nparams:\n efgcode: MT1.1\ncategories:\n - MT1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nWaves, tides and a gradient of exposure drive the structure and function of these productive intertidal ecosystems found mostly on high energy coasts. The biota includes filter feeders like barnacles, mussels and sea squirts which compete for limited space. Grazers like limpets and urchins consume small sessile algae, while predators such as crabs, fish and birds consume a wide range of prey. Organisms use microhabitats during low tide (e.g. rockpools, crevices) or have adaptations like shells to survive exposure to high temperatures, salinity and desiccation.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/MT1.1>{target=\"webapp\"}\n\n## Map description\n***MT1.1 Rocky Shorelines***\n\nMarine ecoregions (Spalding et al. 2008) containing rocky shorelines and boulder and cobble shorelines, respectively, were identified by consulting regional substrate maps, imagery available in Google Earth (to exclude ecoregions with extensive sandy or muddy shores) and expertise of authors, proofed by specialist reviewers..\n\n **Map code and version**: MT1.1.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091089](https://doi.org/10.5281/zenodo.5091089)\n\n::: {.cell}\n::: {.cell-output-display}\n![](MT1_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/MT1_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/MT1_1_history.qmd).\n\n",
+    "supporting": [
+      "MT1_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

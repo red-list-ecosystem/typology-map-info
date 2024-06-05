@@ -1,0 +1,17 @@
+{
+  "hash": "6f6883d97abf872ba546f8cd8498e601",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M1.3 Photic coral reefs\"\nsubtitle: \"M1. Marine shelf biome\"\nparams:\n efgcode: M1.3\ncategories:\n - M1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese slow growing biogenic structures are formed by the calcium carbonate skeletons of certain coral species that depend on symbiotic relationships with algae. They occur in warm, shallow, low-nutrient waters and provide complex three-dimensional habitat for a highly diverse community across all trophic levels, from algae to sharks, along with other characteristic sessile organisms like coralline algae and sponges. Niche habitats produce specialist behaviours and diets, like the symbiotic relationship between clown fish and anemones. Storms and marine heat waves drive cycles of reef destruction and renewal.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M1.3>{target=\"webapp\"}\n\n## Map description\n***M1.3 Photic coral reefs***\n\nIndicative maps of Photic coral reefs were obtained from Institute for Marine Remote Sensing et al. (2011). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M1.3.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090929](https://doi.org/10.5281/zenodo.5090929)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M1_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M1_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M1_3_history.qmd).\n\n",
+    "supporting": [
+      "M1_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

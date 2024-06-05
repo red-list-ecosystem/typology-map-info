@@ -1,0 +1,17 @@
+{
+  "hash": "ae54fef3a15b92c4fee058fb1267c227",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M3.4 Seamounts, ridges and plateaus\"\nsubtitle: \"M3. Deep sea floors biome\"\nparams:\n efgcode: M3.4\ncategories:\n - M3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese deep, lightless ecosystems are centred on major geomorphic features of deep ocean floors. These elevated features interrupt lateral ocean currents and generate upwelling of nutrients. This promotes productivity in surface waters, which returns to depths as detritus. The input of these resources, combined with varied rocky micohabitats, unlike the sand and mud around them, supports diverse communities of immobile filter feeders (e.g. sponges), mobile benthic organisms (e.g. molluscs and starfish), and large aggregations of fish, especially around seamounts.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M3.4>{target=\"webapp\"}\n\n## Map description\n***M3.4 Seamounts, ridges and plateaus***\n\nMajor occurrences of seamounts, ridges and plateaus was based on the ‘mountains’ classes within the abyssal geomorphic unit of Harris et al. (2014b). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M3.4.web.orig v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090982](https://doi.org/10.5281/zenodo.5090982)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M3_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M3_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M3_4_history.qmd).\n\n",
+    "supporting": [
+      "M3_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

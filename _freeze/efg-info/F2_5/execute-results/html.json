@@ -1,0 +1,17 @@
+{
+  "hash": "e8263ae54c09e61af3c4a63d51230d8f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F2.5 Ephemeral freshwater lakes\"\nsubtitle: \"F2. Lakes biome\"\nparams:\n efgcode: F2.5\ncategories:\n - F2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese are shallow lakes that are mostly dry, and then fill for weeks or months, before drying again. During dry periods, many animals or plants survive as eggs, seeds or other dormant forms, while other species disperse. Floods, bring water from surrounding catchments and floodplains with organic matter, nutrients and fine sediments, and trigger movement of birds and mammals. Floods activate simple foodwebs, comprising abundant algae, zooplankton, waterbugs and crustaceans, which have rapid life-cycles able to exploit windows of productivity. This produces food for frogs and visiting waterbirds.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F2.5>{target=\"webapp\"}\n\n## Map description\n***F2.5 Ephemeral freshwater lakes***\n\nLocation of natural ephemeral freshwater lakes was taken from global lake databases (Lehner and Döll 2004; types 1 an 3 from Messager et al. 2016), excluding those from endorheic basins cf. F2.7 (Linke et al. 2019), and intersected with estimates of ephemeral surface water (classes 9 and 10 from Pekel et al. 2016). Occurrences were aggregated to 10 minutes spatial resolution..\n\n **Map code and version**: F2.5.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090951](https://doi.org/10.5281/zenodo.5090951)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F2_5_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F2_5_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F2_5_history.qmd).\n\n",
+    "supporting": [
+      "F2_5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

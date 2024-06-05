@@ -1,0 +1,17 @@
+{
+  "hash": "195e919292276590c882b935d1aefbd5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F2.6 Permanent salt and soda lakes\"\nsubtitle: \"F2. Lakes biome\"\nparams:\n efgcode: F2.6\ncategories:\n - F2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese lakes are usually large and shallow in semi-arid regions, with high concentrations of salts, mediated by inflows of water.  Their productivity from growth of algae and plants can support large numbers, but low diversity of organisms equipped with tolerance to high salinity and other solutes. They have relatively simple foodwebs, with high numbers of microbes and plankton, crustaceans, insect larvae, fish and specialised waterbirds such as flamingos.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F2.6>{target=\"webapp\"}\n\n## Map description\n***F2.6 Permanent salt and soda lakes***\n\nMajor occurrences were compliled from a list of known salt lakes in Wurtsbaugh et al. (2017) and augmented by authors, then matched with names in the HydroLAKES database to identify natural lakes (types 1 and 3 of Messager et al. 2016). Minor occurrences were mapped within arid and semi-arid parts of selected freshwater ecoregions (Abell et al. 2008) by clipping ecoregions to exclude areas with mean annual rainfall >250mm (Harris et al. 2014a). Freshwater ecoregions (Abell et al. 2008) were selected if they contained occurrences of permanent salt or soda lakes if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile. Occurrences were aggregated to 10 minutes spatial resolution..\n\n **Map code and version**: F2.6.web.mix v4.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090954](https://doi.org/10.5281/zenodo.5090954)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F2_6_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F2_6_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F2_6_history.qmd).\n\n",
+    "supporting": [
+      "F2_6_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

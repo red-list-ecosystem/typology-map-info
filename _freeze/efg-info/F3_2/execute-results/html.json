@@ -1,0 +1,17 @@
+{
+  "hash": "a1540f6f6d955dfaf7902f9457a6b060",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F3.2 Constructed lacustrine wetlands\"\nsubtitle: \"F3. Artificial wetlands biome\"\nparams:\n efgcode: F3.2\ncategories:\n - F3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nSmall farm dams, wastewater ponds and mine pits generally form lake-like environments, common in humid and semi-arid climates world-wide. Nutrient inputs vary greatly depending on purpose and surrounding land uses.  They are often warm and shallow, and biological productivity and diversity vary widely depending on the cover and state of fringing vegetation, with the most diverse examples rivalling equivalent natural wetlands.  Aquatic plants, plankton, algae and waterbugs may dominate in the shallows, supporting amphibians, turtles, fish, and waterbirds.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F3.2>{target=\"webapp\"}\n\n## Map description\n***F3.2 Constructed lacustrine wetlands***\n\nFreshwater ecoregions (Abell et al. 2008) were identified as containing major or minor occurrences of these functional groups if: i) their descriptions mentioned features consistent with those identifed in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile. The selections were check by expert reviewers. Occurrences were mapped at 30 arc seconds spatial resolution..\n\n **Map code and version**: F3.2.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090995](https://doi.org/10.5281/zenodo.5090995)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F3_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F3_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F3_2_history.qmd).\n\n",
+    "supporting": [
+      "F3_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

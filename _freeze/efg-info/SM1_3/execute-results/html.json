@@ -1,0 +1,17 @@
+{
+  "hash": "b7c19b8e315624263ebc781339d8d7ca",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"SM1.3 Sea caves\"\nsubtitle: \"SM1. Subterranean tidal biome\"\nparams:\n efgcode: SM1.3\ncategories:\n - SM1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nSea caves are formed by waves action on fissures in a wide range of rocky coastlines around the world. Unlike anchialine caves, salinity gradients are weak and a strong marine influence is maintained throughout their extent. They support a range of sessile invertebrates (e.g. sponges, cnidarians, bryozoans), mobile invertebrates (e.g. molluscs, crustaceans, annelids,) and fish. Some organisms appear to be exclusive to sea caves, some shelter in sea caves diurnally, and others are itinerant visitors.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/SM1.3>{target=\"webapp\"}\n\n## Map description\n***SM1.3 Sea caves***\n\nMarine ecoregions (Spalding et al. 2008) containing occurrences of rocky coastline (see MT1.1) were verified by inspection of imagery available in Google Earth to identify an envelope of potential distribution for sea caves. The coastlines within these ecoregions were summarised using a template of 1-degree grid cell intersected with the coast. As caves represent a small portion of such coastlines, all mapped areas were designated as minor occurrences..\n\n **Map code and version**: SM1.3.web.grid v3.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091037](https://doi.org/10.5281/zenodo.5091037)\n\n::: {.cell}\n::: {.cell-output-display}\n![](SM1_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/SM1_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/SM1_3_history.qmd).\n\n",
+    "supporting": [
+      "SM1_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

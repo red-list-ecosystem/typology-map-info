@@ -1,0 +1,17 @@
+{
+  "hash": "f541afb139dec73bb96d0c1a90bebf13",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F2.4 Freeze-thaw freshwater lakes\"\nsubtitle: \"F2. Lakes biome\"\nparams:\n efgcode: F2.4\ncategories:\n - F2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nMany plants and animals survive surface freezing of freshwater lakes, in dormant life stages, by reducing activity beneath the ice, or by moving. Such freshwater lakes vary enormously in size and distribution, providing a wide range of habitats for many organisms, which undergo a succession of emergence during lake thaw. The annual thaw triggers highly productive plant and animal activity, beginning with diatom algae and then zooplankton. Habitat diversity increases with lake size, increasing the variety of plankton, aquatic plants, waterbugs, birds, and sometimes fish.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F2.4>{target=\"webapp\"}\n\n## Map description\n***F2.4 Freeze-thaw freshwater lakes***\n\nLocation of small and large natural lakes was taken from the HydroLAKES database (types 1 an 3 in Messager et al. 2016). We included all lakes with minimum temperature below 0°C (Linke et al. 2019). Occurrences were aggregated to ten minute spatial resolution..\n\n **Map code and version**: F2.4.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090949](https://doi.org/10.5281/zenodo.5090949)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F2_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F2_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F2_4_history.qmd).\n\n",
+    "supporting": [
+      "F2_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

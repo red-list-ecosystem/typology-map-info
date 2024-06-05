@@ -1,0 +1,17 @@
+{
+  "hash": "3321fdfb5f9f7a7edd583b35fd56c6be",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M3.3 Abyssal plains\"\nsubtitle: \"M3. Deep sea floors biome\"\nparams:\n efgcode: M3.3\ncategories:\n - M3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese ecosystems on the very deep seafloors (3000-6000m) of all oceans support a low biomass but high diversity of small invertebrates and microbes, along with larger crustaceans, demersal fish and echinoderms like starfish. Tracks and burrows of larger organisms in fine sediments that may be up to thousands of metres thick, structure habitat for smaller invertebrates. The absence of light, scarcity of food, and extreme hydrostatic pressures limit the density and biomass of organisms as well as the interactions among them. Inaccessible and little known, exploration of these ecosystems continue to reveal large numbers of species new to science.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M3.3>{target=\"webapp\"}\n\n## Map description\n***M3.3 Abyssal plains***\n\nMajor occurrences of Abyssal plains was based on the ‘plains’ and ‘hills’ classes within the abyssal geomorphic unit of Harris et al. (2014b). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M3.3.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090980](https://doi.org/10.5281/zenodo.5090980)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M3_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M3_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M3_3_history.qmd).\n\n",
+    "supporting": [
+      "M3_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

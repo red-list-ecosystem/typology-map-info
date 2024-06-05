@@ -1,0 +1,17 @@
+{
+  "hash": "faa382d11d9e8cbdd678845b147a4d83",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F3.4 Freshwater aquafarms\"\nsubtitle: \"F3. Artificial wetlands biome\"\nparams:\n efgcode: F3.4\ncategories:\n - F3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nFreshwater aquafarms are ponds constructed from earthworks or cages built within freshwater lakes, rivers and reservoirs. They are most common in Asia. and used to produce species. Their commercial production of fish and crustacean involves intensive interventions, including focussed inputs of food and nutrients, and control of competitors, predators and diseases that may limit production of target species. Consequently habitat diversity and primary production are low, and non-target biota is limited to opportunistic colonisers from adjacent water sources, including insects, fish, frogs, waterbirds and some aquatic plants.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F3.4>{target=\"webapp\"}\n\n## Map description\n***F3.4 Freshwater aquafarms***\n\nFreshwater ecoregions (Abell et al. 2008) were identified as containing major or minor occurrences of these functional groups if: i) their descriptions mentioned features consistent with those identifed in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile. The selections were check by expert reviewers. Occurrences were mapped at 30 arc seconds spatial resolution..\n\n **Map code and version**: F3.4.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090999](https://doi.org/10.5281/zenodo.5090999)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F3_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F3_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F3_4_history.qmd).\n\n",
+    "supporting": [
+      "F3_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

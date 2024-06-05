@@ -1,0 +1,17 @@
+{
+  "hash": "ebf5ef5f9ff150b1e0d68fdd7f1f843b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T3.2 Seasonally dry temperate heath and shrublands\"\nsubtitle: \"T3. Shrublands and shrubby woodlands biome\"\nparams:\n efgcode: T3.2\ncategories:\n - T3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese temperate ecosystems are dominated by sclerophyll shrubs with small or ericoid leaves. A low sparse tree canopy may or may not be present. Low-moderate productivity is limited by summer droughts and low nutrient availability. and sandy or loamy soils, with many diverse plant specialisations to low nutrient, and regular fires, accelerated by slow decomposition rates. Foodwebs vary from complex to simple, but most lack large herbivores and predators. Vertebrate herbivores have specialisations to exploit low nutrient vegetation and avoid recurring fires, which are influential on plant and animal life histories. Specific plant-invertebrate relationships (e.g. as larval hosts and pollinators) are common (moths and butterflies larval hosts, wasp pollinators).\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T3.2>{target=\"webapp\"}\n\n## Map description\n***T3.2 Seasonally dry temperate heath and shrublands***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: T3.2.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091107](https://doi.org/10.5281/zenodo.5091107)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T3_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T3_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T3_2_history.qmd).\n\n",
+    "supporting": [
+      "T3_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

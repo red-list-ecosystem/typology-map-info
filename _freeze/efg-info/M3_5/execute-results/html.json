@@ -1,0 +1,17 @@
+{
+  "hash": "6056370f5aaeb356855b912b9d24ef4f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M3.5 Deepwater biogenic beds\"\nsubtitle: \"M3. Deep sea floors biome\"\nparams:\n efgcode: M3.5\ncategories:\n - M3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nRelatively complex three-dimensional structures are formed by slow-growing, filter-feeders like sponges, corals and bivalves. Without light, they rely on currents and fallout from upper ocean layers for energy and also nutrients. However, their structural complexity provides habitats for a great diversity of dependent species including symbionts, microbial biofilms and associated grazers, and filter-feeding epifauna. Mobile predators like crabs and benthic demersal fish contribute to diverse communities.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M3.5>{target=\"webapp\"}\n\n## Map description\n***M3.5 Deepwater biogenic beds***\n\nThe distribution of deepwater biogenic beds was based on the ‘mountains’ and ‘hills’ classes within the abyssal geomorphic unit of of Harris et al. (2014b). These were mapped in yellow as minor occurrences to acknowledges considerable uncertainties in the distribution of biogenic beds within these geomorphic units. Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M3.5.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090984](https://doi.org/10.5281/zenodo.5090984)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M3_5_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M3_5_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M3_5_history.qmd).\n\n",
+    "supporting": [
+      "M3_5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

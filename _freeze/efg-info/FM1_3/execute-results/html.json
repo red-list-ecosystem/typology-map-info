@@ -1,0 +1,17 @@
+{
+  "hash": "2ea502c62e7659565fd3f90344b8b02d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"FM1.3 Intermittently closed and open lakes and lagoons\"\nsubtitle: \"FM1. Semi-confined transitional waters biome\"\nparams:\n efgcode: FM1.3\ncategories:\n - FM1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nOpportunistic, short-lived organisms live in these ecosystems, where conditions change rapidly as lagoon entrances to the open ocean open or close. Periodic opening and closure influences dynamic gradients in salinity, nutrients, temperature, and water level. Algae, invertebrates like shrimps, and small fish rely on nutrients from land and, when open, the sea. Timing of opening or closing depends on transport of sand and mud by currents or freshwater inflow, or on anthropogenic processes.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/FM1.3>{target=\"webapp\"}\n\n## Map description\n***FM1.3 Intermittently closed and open lakes and lagoons***\n\nMarine ecoregions (Spalding et al. 2008) containing major or minor occurrences of each ecosystem functional group were identified by consulting global and regional reviews, maps of relevant ecosystems, imagery available in Google Earth and expertise of authors. Occurrences were converted to 30 arc second spatial resolution and clipped to a 20 km buffer along the coastline to exlcude inland and offshore areas of the ecoregions..\n\n **Map code and version**: FM1.3.web.orig v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091017](https://doi.org/10.5281/zenodo.5091017)\n\n::: {.cell}\n::: {.cell-output-display}\n![](FM1_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/FM1_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/FM1_3_history.qmd).\n\n",
+    "supporting": [
+      "FM1_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "67b81dceaeedf029e775fab25af705c2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M1.1 Seagrass meadows\"\nsubtitle: \"M1. Marine shelf biome\"\nparams:\n efgcode: M1.1\ncategories:\n - M1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese shallow, subtidal systems are the only marine ecosystems with an abundance of flowering plants. They are typically found mostly on soft, sandy or muddy substrates around relatively sheltered coastlines. Extent is limited in the shallows by wave action and tidal exposure, and at depth by light availability. Productive ecosystems, their three-dimensional structure provides shelter for juvenile fish, invertebrates and epiphytic algae. Diverse organisms live in and around seagrass beds including many grazers, from tiny invertebrates to megafauna such as dugongs.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M1.1>{target=\"webapp\"}\n\n## Map description\n***M1.1 Seagrass meadows***\n\nIndicative maps of Seagrass meadows were obtained from UNEP-WCMC & Short (2017) based on Green & Short (2003). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M1.1.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090925](https://doi.org/10.5281/zenodo.5090925)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M1_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M1_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M1_1_history.qmd).\n\n",
+    "supporting": [
+      "M1_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

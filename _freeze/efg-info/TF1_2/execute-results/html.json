@@ -1,0 +1,17 @@
+{
+  "hash": "7234a70533ef310fbb57c6d163b9a714",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"TF1.2 Subtropical/temperate forested wetlands\"\nsubtitle: \"TF1. Palustrine wetlands biome\"\nparams:\n efgcode: TF1.2\ncategories:\n - TF1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nForested wetlands in temperate and subtropical climates undergo periodic flooding. One or two tree species dominate the canopy. Trees shape the flow of flood waters, the ground surface, and the understorey, as well as animal habitats. With flooding, complex aquatic food webs support turtles, frogs, fish and birds, but can produce microbial blooms with nutrients flushed from the floodplain. Many vertebrates use these wetlands as refuges during dry times.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/TF1.2>{target=\"webapp\"}\n\n## Map description\n***TF1.2 Subtropical/temperate forested wetlands***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: TF1.2.web.orig v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091054](https://doi.org/10.5281/zenodo.5091054)\n\n::: {.cell}\n::: {.cell-output-display}\n![](TF1_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/TF1_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/TF1_2_history.qmd).\n\n",
+    "supporting": [
+      "TF1_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

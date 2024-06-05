@@ -1,0 +1,17 @@
+{
+  "hash": "f89f3b7024d8606ae9a6d3b2364df506",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"SF2.2 Flooded mines and other voids\"\nsubtitle: \"SF2. Anthropogenic subterranean freshwaters biome\"\nparams:\n efgcode: SF2.2\ncategories:\n - SF2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nDisused subterranean mines and other voids may fill with static or slowing moving water from seepage. The inhabitants of these ecosystems include biofilms comprising bacteria, aquatic fungi and protists that originated as colonists from surrounding groundwaters, or imported with people.  As well as the lack of light and low nutrient levels, productivity and diversity may be limited by heavy metals and toxins liberated during construction and mining of the voids.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/SF2.2>{target=\"webapp\"}\n\n## Map description\n***SF2.2 Flooded mines and other voids***\n\nPoint records of flooded mines were compiled from public databases (https://www.unexmin.eu/the-european-inventory-of-flooded-mines-is-now-online/), an internet search for \"flooded mines\" and locations of deep mines inferred from world mineral resources spatial data (USGS: https://mrdata.usgs.gov/). Terrestrial ecoregions (Dinerstein et al. 2017) with concentrations of these records were selected to represent an indicative global distribution of flooded mines at 30 arc seconds spatial resolution..\n\n **Map code and version**: SF2.2.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091050](https://doi.org/10.5281/zenodo.5091050)\n\n::: {.cell}\n::: {.cell-output-display}\n![](SF2_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/SF2_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/SF2_2_history.qmd).\n\n",
+    "supporting": [
+      "SF2_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "85b915b791d06327b56479428f5b3dd4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T2.4 Warm temperate laurophyll forests\"\nsubtitle: \"T2. Temperate-boreal forests and woodlands biome\"\nparams:\n efgcode: T2.4\ncategories:\n - T2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nWith a patchy warm-temperate distribution, laurophyll forests are extensive in some regions, but more typically occupy topographic refugia in a matrix of drier, more fire-prone ecosystems. They have glossy- or leathery-leaved dense evergreen canopies, with moderate tree diversity. A mild climate, and more acid soils, distinguish them from oceanic cool temperate forests (T2.3). Primary productivity is high, but can be limited by mild summer drought. Decomposers such as invertebrates, fungi, and microbes on the forest floor are critical to nutrient cycling. Insects are the major consumers of primary production and a major food source for birds and bats, which can be important seed-dispersers and pollinators. Vertebrate herbivores are relatively uncommon.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T2.4>{target=\"webapp\"}\n\n## Map description\n***T2.4 Warm temperate laurophyll forests***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: T2.4.web.orig v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091103](https://doi.org/10.5281/zenodo.5091103)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T2_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T2_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T2_4_history.qmd).\n\n",
+    "supporting": [
+      "T2_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

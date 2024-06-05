@@ -1,0 +1,17 @@
+{
+  "hash": "cba2addb82c24aea6fe31b4f7a3820ba",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T6.1 Ice sheets, glaciers and perennial snowfields\"\nsubtitle: \"T6. Polar/alpine (cryogenic) biome\"\nparams:\n efgcode: T6.1\ncategories:\n - T6\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nFound in polar regions and on high mountains, ice sheets, glaciers and perennial snowfields make up around 10% of the earth’s surface. They have very low productivity and diversity in extreme cold conditions. Nutrients are in short supply, and generally come from glacial debris, seawater or guano. At the base of simple foodwebs, micro-organisms such as bacteria, viruses and algae are the dominant life forms, although itinerant vertebrates make important contributions to nutrient and carbon subsidies. Micro-organisms are often dispersed by wind, and accumulate organic matter at the surface, fuelling microbial activity both at the surface, and below the ice. Productivity is restricted to summer months, when migratory birds and mammals visit.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T6.1>{target=\"webapp\"}\n\n## Map description\n***T6.1 Ice sheets, glaciers and perennial snowfields***\n\nAreas of permanent snow where identified from consensus land-cover maps (Tuanmu et al. 2014), glacier inventories (Raup et al 2007; GLIMS and NSIDC 2005-2018) and the Antarctic Land Cover map for 2000 (Hui et al. 2017). A composite map was created at 30 arc seconds spatial resolution in geographic projection..\n\n **Map code and version**: T6.1.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090467](https://doi.org/10.5281/zenodo.5090467)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T6_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T6_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T6_1_history.qmd).\n\n",
+    "supporting": [
+      "T6_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

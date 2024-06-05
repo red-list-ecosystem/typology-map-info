@@ -1,0 +1,17 @@
+{
+  "hash": "ff1bc733b8db5295c2e829ba1e2dc038",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M1.7 Subtidal sand beds\"\nsubtitle: \"M1. Marine shelf biome\"\nparams:\n efgcode: M1.7\ncategories:\n - M1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese relatively unstable shelf ecosystems in turbulent waters support moderately diverse communities made up largely of consumers, like invertebrate detritivores and filter-feeders, including burrowing polychaetes, crustaceans, echinoderms, and molluscs. Filter feeders are most common in higher energy areas of currents and wave action. Primary producers are limited by substrate instability or light, with seagrass ecosystems (M1.1) occurring where these factors are not limiting to plant establishment and persistence. Low structural habitat complexity means a lack of shelter, and many organisms display predator avoidance traits like burrowing, shells or camouflage (e.g. sole).\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M1.7>{target=\"webapp\"}\n\n## Map description\n***M1.7 Subtidal sand beds***\n\nThese are ecosystem functional groups that are widespread through the global extent of the marine shelf biome. Reliable data on their precise distribution are limited. To represent regional uncertainty, their indicative distributions were mapped in as minor occurrences through the full extent of the marine ‘shelf’ base layer as mapped by Harris et al. (2014b). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M1.7.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090937](https://doi.org/10.5281/zenodo.5090937)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M1_7_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M1_7_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M1_7_history.qmd).\n\n",
+    "supporting": [
+      "M1_7_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

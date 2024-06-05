@@ -1,0 +1,17 @@
+{
+  "hash": "6f9d4f5239b2f788116a54e32cc891df",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T3.3 Cool temperate heathlands\"\nsubtitle: \"T3. Shrublands and shrubby woodlands biome\"\nparams:\n efgcode: T3.3\ncategories:\n - T3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nIn cool temperate, humid, maritime environments, a dense cover of low shrubs with small tough leaves is interspersed with grasses and ferns. Cold temperatures and low-fertility acid soils limit productivity, with wet subsoils limiting decomposition so that organic matter accumulates. Low intensity fires may occur in the warmer months. Browsing mammals, such as rabbits and deer, bring nutrients from more productive systems and maintain the shrubby composition. Canids and raptors are common predators of ground-nesting birds and rodents, in a relatively simple foodweb.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T3.3>{target=\"webapp\"}\n\n## Map description\n***T3.3 Cool temperate heathlands***\n\nMajor and minor occurrences were identified using consensus land-cover maps (Tuanmu et al. 2014; Latifovic et al. 2016), then cropped to selected terrestrial ecoregions at 30 arc seconds spatial resolution (Dinerstein et al. 2017; CEC 1997). Ecoregions were selected if they contained areas mentioned or mapped in published regional studies (Loidi et al. 2015; Luebert & Pliscoff 2017), or if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T3.3.web.alt v4.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091109](https://doi.org/10.5281/zenodo.5091109)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T3_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T3_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T3_3_history.qmd).\n\n",
+    "supporting": [
+      "T3_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

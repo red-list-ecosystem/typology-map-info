@@ -1,0 +1,17 @@
+{
+  "hash": "9ef5fec32d24215bb7f3e525ba525a5d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T3.1 Seasonally dry tropical shrublands\"\nsubtitle: \"T3. Shrublands and shrubby woodlands biome\"\nparams:\n efgcode: T3.1\ncategories:\n - T3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nOccurring on nutrient-deficient soils of tropical regions, these fire-prone shrublands and low forests are associated with dry tropical winters, often occurring in a matrix with savannas (T4.2) or tropical dry forests (T1.2). Dominated by small-leaved sclerophyll shrubs and grasses, plants have traits to capture and conserve nutrients, such as cluster roots and carnivorous forms. Birds, reptiles and seed-eating small mammals dominate the vertebrate fauna, with few vertebrate herbivores. Periodic fires are cues for life-history processes of plants and animals, and help maintain species composition and nutrient cycling.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T3.1>{target=\"webapp\"}\n\n## Map description\n***T3.1 Seasonally dry tropical shrublands***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: T3.1.web.orig v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091105](https://doi.org/10.5281/zenodo.5091105)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T3_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T3_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T3_1_history.qmd).\n\n",
+    "supporting": [
+      "T3_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

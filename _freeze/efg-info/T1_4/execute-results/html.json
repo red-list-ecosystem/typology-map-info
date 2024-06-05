@@ -1,0 +1,17 @@
+{
+  "hash": "ead85e1a455ccd2bdab25aa4a19b818a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T1.4 Tropical heath forests\"\nsubtitle: \"T1. Tropical-subtropical forests biome\"\nparams:\n efgcode: T1.4\ncategories:\n - T1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese structurally unique forests are restricted to less fertile soils on acidic sandy substrates best known in Amazonia and Southeast Asia. They are characterised by high densities of low, slender trees that allow light penetration to an open forest floor covered with mosses. They have low productivity compared to other tropical forests, with a limited diversity of plants and animals forming a simple foodweb, including amphibians and reptiles.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T1.4>{target=\"webapp\"}\n\n## Map description\n***T1.4 Tropical heath forests***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: T1.4.web.orig v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.10030952](https://doi.org/10.5281/zenodo.10030952)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T1_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T1_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T1_4_history.qmd).\n\n",
+    "supporting": [
+      "T1_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

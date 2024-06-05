@@ -1,0 +1,17 @@
+{
+  "hash": "5dd2d24500973cd889c3efc5b29bbbff",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T6.3 Polar tundra and deserts\"\nsubtitle: \"T6. Polar/alpine (cryogenic) biome\"\nparams:\n efgcode: T6.3\ncategories:\n - T6\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nPolar tundra and deserts have continuous to sparse cover of cold-tolerant mosses, liverworts, lichens, grasses, low shrubs and other flowering plants. They occur primarily in the Arctic circle, but polar desert is found in dry coastal lowlands of Antarctica. Precipitation falls as snow, with seasonal snow cover limiting the growing season. Extreme cold temperatures and short growing seasons exclude trees, as well as vascular plants in the coldest and driest locations. Permafrost substrates accumulate peat through slow decomposition rates. Migratory birds feed in distant wetlands or open oceans, and contribute nutrients to the system through guano, as well as dispersing seeds and other organisms. Migratory or hibernating mammals include seals, and, in the north, polar bears, foxes and wolves.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T6.3>{target=\"webapp\"}\n\n## Map description\n***T6.3 Polar tundra and deserts***\n\nAreas corresponding to the tundra climatic zone according to the Köppen-Geiger classification system (Beck et al. 2018) were first identified. Additional areas were then selected in high latitudes corresponding with low annual solar radiation (values <1800 in Beckmann et al. 2014). A union of these maps was created at 30 arc seconds spatial resolution in geographic projection..\n\n **Map code and version**: T6.3.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091075](https://doi.org/10.5281/zenodo.5091075)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T6_3_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T6_3_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T6_3_history.qmd).\n\n",
+    "supporting": [
+      "T6_3_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -18,7 +18,13 @@ website:
           - how2/this-site.qmd
           - how2/download-with-R.qmd
           - how2/additional-map-details.qmd
- 
+  margin-header: |
+    <center>![Global Ecosystem Typology](/assets/logo_RLE.png)</center>
+  page-footer:
+    left: "Created by: JR Ferrer-Paris"
+    right:
+      - icon: github
+        href: https://github.com/jrfep
 format:
   html:
     theme: mint
@@ -26,5 +32,7 @@ format:
     highlight-style: solarized
     toc: true
 
+execute:
+  freeze: true  # never re-render during project render
 
 

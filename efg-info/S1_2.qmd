@@ -5,10 +5,11 @@ params:
  efgcode: S1.2
 categories:
  - S1
+ - error
 format:
  html: default
 execute:
    echo: false
 ---
 
-{{< include _short-description-map.qmd >}}
+

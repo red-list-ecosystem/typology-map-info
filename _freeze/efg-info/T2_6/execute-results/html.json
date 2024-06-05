@@ -1,0 +1,17 @@
+{
+  "hash": "9711b19e3503d42c5bffad820d27c12d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T2.6 Temperate pyric sclerophyll forests and woodlands\"\nsubtitle: \"T2. Temperate-boreal forests and woodlands biome\"\nparams:\n efgcode: T2.6\ncategories:\n - T2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nIn fire-prone temperate regions, temperate pyric sclerophyll forests are characterised by an open canopy of hard-leaved trees with a shrub layer underneath, sometimes with grasses and forbs. Productivity is limited by seasonal drought, hot summers, and low nutrients in sandy and loamy soils. Some groups of plants, birds, reptiles, and invertebrates have high diversity and uniqueness, many with locally restricted distributions. Plants and animals are adapted for persistence through successive summer droughts and fires and, although sensitive to fire frequency and season, periodic disturbance by fire is critical to maintaining forest diversity.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T2.6>{target=\"webapp\"}\n\n## Map description\n***T2.6 Temperate pyric sclerophyll forests and woodlands***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T2.6.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091121](https://doi.org/10.5281/zenodo.5091121)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T2_6_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T2_6_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T2_6_history.qmd).\n\n",
+    "supporting": [
+      "T2_6_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "83093089108cd95414157421f1b02876",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M2.2 Mesopelagic ocean water\"\nsubtitle: \"M2. Pelagic ocean waters biome\"\nparams:\n efgcode: M2.2\ncategories:\n - M2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThis very low light ‘twilight zone’ (~200-1000m depth) divides the surface epipelagic waters from the deep ocean. Sunlight is too dim for photosynthesis, but in the upper mesopelagic zone there is enough to enable some visual predators to exploit their prey. Often used as a refuge by species that migrate upward at night to feed in more productive epipelagic waters when predation risk is lower, it supports a high but unknown biomass of fish and planktonic detritivores, relying on flux of nutrients from upper oceanic layers. Low oxygen zones can form where patches of high biological activity deplete this limited resource. Bioluminescence is a common trait in mesopelagic organisms.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M2.2>{target=\"webapp\"}\n\n## Map description\n***M2.2 Mesopelagic ocean water***\n\nIndicative distributions of these marine pelagic ecosystem functional groups were derived from bathymetric spatial data obtained from Becker et al. (2009) using depth range thresholds cited in respective descriptive profiles for each functional group. Occurrences were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: M2.2.web.orig v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090914](https://doi.org/10.5281/zenodo.5090914)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M2_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M2_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M2_2_history.qmd).\n\n",
+    "supporting": [
+      "M2_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

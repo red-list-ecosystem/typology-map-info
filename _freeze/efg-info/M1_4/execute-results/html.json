@@ -1,0 +1,17 @@
+{
+  "hash": "329be8f006c7c2b4d28cda4c6d4fb9c6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M1.4 Shellfish beds and reefs\"\nsubtitle: \"M1. Marine shelf biome\"\nparams:\n efgcode: M1.4\ncategories:\n - M1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese productive intertidal or subtidal biogenic ecosystems are formed and dominated by sessile molluscs like mussels or oysters, around temperate or tropical coasts and estuaries globally. They filter plankton from the water column, acting as carbon sinks and modifying local physical environments by changing currents and dampening wave action. Distribution is limited by available rocky substrates on low-energy coastlines, as well as requirements for high water quality and oxygen availability. Many organisms are adapted to the extreme range of conditions typical of the intertidal zone (e.g. shellfish closing valves to avoid adverse desiccation).\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M1.4>{target=\"webapp\"}\n\n## Map description\n***M1.4 Shellfish beds and reefs***\n\nMajor and minor occurrences of shellfish beds and reefs were identified by overlaying a global map of oyster reefs (Beck et al. 2011) on marine ecoregions (Spalding et al. 2008), and then clipping to the extent of the marine ‘shelf’ base layer as mapped by Harris et al. (2014b). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M1.4.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090931](https://doi.org/10.5281/zenodo.5090931)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M1_4_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M1_4_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M1_4_history.qmd).\n\n",
+    "supporting": [
+      "M1_4_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

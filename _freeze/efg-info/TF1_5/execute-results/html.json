@@ -1,0 +1,17 @@
+{
+  "hash": "18ebcdfa4a3651f9781ad1b25c69186f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"TF1.5 Episodic arid floodplains\"\nsubtitle: \"TF1. Palustrine wetlands biome\"\nparams:\n efgcode: TF1.5\ncategories:\n - TF1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nEpisodic arid floodplains rarely flood and are predominantly dry, sometimes for years.  They are supplied by temporary rivers in semi-arid and arid regions of all continents. When floods come, there is a spike in productivity as nutrients mobilise from leaf litter and organic matter. At such times, dormant plants and animals form complex food webs, capitalising on short periods of high productivity.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/TF1.5>{target=\"webapp\"}\n\n## Map description\n***TF1.5 Episodic arid floodplains***\n\nLocations of pan, brackish and saline wetlands were taken from the Global Lakes and Wetlands Database GLWD3 class 7 from Lehner and Döll (2004). .\n\n **Map code and version**: TF1.5.web.map v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091060](https://doi.org/10.5281/zenodo.5091060)\n\n::: {.cell}\n::: {.cell-output-display}\n![](TF1_5_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/TF1_5_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/TF1_5_history.qmd).\n\n",
+    "supporting": [
+      "TF1_5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

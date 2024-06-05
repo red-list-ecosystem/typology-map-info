@@ -1,0 +1,17 @@
+{
+  "hash": "739c0e589209308ac3803a24cf76ba76",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"TF1.7 Boreal and temperate fens\"\nsubtitle: \"TF1. Palustrine wetlands biome\"\nparams:\n efgcode: TF1.7\ncategories:\n - TF1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nFens occur extensively in boreal-subarctic and cool temperate regions. Like peat bogs, with which they may form mosaics, they have waterlogged organic soils, but they are rich in mineral nutrients and typically neutral or alkaline in pH. The vegetation comprises a low diversity of small plants, fungi and brown mosses, but woody plants are generally absent. They support insects, specialised frogs and some birds. Shallow standing water or permafrost may be present.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/TF1.7>{target=\"webapp\"}\n\n## Map description\n***TF1.7 Boreal and temperate fens***\n\nTerrestrial ecoregions containing major or minor occurrences of this ecosystem functional group were identified by consulting available ecoregion descriptions (Dinerstein et al. 2017), global and regional reviews, national and regional ecosystem maps, locations of relevant examples, and proofed by expert reviewers. Consequently they are coarse-scale indicative representations of distribution, except where they occupy small ecoregions. Ecoregions were mapped at 30 arc second spatial resolution..\n\n **Map code and version**: TF1.7.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091064](https://doi.org/10.5281/zenodo.5091064)\n\n::: {.cell}\n::: {.cell-output-display}\n![](TF1_7_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/TF1_7_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/TF1_7_history.qmd).\n\n",
+    "supporting": [
+      "TF1_7_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

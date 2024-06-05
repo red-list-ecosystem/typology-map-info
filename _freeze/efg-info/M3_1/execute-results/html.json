@@ -1,0 +1,17 @@
+{
+  "hash": "07d1263872d12a19ed414d9c42868501",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M3.1 Continental and island slopes\"\nsubtitle: \"M3. Deep sea floors biome\"\nparams:\n efgcode: M3.1\ncategories:\n - M3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese lightless slopes of sand, mud and rocky outrops run down from the shallower shelf break to the very deep abyssal basins. Nutrients falling from upper ocean layers and delivered by currents from the shelf support diverse communities of microbial decomposers, detritivores like crabs and demersal fish, and their predators, but sessile animals are rare and algae are absent. Biomass is relatively low and peaks at mid-slope, diminishing with depth as food and temperature decrease and bathymetric pressure increases.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M3.1>{target=\"webapp\"}\n\n## Map description\n***M3.1 Continental and island slopes***\n\nMajor occurrences of continental and island slopes was based on the ‘slope’ geomorphic unit of Harris et al. (2014b). Occurrences were converted to 30 arc second spatial resolution..\n\n **Map code and version**: M3.1.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090976](https://doi.org/10.5281/zenodo.5090976)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M3_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M3_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M3_1_history.qmd).\n\n",
+    "supporting": [
+      "M3_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

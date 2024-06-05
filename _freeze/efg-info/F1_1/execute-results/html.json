@@ -1,0 +1,17 @@
+{
+  "hash": "706c66c9bf379105360dd613f6cafba0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F1.1 Permanent upland streams\"\nsubtitle: \"F1. Rivers and streams biome\"\nparams:\n efgcode: F1.1\ncategories:\n - F1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese small rivers or streams in mountainous or hilly areas are characterised by steep gradients and fast flow. They flow all year, increasing in wet periods, in humid tropical and temperate zones. Stones are common along their rapids and pools, turning over and oxygenating the water. Dependent organisms are specialised for these high flow-velocity environments, with resources for food webs derived mainly from the stream and inputs from adjacent and upstream vegetation.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F1.1>{target=\"webapp\"}\n\n## Map description\n***F1.1 Permanent upland streams***\n\nFreshwater ecoregions  (Abell et al. 2008) were initially identified as containing permanent upland streams if: i) their descriptions mentioned features consistent with those identifed in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile. The selected ecoregions were then clipped to exlude cold or dry climates (mean temperature of coldest quarter >0°C, mean annual preipitation >300mm) based on data from Karger et al. (2017). Major occurrences were mapped by intersecting the selected ecoregions with the distribution of 1st-3rd order streams taken from the RiverATLAS (v1.0) database at 30 arc seconds spatial resolution (Linke et al. 2019). The remaining areas within selected ecoregions (excluding freeze/thaw areas) were designated as minor occurrences..\n\n **Map code and version**: F1.1.web.mix v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090962](https://doi.org/10.5281/zenodo.5090962)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F1_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F1_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F1_1_history.qmd).\n\n",
+    "supporting": [
+      "F1_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

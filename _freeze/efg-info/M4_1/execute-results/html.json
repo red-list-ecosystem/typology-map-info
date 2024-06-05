@@ -1,0 +1,17 @@
+{
+  "hash": "5ae0c56c9f7cd39c7a15bbfa64853fb7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"M4.1 Submerged artificial structures\"\nsubtitle: \"M4. Anthropogenic marine biome\"\nparams:\n efgcode: M4.1\ncategories:\n - M4\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nSubmerged structures, including rubble piles, ship wrecks, oil and gas infrastructure and artificial reefs provide vertically oriented hard substrates for marine organisms in coastal waters worldwide. Sedentary filter feeders like sponges and barnacles take advantage of access to plankton in ocean currents. Their excretions support high abundances of other invertebrates and fish, while organisms beneath the structures feed on nutrients falling to the bottom, particularly after storm events. Some types of structure increase exposure to light, noise and chemical pollution and may promote the spread of invasive species.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/M4.1>{target=\"webapp\"}\n\n## Map description\n***M4.1 Submerged artificial structures***\n\nMarine ecoregions that include occurrences of submerged artificial structures were identified by overlaying a mapped distribution of shipwrecks (Monfils 2004) on marine ecoregions (Spalding et al. 2008). Occurrences were converted to 30arc second spatial resolution. In many cases these ecoregions encompassed other submerged structures such as energy infrastructure. To represent uncertainty, indicative distributions were mapped as minor occurrences..\n\n **Map code and version**: M4.1.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091039](https://doi.org/10.5281/zenodo.5091039)\n\n::: {.cell}\n::: {.cell-output-display}\n![](M4_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/M4_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/M4_1_history.qmd).\n\n",
+    "supporting": [
+      "M4_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "cdfd6b68dbf10b54a46cabd433f361cd",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T5.5 Hyper-arid deserts\"\nsubtitle: \"T5. Deserts and semi-deserts biome\"\nparams:\n efgcode: T5.5\ncategories:\n - T5\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThe most extreme of all desert ecosystems, hyper-arid deserts are limited by very dry and often windy conditions with high temperatures and sandy or stony soils. Dry periods may be prolonged for several years. Vegetation is characterised by very low densities of small drought-tolerant perennial plants known as xerophytes, very slow growing species with adaptations to drought such as extensive root systems and water storage tissues. Some of these plants may acquire much of their moisture from fogs. Ephemeral plants occur in some regions, but are less common than in other desert systems. Microbial biofilms are important decomposers. Drought tolerant reptiles and invertebrates are the main faunal groups, along with occasional nomadic mammals and birds, in simple foodwebs.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T5.5>{target=\"webapp\"}\n\n## Map description\n***T5.5 Hyper-arid deserts***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T5.5.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091011](https://doi.org/10.5281/zenodo.5091011)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T5_5_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T5_5_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T5_5_history.qmd).\n\n",
+    "supporting": [
+      "T5_5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "fb9dc01f83f4d1c58e1571afdc824cd7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F2.10 Subglacial lakes\"\nsubtitle: \"F2. Lakes biome\"\nparams:\n efgcode: F2.10\ncategories:\n - F2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese hidden lakes exist beneath permanent ice sheets, sometimes tens to thousands of metres below, mostly in Antarctica and Greenland. Bacteria and other microbes are the only forms of life, but there is a surprising diversity of them. Productivity is very low in the dark and freezing conditions, with species relying on metabolism of chemicals such as methane, iron and sulphur to support the simple foodweb.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F2.10>{target=\"webapp\"}\n\n## Map description\n***F2.10 Subglacial lakes***\n\nMajor occurrences of subglacial lakes were mapped as point records from Wright and Siegert (2012), Bowler et al. (2019), Marteinsson et al. (2013) and Livingstone et al. (2016). Unmapped lakes are likely to occur within areas with permanent snow and ice cover and were mapped as minor occurrences based on permanent snow and ice from Dinerstein et al. (2017) and Tuanmu et al. (2014)..\n\n **Map code and version**: F2.10.web.mix v2.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.10067940](https://doi.org/10.5281/zenodo.10067940)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F2_10_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F2_10_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F2_10_history.qmd).\n\n",
+    "supporting": [
+      "F2_10_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

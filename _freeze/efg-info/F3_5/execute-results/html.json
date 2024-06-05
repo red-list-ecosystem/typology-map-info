@@ -1,0 +1,17 @@
+{
+  "hash": "875366371c8a11f56c3df2a6ea735ec3",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F3.5 Canals, ditches and drains\"\nsubtitle: \"F3. Artificial wetlands biome\"\nparams:\n efgcode: F3.5\ncategories:\n - F3\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nCanals, ditches and drains are associated with agriculture and cities throughout the world.  They take freshwater to and from urban and rural areas, particularly in temperate and subtropical regions. They can carry high nutrient and pollutant loads. Diversity of organisms is generally low, but may be high where there are earthen banks and fringing vegetation.  Algae and macrophytes (where present) support microbes and waterbugs and other invertebrates often small fish, amphibians and crustaceans. They are also important pathways for dispersal of some aquatic species.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F3.5>{target=\"webapp\"}\n\n## Map description\n***F3.5 Canals, ditches and drains***\n\nFreshwater ecoregions (Abell et al. 2008) were identified as containing major or minor occurrences of these functional groups if: i) their descriptions mentioned features consistent with those identifed in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile. The selections were check by expert reviewers. Occurrences were mapped at 30 arc seconds spatial resolution..\n\n **Map code and version**: F3.5.web.orig v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091001](https://doi.org/10.5281/zenodo.5091001)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F3_5_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F3_5_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F3_5_history.qmd).\n\n",
+    "supporting": [
+      "F3_5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

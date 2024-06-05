@@ -1,0 +1,17 @@
+{
+  "hash": "12a1b711fb49d38a7c3f90124eebd45f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"F2.1 Large permanent freshwater lakes\"\nsubtitle: \"F2. Lakes biome\"\nparams:\n efgcode: F2.1\ncategories:\n - F2\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nLarge volumes of permanent water in these lakes buffers water temperatures and effects of nutrient input on water quality. The spatial extent and range of habitats support very large numbers of species in some groups such as fish, some of which are unique to a single lake, often composed of closely related species, endemic to a lake. The high primary productivity from algae and aquatic plants lake supports diverse foodwebs. High numbers of plankton support large numbers of waterbugs, fish, frogs, reptiles, waterbirds, and mammals. Bacteria play key roles in cycling organic matter.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/F2.1>{target=\"webapp\"}\n\n## Map description\n***F2.1 Large permanent freshwater lakes***\n\nLocations of large lakes (>100km2)were taken from the HydroLAKES database (Messager et al. 2016) and combined with global estimates of permanent surface water surfaces (classes 1, 2 and 7 from Pekel et al. 2016). Freeze/thaw lakes in boreal and polar climates (temperature of coldest quarter > -10°C) were excluded (Beck et al. 2018) (see F2.3). Occurrences were aggregated to 30 arc second spatial resolution..\n\n **Map code and version**: F2.1.web.alt v4.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5090943](https://doi.org/10.5281/zenodo.5090943)\n\n::: {.cell}\n::: {.cell-output-display}\n![](F2_1_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/F2_1_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/F2_1_history.qmd).\n\n",
+    "supporting": [
+      "F2_1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "6f97831bcafc36a432e384e50e06892e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"FM1.2 Permanently open riverine estuaries and bays\"\nsubtitle: \"FM1. Semi-confined transitional waters biome\"\nparams:\n efgcode: FM1.2\ncategories:\n - FM1\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese coastal ecosystems are shifting mosaics of different habitats, depending on the shape of the local coast, and proportional inflow of freshwater and seawater. Combined nutrients from marine, freshwater and land-based sources support very high productivity. Transient large animals like dugongs, dolphins, turtles and shorebirds feed on abundant fish, invertebrates and plant life, and they commonly serve as sheltered nursery areas for fish. Many organisms are adapted to large variations in salinity.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/FM1.2>{target=\"webapp\"}\n\n## Map description\n***FM1.2 Permanently open riverine estuaries and bays***\n\nMarine ecoregions (Spalding et al. 2008) containing major or minor occurrences of each ecosystem functional group were identified by consulting global and regional reviews, maps of relevant ecosystems, imagery available in Google Earth and expertise of authors. Occurrences were converted to 30 arc second spatial resolution and clipped to a 20 km buffer along the coastline to exlcude inland and offshore areas of the ecoregions..\n\n **Map code and version**: FM1.2.web.map v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091015](https://doi.org/10.5281/zenodo.5091015)\n\n::: {.cell}\n::: {.cell-output-display}\n![](FM1_2_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/FM1_2_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/FM1_2_history.qmd).\n\n",
+    "supporting": [
+      "FM1_2_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

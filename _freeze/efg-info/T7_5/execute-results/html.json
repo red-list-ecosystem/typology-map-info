@@ -1,0 +1,17 @@
+{
+  "hash": "c8c1eccd43161e294dbd32670f6e37a8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"T7.5 Derived semi-natural pastures and old fields\"\nsubtitle: \"T7. Intensive land-use biome\"\nparams:\n efgcode: T7.5\ncategories:\n - T7\nformat:\n html: default\nexecute:\n   echo: false\n---\n## Brief description\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\nThese managed ecosystems are derived from a range of other ecosystems (mostly from biome T1 - biome T4, a few from biome T5) by the removal or modification of woody plant components. The remaining vegetation includes both local indigenous species and introduced species, providing habitat for a mixed indigenous and non-indigenous fauna. They are used mainly for livestock grazing, which is essential to maintaining the structure of the system. Unlike sown pastures, inputs of water and nutrients are limited. Although structurally simpler than the systems from which they were derived, they often harbour an appreciable diversity of native organisms.\n\nRead more about this functional group at: <https://global-ecosystems.org/explore/groups/T7.5>{target=\"webapp\"}\n\n## Map description\n***T7.5 Derived semi-natural pastures and old fields***\n\nMajor and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n **Map code and version**: T7.5.web.mix v1.0. **GIS data (raster and vector format) available at** DOI:[10.5281/zenodo.5091087](https://doi.org/10.5281/zenodo.5091087)\n\n::: {.cell}\n::: {.cell-output-display}\n![](T7_5_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\nRead more details about this map [here](/map-info/T7_5_valid.qmd).\n\nRead more details about older versions of this map [here](/map-info/T7_5_history.qmd).\n\n",
+    "supporting": [
+      "T7_5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
