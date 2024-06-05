@@ -1,0 +1,14 @@
+---
+title: "FM1.2 Permanently open riverine estuaries and bays"
+subtitle: "FM1. Semi-confined transitional waters biome"
+params:
+ efgcode: FM1.2
+categories:
+ - FM1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "F3.2 Constructed lacustrine wetlands"
+subtitle: "F3. Artificial wetlands biome"
+params:
+ efgcode: F3.2
+categories:
+ - F3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

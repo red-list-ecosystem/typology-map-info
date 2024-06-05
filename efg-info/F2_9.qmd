@@ -1,0 +1,14 @@
+---
+title: "F2.9 Geothermal pools and wetlands"
+subtitle: "F2. Lakes biome"
+params:
+ efgcode: F2.9
+categories:
+ - F2
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "M1.7 Subtidal sand beds"
+subtitle: "M1. Marine shelf biome"
+params:
+ efgcode: M1.7
+categories:
+ - M1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

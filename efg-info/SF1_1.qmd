@@ -1,0 +1,14 @@
+---
+title: "SF1.1 Underground streams and pools"
+subtitle: "SF1. Subterranean freshwaters biome"
+params:
+ efgcode: SF1.1
+categories:
+ - SF1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "T2.2 Deciduous temperate forests"
+subtitle: "T2. Temperate-boreal forests and woodlands biome"
+params:
+ efgcode: T2.2
+categories:
+ - T2
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

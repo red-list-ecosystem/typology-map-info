@@ -1,0 +1,14 @@
+---
+title: "S1.1 Aerobic caves"
+subtitle: "S1. Subterranean lithic biome"
+params:
+ efgcode: S1.1
+categories:
+ - S1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

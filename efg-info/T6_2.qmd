@@ -1,0 +1,14 @@
+---
+title: "T6.2 Polar/alpine cliffs, screes, outcrops and lava flows"
+subtitle: "T6. Polar/alpine (cryogenic) biome"
+params:
+ efgcode: T6.2
+categories:
+ - T6
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

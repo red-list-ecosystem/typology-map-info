@@ -1,0 +1,14 @@
+---
+title: "T5.1 Semi-desert steppe"
+subtitle: "T5. Deserts and semi-deserts biome"
+params:
+ efgcode: T5.1
+categories:
+ - T5
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

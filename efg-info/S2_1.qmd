@@ -1,0 +1,14 @@
+---
+title: "S2.1 Anthropogenic subterranean voids"
+subtitle: "S2. Anthropogenic subterranean voids biome"
+params:
+ efgcode: S2.1
+categories:
+ - S2
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

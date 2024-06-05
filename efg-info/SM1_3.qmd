@@ -1,0 +1,14 @@
+---
+title: "SM1.3 Sea caves"
+subtitle: "SM1. Subterranean tidal biome"
+params:
+ efgcode: SM1.3
+categories:
+ - SM1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

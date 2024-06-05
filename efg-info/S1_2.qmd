@@ -1,0 +1,14 @@
+---
+title: "S1.2 Endolithic systems"
+subtitle: "S1. Subterranean lithic biome"
+params:
+ efgcode: S1.2
+categories:
+ - S1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

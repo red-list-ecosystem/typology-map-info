@@ -1,0 +1,14 @@
+---
+title: "F1.4 Seasonal upland streams"
+subtitle: "F1. Rivers and streams biome"
+params:
+ efgcode: F1.4
+categories:
+ - F1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "MT2.2 Large seabird and pinniped colonies"
+subtitle: "MT2. Supralittoral coastal biome"
+params:
+ efgcode: MT2.2
+categories:
+ - MT2
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

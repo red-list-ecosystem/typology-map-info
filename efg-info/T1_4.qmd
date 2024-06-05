@@ -1,8 +1,8 @@
 ---
-title: "T1.3 Tropical/Subtropical montane rainforests"
+title: "T1.4 Tropical heath forests"
 subtitle: "T1. Tropical-subtropical forests biome"
 params:
- efgcode: T1.3
+ efgcode: T1.4
 categories:
  - T1
 format:
@@ -12,4 +12,3 @@ execute:
 ---
 
 {{< include _short-description-map.qmd >}}
-

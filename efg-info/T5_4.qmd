@@ -1,0 +1,14 @@
+---
+title: "T5.4 Cool deserts and semi-deserts"
+subtitle: "T5. Deserts and semi-deserts biome"
+params:
+ efgcode: T5.4
+categories:
+ - T5
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

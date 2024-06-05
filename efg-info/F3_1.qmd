@@ -1,0 +1,14 @@
+---
+title: "F3.1 Large reservoirs"
+subtitle: "F3. Artificial wetlands biome"
+params:
+ efgcode: F3.1
+categories:
+ - F3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "T4.4 Temperate woodlands"
+subtitle: "T4. Savannas and grasslands biome"
+params:
+ efgcode: T4.4
+categories:
+ - T4
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "M1.6 Subtidal rocky reefs"
+subtitle: "M1. Marine shelf biome"
+params:
+ efgcode: M1.6
+categories:
+ - M1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

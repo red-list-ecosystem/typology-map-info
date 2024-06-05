@@ -1,0 +1,14 @@
+---
+title: "FM1.1 Deepwater coastal inlets"
+subtitle: "FM1. Semi-confined transitional waters biome"
+params:
+ efgcode: FM1.1
+categories:
+ - FM1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "F2.6 Permanent salt and soda lakes"
+subtitle: "F2. Lakes biome"
+params:
+ efgcode: F2.6
+categories:
+ - F2
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

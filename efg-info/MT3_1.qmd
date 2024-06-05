@@ -1,0 +1,14 @@
+---
+title: "MT3.1 Artificial shorelines"
+subtitle: "MT3. Anthropogenic shorelines biome"
+params:
+ efgcode: MT3.1
+categories:
+ - MT3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

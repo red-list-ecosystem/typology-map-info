@@ -1,0 +1,14 @@
+---
+title: "M3.4 Seamounts, ridges and plateaus"
+subtitle: "M3. Deep sea floors biome"
+params:
+ efgcode: M3.4
+categories:
+ - M3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "T6.5 Tropical alpine grasslands and herbfields"
+subtitle: "T6. Polar/alpine (cryogenic) biome"
+params:
+ efgcode: T6.5
+categories:
+ - T6
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

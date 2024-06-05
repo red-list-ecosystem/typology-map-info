@@ -1,0 +1,14 @@
+---
+title: "MFT1.3 Coastal saltmarshes and reedbeds"
+subtitle: "MFT1. Brackish tidal biome"
+params:
+ efgcode: MFT1.3
+categories:
+ - MFT1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

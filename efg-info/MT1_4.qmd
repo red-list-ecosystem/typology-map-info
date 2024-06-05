@@ -1,0 +1,14 @@
+---
+title: "MT1.4 Boulder and cobble shores"
+subtitle: "MT1. Shorelines biome"
+params:
+ efgcode: MT1.4
+categories:
+ - MT1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

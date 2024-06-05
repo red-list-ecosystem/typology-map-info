@@ -1,0 +1,14 @@
+---
+title: "M4.2 Marine aquafarms"
+subtitle: "M4. Anthropogenic marine biome"
+params:
+ efgcode: M4.2
+categories:
+ - M4
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

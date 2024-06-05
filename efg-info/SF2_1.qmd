@@ -1,0 +1,14 @@
+---
+title: "SF2.1 Water pipes and subterranean canals"
+subtitle: "SF2. Anthropogenic subterranean freshwaters biome"
+params:
+ efgcode: SF2.1
+categories:
+ - SF2
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

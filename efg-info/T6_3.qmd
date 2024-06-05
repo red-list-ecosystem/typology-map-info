@@ -1,0 +1,14 @@
+---
+title: "T6.3 Polar tundra and deserts"
+subtitle: "T6. Polar/alpine (cryogenic) biome"
+params:
+ efgcode: T6.3
+categories:
+ - T6
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

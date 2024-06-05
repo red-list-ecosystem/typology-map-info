@@ -1,0 +1,14 @@
+---
+title: "M4.1 Submerged artificial structures"
+subtitle: "M4. Anthropogenic marine biome"
+params:
+ efgcode: M4.1
+categories:
+ - M4
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "M3.1 Continental and island slopes"
+subtitle: "M3. Deep sea floors biome"
+params:
+ efgcode: M3.1
+categories:
+ - M3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

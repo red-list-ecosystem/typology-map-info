@@ -1,0 +1,14 @@
+---
+title: "FM1.3 Intermittently closed and open lakes and lagoons"
+subtitle: "FM1. Semi-confined transitional waters biome"
+params:
+ efgcode: FM1.3
+categories:
+ - FM1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

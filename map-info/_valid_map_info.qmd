@@ -1,0 +1,44 @@
+```{r setup}
+#| warning: false
+#| message: false
+library(xml2)
+library(terra)
+library(magick)
+efg_code <- params$efgcode
+efg_code_ <- gsub("\\.","_",efg_code)
+here::i_am(sprintf("map-info/%s_valid.qmd", efg_code_))
+out_folder <- here::here("gisdata", "indicative-maps-bundle","latest")
+```
+
+```{r}
+xpath_map_efg <- sprintf("//Map[@efg_code='%s']", efg_code)
+map_details_file <- paste(out_folder, "map-details.xml", sep = "/")
+# file.exists(map_details_file)
+map_details <- read_xml(map_details_file)
+map_info <- map_details |> xml_find_first(xpath_map_efg)
+map_attrs <- map_info |> xml_attrs()
+efg_name <- map_info |> xml_find_first("Functional_group") |> xml_text()
+ds_doi <- map_info |> xml_find_first("Dataset-doi") |> xml_text()
+downloaded_copy <- here::here("gisdata", "indicative-maps", ds_doi)
+efg_details <- read_xml(dir(downloaded_copy, "xml", full.names = TRUE))
+```
+
+This section provides information about the valid indicative distribution map for the ecosystem functional group [**`r efg_name`**]((/efg-info/`r efg_code_`.qmd).)
+
+```{r}
+library("RPostgreSQL")
+
+drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
+
+con <- dbConnect(drv, 
+                 dbname = Sys.getenv("DBNAME"),
+                 host = Sys.getenv("DBHOST"),
+                 port = Sys.getenv("DBPORT"),
+                 user = Sys.getenv("DBUSER"))
+
+qry <- sprintf("select map_file, file_description, file_comments from map_files where map_code like '%s' and map_version = '%s';", map_attrs["map_code"], map_attrs["map_version"])
+
+dbGetQuery(con,qry) 
+
+dbDisconnect(con)
+```

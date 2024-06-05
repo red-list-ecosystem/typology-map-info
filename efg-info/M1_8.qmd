@@ -1,0 +1,14 @@
+---
+title: "M1.8 Subtidal mud plains"
+subtitle: "M1. Marine shelf biome"
+params:
+ efgcode: M1.8
+categories:
+ - M1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

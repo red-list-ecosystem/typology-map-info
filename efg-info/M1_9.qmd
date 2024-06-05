@@ -1,0 +1,14 @@
+---
+title: "M1.9 Upwelling zones"
+subtitle: "M1. Marine shelf biome"
+params:
+ efgcode: M1.9
+categories:
+ - M1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -26,6 +26,7 @@ library(dplyr)
 library(stringr)
 library(tidyr)
 library(lubridate)
+library(readr)
 library("RPostgreSQL")
 
 drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
@@ -40,6 +41,14 @@ con <- dbConnect(drv,
  
 ### Queries
 
+#### Biome names
+This information is actually missing from the profile information workbook:
+
+```{r}
+qry <- "select biome_code, name from biomes;"
+biome_info <- dbGetQuery(con,qry)
+write_csv(biome_info, file = here::here("gisdata","profiles","biome-names.csv"))
+```
 
 ```{r}
 

@@ -1,0 +1,14 @@
+---
+title: "TF1.4 Seasonal floodplain marshes"
+subtitle: "TF1. Palustrine wetlands biome"
+params:
+ efgcode: TF1.4
+categories:
+ - TF1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

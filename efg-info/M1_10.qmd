@@ -1,0 +1,15 @@
+---
+title: "M1.10 Rhodolith/Maërl beds"
+subtitle: "M1. Marine shelf biome"
+params:
+ efgcode: M1.10
+categories:
+ - M1
+ - error
+format:
+ html: default
+execute:
+   echo: false
+---
+
+This EFG has an error.

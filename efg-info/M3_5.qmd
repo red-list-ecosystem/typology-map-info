@@ -1,0 +1,14 @@
+---
+title: "M3.5 Deepwater biogenic beds"
+subtitle: "M3. Deep sea floors biome"
+params:
+ efgcode: M3.5
+categories:
+ - M3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

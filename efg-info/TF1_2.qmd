@@ -1,0 +1,14 @@
+---
+title: "TF1.2 Subtropical/temperate forested wetlands"
+subtitle: "TF1. Palustrine wetlands biome"
+params:
+ efgcode: TF1.2
+categories:
+ - TF1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

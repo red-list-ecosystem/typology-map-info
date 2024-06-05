@@ -1,0 +1,14 @@
+---
+title: "T7.3 Plantations"
+subtitle: "T7. Intensive land-use biome"
+params:
+ efgcode: T7.3
+categories:
+ - T7
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

@@ -1,0 +1,14 @@
+---
+title: "M2.2 Mesopelagic ocean water"
+subtitle: "M2. Pelagic ocean waters biome"
+params:
+ efgcode: M2.2
+categories:
+ - M2
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

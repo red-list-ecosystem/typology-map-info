@@ -1,0 +1,14 @@
+---
+title: "M3.6 Hadal trenches and troughs"
+subtitle: "M3. Deep sea floors biome"
+params:
+ efgcode: M3.6
+categories:
+ - M3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

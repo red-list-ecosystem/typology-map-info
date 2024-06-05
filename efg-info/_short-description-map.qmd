@@ -1,0 +1,56 @@
+## Brief description
+
+```{r setup}
+#| warning: false
+#| message: false
+library(xml2)
+library(terra)
+library(magick)
+efg_code <- params$efgcode
+efg_code_ <- gsub("\\.","_",efg_code)
+here::i_am(sprintf("efg-info/%s.qmd", efg_code_))
+out_folder <- here::here("gisdata", "indicative-maps-bundle","latest")
+```
+
+```{r}
+xpath_map_efg <- sprintf("//Map[@efg_code='%s']", efg_code)
+map_details_file <- paste(out_folder, "map-details.xml", sep = "/")
+# file.exists(map_details_file)
+map_details <- read_xml(map_details_file)
+map_info <- map_details |> xml_find_first(xpath_map_efg)
+map_attrs <- map_info |> xml_attrs()
+ds_doi <- map_info |> xml_find_first("Dataset-doi") |> xml_text()
+downloaded_copy <- here::here("gisdata", "indicative-maps", ds_doi)
+efg_details <- read_xml(dir(downloaded_copy, "xml", full.names = TRUE))
+```
+
+```{r}
+#| output: asis
+efg_details |> xml_find_first("//Short-description") |> xml_text() |> cat()
+```
+
+Read more about this functional group at: <https://global-ecosystems.org/explore/groups/`r efg_code`>{target="webapp"}
+
+## Map description
+```{r}
+#| output: asis
+markdown_text <- sprintf("***%1$s***\n\n%2$s.\n\n **Map code and version**: %3$s %4$s. **GIS data (raster and vector format) available at** DOI:[%5$s](https://doi.org/%5$s)",
+    map_info |> xml_find_first("Functional_group") |> xml_text(),
+    map_info |> xml_find_first("Description") |> xml_text(),
+        map_attrs["map_code"],
+        map_attrs["map_version"],
+       ds_doi 
+)
+
+cat(markdown_text)
+```
+
+```{r}
+thmbmap <- dir(downloaded_copy,"png", full.names = TRUE)
+raw_img <- image_read(thmbmap)
+image_ggplot(raw_img)
+```
+
+Read more details about this map [here](/map-info/`r efg_code_`_valid.qmd).
+
+Read more details about older versions of this map [here](/map-info/`r efg_code_`_history.qmd).

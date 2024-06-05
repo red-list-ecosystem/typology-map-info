@@ -1,0 +1,14 @@
+---
+title: "F1.6 Episodic arid rivers"
+subtitle: "F1. Rivers and streams biome"
+params:
+ efgcode: F1.6
+categories:
+ - F1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

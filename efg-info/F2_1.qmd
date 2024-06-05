@@ -1,0 +1,14 @@
+---
+title: "F2.1 Large permanent freshwater lakes"
+subtitle: "F2. Lakes biome"
+params:
+ efgcode: F2.1
+categories:
+ - F2
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

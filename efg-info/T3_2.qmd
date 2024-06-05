@@ -1,0 +1,14 @@
+---
+title: "T3.2 Seasonally dry temperate heath and shrublands"
+subtitle: "T3. Shrublands and shrubby woodlands biome"
+params:
+ efgcode: T3.2
+categories:
+ - T3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

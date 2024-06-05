@@ -1,0 +1,14 @@
+---
+title: "F1.2 Permanent lowland rivers"
+subtitle: "F1. Rivers and streams biome"
+params:
+ efgcode: F1.2
+categories:
+ - F1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

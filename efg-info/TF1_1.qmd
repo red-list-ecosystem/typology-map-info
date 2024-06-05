@@ -1,0 +1,14 @@
+---
+title: "TF1.1 Tropical flooded forests and peat forests"
+subtitle: "TF1. Palustrine wetlands biome"
+params:
+ efgcode: TF1.1
+categories:
+ - TF1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

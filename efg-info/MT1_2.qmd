@@ -1,0 +1,14 @@
+---
+title: "MT1.2 Muddy Shorelines"
+subtitle: "MT1. Shorelines biome"
+params:
+ efgcode: MT1.2
+categories:
+ - MT1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

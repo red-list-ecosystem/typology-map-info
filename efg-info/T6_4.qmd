@@ -1,0 +1,14 @@
+---
+title: "T6.4 Temperate alpine grasslands and shrublands"
+subtitle: "T6. Polar/alpine (cryogenic) biome"
+params:
+ efgcode: T6.4
+categories:
+ - T6
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

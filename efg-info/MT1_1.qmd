@@ -1,0 +1,14 @@
+---
+title: "MT1.1 Rocky Shorelines"
+subtitle: "MT1. Shorelines biome"
+params:
+ efgcode: MT1.1
+categories:
+ - MT1
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

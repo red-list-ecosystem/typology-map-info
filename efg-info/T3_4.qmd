@@ -1,0 +1,14 @@
+---
+title: "T3.4 Young rocky pavements, lava flows and screes"
+subtitle: "T3. Shrublands and shrubby woodlands biome"
+params:
+ efgcode: T3.4
+categories:
+ - T3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}

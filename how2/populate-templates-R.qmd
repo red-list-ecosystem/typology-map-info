@@ -1,0 +1,70 @@
+---
+title: Populate templates with R
+execute: 
+ eval: true
+---
+
+## Set up work directory
+
+We use library `here` to define relative paths
+```{r}
+here::i_am("how2/populate-templates-R.qmd")
+```
+
+## Read profile information
+
+We read the profile information from the workbook downloaded from OSF and complement this with information about the biomes.
+
+```{r setup}
+#| warning: false
+#| message: false
+library(readxl)
+library(dplyr)
+library(readr)
+
+out_folder <- here::here("gisdata", "profiles")
+dest_file <- here::here(out_folder,  "biome-names.csv")
+biome_names <- read_csv(dest_file, show_col_types = FALSE) |>
+    rename("biome code" = "biome_code" , "biome name" = "name") 
+
+dest_file <- here::here(out_folder,  "IUCN-GET-profiles-exported.xlsx")
+profile_info <- read_excel(dest_file, sheet = 2) |> 
+    left_join(biome_names, by = "biome code")
+```
+
+## Output initial qmd file
+
+Now we can export this information into a template `qmd` file to show the results for all functional groups.
+
+```{r}
+template_text <- "---
+title: \"%s\"
+subtitle: \"%s\"
+params:
+ efgcode: %s
+categories:
+ - %s
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}
+"
+
+outdata <- profile_info |> 
+    mutate(out = sprintf(template_text, 
+                name, `biome name`, code, `biome code`), 
+            outfile = here::here("efg-info", sprintf("%s.qmd", gsub("\\.", "_", code)))) |>
+    select(outfile, out) 
+
+for (j in seq(along=outdata$out)) {
+    outfile <- slice(outdata,j) |> pull(outfile)
+    outtext <- slice(outdata,j) |> pull(out)
+    
+    if (!file.exists(outfile)) {
+        cat(outtext, file =  outfile)
+    }
+}
+```

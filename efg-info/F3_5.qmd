@@ -1,0 +1,14 @@
+---
+title: "F3.5 Canals, ditches and drains"
+subtitle: "F3. Artificial wetlands biome"
+params:
+ efgcode: F3.5
+categories:
+ - F3
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-description-map.qmd >}}
