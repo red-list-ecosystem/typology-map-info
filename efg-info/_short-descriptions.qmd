@@ -1,0 +1,42 @@
+## Profile summary 
+
+```{r setup}
+#| warning: false
+#| message: false
+library(readxl)
+library(dplyr)
+library(readr)
+
+efg_code <- params$efgcode
+efg_code_ <- gsub("\\.","_",efg_code)
+here::i_am(sprintf("efg-info/%s.qmd", efg_code_))
+
+out_folder <- here::here("gisdata", "profiles")
+dest_file <- here::here(out_folder,  "biome-names.csv")
+biome_names <- read_csv(dest_file, show_col_types = FALSE) |>
+    rename("biome code" = "biome_code" , "biome name" = "name") 
+
+dest_file <- here::here(out_folder,  "IUCN-GET-profiles-exported.xlsx")
+profile_info <- read_excel(dest_file, sheet = 2) |> 
+    left_join(biome_names, by = "biome code") |> 
+    filter(code %in% efg_code)
+
+```
+
+```{r}
+#| output: asis
+
+cat(sprintf("Full profile at <%s>{target='GET'}\n\n", profile_info$url))
+
+mdtext_string <- "### Brief description\n%s\n\n### Key features\n\n%s.\n\n### Overview of distribution\n\n%s."
+profile_info  |> 
+    mutate(mdtext = sprintf(
+        mdtext_string,
+        `short description`, 
+        `key features`,
+         `distribution summary`)) |>
+         pull(mdtext) |>
+         cat()
+
+```
+

@@ -1,0 +1,136 @@
+```{r versions-setup}
+#| warning: false
+#| message: false
+library(RPostgreSQL)
+library(dplyr)
+library(stringr)
+```
+
+
+```{r}
+#| label: queries
+#| message: false
+#| results: hide
+drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
+
+con <- dbConnect(drv, 
+                 dbname = Sys.getenv("DBNAME"),
+                 host = Sys.getenv("DBHOST"),
+                 port = Sys.getenv("DBPORT"),
+                 user = Sys.getenv("DBUSER"))
+
+
+qry <- sprintf(" SELECT DISTINCT contributors, version, DATE(update) as update
+    FROM
+        (SELECT contributors, version, update, code, language
+        FROM efg_ecological_traits
+        UNION ALL
+        SELECT contributors, version, update, code, language
+        FROM efg_distribution
+        UNION ALL
+        SELECT contributors, version, update, code, language
+        FROM efg_key_ecological_drivers) AS full_table
+    WHERE code = '%s' AND language = 'en'
+    ORDER BY version DESC 
+        ", efg_code)
+
+profile_versions <- dbGetQuery(con,qry) 
+
+qry <- sprintf(
+    "SELECT ref_code,ref_markdown
+FROM ref_list 
+WHERE ref_code IN 
+    (SELECT distinct ref_code from efg_references WHERE code = '%s') 
+", efg_code)
+
+
+profile_refs <- dbGetQuery(con,qry) 
+
+qry <- sprintf(
+    "SELECT ref_code,ref_markdown
+FROM ref_list 
+WHERE ref_code IN 
+    (SELECT distinct ref_code from map_references 
+     LEFT JOIN map_metadata USING(map_code, map_version) 
+     WHERE code = '%s') 
+", efg_code)
+
+
+maps_refs <- dbGetQuery(con,qry) 
+
+qry <- sprintf("SELECT map_code, map_version, status, map_type
+    FROM map_metadata WHERE code = '%s' 
+    ORDER BY map_version DESC;", efg_code)
+
+maps_available <- dbGetQuery(con,qry) 
+
+dbDisconnect(con)
+```
+
+
+## Version history
+### Profile versions
+
+```{r}
+#| output: asis
+mdtext_string <- "- %s (%s): %s.%s\n"
+current_url <- sprintf("^[This is the current version available at [official site](%s){target='GET'}.]", profile_info$url)
+profile_versions |>
+    mutate(mdtext = sprintf(mdtext_string,
+        version, update, str_replace_all(contributors,"\",\"","; ") |> str_replace_all("[{}\"]",""),
+        ifelse(version == "v2.1", current_url, ""))) |>
+    pull(mdtext) |> 
+    cat()
+```
+
+### Available maps
+
+Read more details about the current map versions [here](/map-info/`r efg_code_`_valid.qmd).
+
+```{r}
+#| output: asis
+maps_available |>
+    filter(status %in% "valid") |>
+    mutate(mdtext = sprintf("- %s (**code: %s**, version %s) \n", 
+        map_type, map_code, map_version)) |>
+    pull(mdtext) |> 
+    cat()
+```
+
+Read more details about [older or alternative versions](/map-info/`r efg_code_`_history.qmd) of maps for this functional group.
+
+```{r}
+#| output: asis
+maps_available |>
+    filter(!status %in% "valid") |>
+    mutate(mdtext = sprintf("- %s: %s (*code: %s*, version %s) \n", 
+        map_type, status, map_code, map_version)) |>
+    pull(mdtext) |> 
+    cat()
+```
+
+## References 
+
+### Main references
+
+References used in the different versions of the profiles.
+
+```{r}
+#| output: asis
+profile_refs |>
+    mutate(mdtext = sprintf("- %s \n", ref_markdown)) |>
+    pull(mdtext) |> 
+    cat()
+```
+
+### Map references
+
+References used in the different versions of the maps (current and discarded).
+
+```{r}
+#| output: asis
+maps_refs |>
+    mutate(mdtext = sprintf("- %s \n", ref_markdown)) |>
+    pull(mdtext) |> 
+    cat()
+```

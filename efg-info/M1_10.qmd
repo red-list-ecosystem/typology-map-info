@@ -5,11 +5,12 @@ params:
  efgcode: M1.10
 categories:
  - M1
- - error
 format:
  html: default
 execute:
    echo: false
 ---
 
-This EFG has an error.
+{{< include _short-descriptions.qmd >}}
+{{< include _map.qmd >}}
+{{< include _profile-versions.qmd >}}

@@ -12,4 +12,6 @@ execute:
    echo: false
 ---
 
+{{< include _short-descriptions.qmd >}}
 
+{{< include _profile-versions.qmd >}}
