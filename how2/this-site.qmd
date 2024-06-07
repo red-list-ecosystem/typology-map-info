@@ -30,3 +30,38 @@ For editing jupyter notebooks activate a python environment with jupyter modules
 ```{.bash filename="Terminal"}
 source ~/venv/jptr/bin/activate
 ```
+## Enable commenting
+
+We enable [Utterances](https://utteranc.es) commenting using the `utterances` option. 
+
+First install the [utterances app]() in the repo.
+
+For this we specify the GitHub repo for storing comments:
+
+```{.yaml}
+comments:
+  utterances:
+    repo: red-list-ecosystem/typology-map-info
+```
+
+## quarto publish command
+
+First create the gh-pages branch:
+
+```{.bash filename="Terminal"}
+git checkout --orphan gh-pages
+git reset --hard # make sure all changes are committed before running this!
+git commit --allow-empty -m "Initialising gh-pages branch"
+git push origin gh-pages
+```
+
+Then ensure that the **Source** branch of the repository is `gh-pages` and that the site directory is set to the repository root (`/`). Check **Settings : Pages** in our repository.
+
+Now we can do:
+
+```{.bash filename="Terminal"}
+git checkout main
+quarto publish gh-pages
+```
+
+And this site is up and running!

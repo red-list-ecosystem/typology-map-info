@@ -41,6 +41,9 @@ website:
     right:
       - icon: github
         href: https://github.com/jrfep
+  comments:
+    utterances:
+      repo: red-list-ecosystem/typology-map-info
 format:
   html:
     theme: mint

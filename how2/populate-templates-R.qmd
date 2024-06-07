@@ -109,3 +109,41 @@ for (j in seq(along=outdata$out)) {
     }
 }
 ```
+
+And the complete version history of the maps.
+
+```{r}
+template_text <- "---
+title: \"Previous map versions for EFG %s\"
+subtitle: \"%s\"
+date: %s
+params:
+ efgcode: %s
+ efgname: %s
+categories:
+ - %s
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}
+"
+
+outdata <- profile_info |> 
+    mutate(out = sprintf(template_text, 
+                `short name`, `biome name`, today, code, `short name`, `biome code`), 
+            outfile = here::here("map-info", sprintf("%s_history.qmd", gsub("\\.", "_", code)))) |>
+    select(outfile, out) 
+
+for (j in seq(along=outdata$out)) {
+    outfile <- slice(outdata,j) |> pull(outfile)
+    outtext <- slice(outdata,j) |> pull(out)
+    
+    if (!file.exists(outfile)) {
+        cat(outtext, file =  outfile)
+    }
+}
+```

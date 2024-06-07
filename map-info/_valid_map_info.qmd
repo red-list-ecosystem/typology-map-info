@@ -13,6 +13,7 @@ here::i_am(sprintf("map-info/%s_valid.qmd", efg_code_))
 out_folder <- here::here("gisdata", "indicative-maps-bundle","latest")
 ```
 
+
 ```{r}
 xpath_map_efg <- sprintf("//Map[@efg_code='%s']", efg_code)
 map_details_file <- paste(out_folder, "map-details.xml", sep = "/")
@@ -26,53 +27,15 @@ downloaded_copy <- here::here("gisdata", "indicative-maps", ds_doi)
 efg_details <- read_xml(dir(downloaded_copy, "xml", full.names = TRUE))
 ```
 
+This page provides information about the valid indicative distribution map for the ecosystem functional group [**`r efg_name`**](/efg-info/`r efg_code_`.qmd).
+
+## Methods
 
 ```{r}
 #| output: asis
-markdown_text <- sprintf("The current valid map is identified by **Map code and version**: %1$s %2$s.",
+sprintf("Here is the methods summary for **Map code and version**: %1$s %2$s.\n\n> %3$s",
         map_attrs["map_code"],
-        map_attrs["map_version"]
-)
-
-cat(markdown_text)
-```
-
-
-```{r}
-#| output: asis
-markdown_text <- sprintf("> %s.",
-    map_info |> xml_find_first("Description") |> xml_text()
-)
-cat(markdown_text)
-```
-
-```{r}
-#| message: false
-#| results: hide
-drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
-
-con <- dbConnect(drv, 
-                 dbname = Sys.getenv("DBNAME"),
-                 host = Sys.getenv("DBHOST"),
-                 port = Sys.getenv("DBPORT"),
-                 user = Sys.getenv("DBUSER"))
-
-qry <- sprintf("select map_file, file_description, file_comments, map_script from map_files where map_code like '%s' and map_version = '%s';", map_attrs["map_code"], map_attrs["map_version"])
-
-map_files <- dbGetQuery(con,qry) 
-
-dbDisconnect(con)
-```
-
-
-You can download and use this file from the following sources:
-
-```{r}
-#| results: asis
-mdtexts <- map_files |>
-    filter(grepl("^http", map_file)) |>
-    mutate(mdtext = sprintf("- %s ([%s](%s))\n",file_description, file_comments, map_file)) |>
-    pull(mdtext)
-
-cat(mdtexts)
+        map_attrs["map_version"],
+        map_info |> xml_find_first("Description") |> xml_text()) |> 
+    cat()
 ```

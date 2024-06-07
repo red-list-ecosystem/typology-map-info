@@ -1,4 +1,4 @@
-```{r versions-setup}
+```{r setup}
 #| warning: false
 #| message: false
 library(RPostgreSQL)
@@ -7,11 +7,8 @@ library(stringr)
 
 efg_code <- params$efgcode
 efg_code_ <- gsub("\\.","_",efg_code)
-here::i_am(sprintf("map-info/%s_valid.qmd", efg_code_))
-
+here::i_am(sprintf("map-info/%s_history.qmd", efg_code_))
 ```
-
-
 
 ```{r}
 #| label: queries
@@ -25,9 +22,9 @@ con <- dbConnect(drv,
                  port = Sys.getenv("DBPORT"),
                  user = Sys.getenv("DBUSER"))
 
-qry <- sprintf("SELECT map_code, map_version, map_type
+qry <- sprintf("SELECT map_code, map_version, map_type, status
     FROM map_metadata WHERE code = '%s' 
-    AND status = 'valid'
+    AND status !=  'valid'
     ORDER BY map_version DESC;", efg_code)
 
 maps_available <- dbGetQuery(con,qry) 
@@ -37,18 +34,18 @@ SELECT map_code, map_version, map_file, file_description, file_comments, f.map_s
 FROM map_files f
 LEFT JOIN map_metadata
     USING(map_code, map_version)
-WHERE code = '%s';", efg_code)
+WHERE code = '%s'
+AND status != 'valid';", efg_code)
 
 map_files <- dbGetQuery(con,qry) 
 
-qry <- sprintf("SELECT DISTINCT dataset, ref_code, source_of, spatial_resolution, accuracy_evaluation, temporal_resolution, rule_set 
+qry <- sprintf("SELECT DISTINCT dataset, ref_code
 FROM map_references r 
 LEFT JOIN map_metadata
     USING(map_code, map_version)
-WHERE map_code = '%s' AND map_version = '%s' 
-AND status = 'valid';", 
-    map_attrs["map_code"],
-    map_attrs["map_version"])
+WHERE code = '%s'  
+AND status != 'valid';", 
+    efg_code)
 
 map_datasets <- dbGetQuery(con,qry) 
 
@@ -60,7 +57,7 @@ WHERE ref_code IN (
     LEFT JOIN map_metadata
         USING(map_code, map_version)
     WHERE code = '%s' 
-    AND status = 'valid'
+    AND status != 'valid'
 );", efg_code)
 
 maps_refs <- dbGetQuery(con,qry) 
@@ -82,33 +79,34 @@ dataset_licenses <- dbGetQuery(con,qry) |>
     group_by(dataset) |>
     summarise( license_info = paste(lcs, collapse = " :: "))
 
-qry <- sprintf("SELECT concept_alignment, ground_observations, accuracy_evaluation, time_series, evaluation, processing, license
-FROM map_evaluation
-LEFT JOIN map_metadata
-        USING(map_code, map_version)
-    WHERE code = '%s' 
-    AND status = 'valid'",
-    efg_code
-)
-map_evaluation <- dbGetQuery(con,qry)
 dbDisconnect(con)
 ```
 
+### Version history
 
-
-### Datasets
+This page provides information about older or alternative versions of  indicative distribution map for this ecosystem functional group [**{{< meta params.efgname >}}**](/efg-info/`r efg_code_`.qmd).
+Check the current maps [here](/map-info/`r efg_code_`_valid.qmd).
 
 ```{r}
 #| output: asis
-mdtext_string <- "**%s** (%s):\n\nSource of _%s_.\n Resolution: %s, %s.\n Accuracy evaluation: %s.\n\n"
+    maps_available |>
+        mutate(mdtext = sprintf("- %s (**code: %s**, version %s) %s \n", 
+            map_type, map_code, map_version, status)) |>
+        pull(mdtext) |> 
+        cat()
+```
+
+### Datasets
+
+Datasets considered for previous versions of the indicative map
+
+```{r}
+#| output: asis
+mdtext_string <- "- **%s** (%s).\n"
 map_datasets |>
     mutate(mdtext = sprintf(mdtext_string,
         dataset,
-        ref_code,
-        source_of,
-        spatial_resolution,
-        temporal_resolution,
-        accuracy_evaluation
+        ref_code
     )) |>
     pull(mdtext) |>
     cat()
@@ -119,60 +117,9 @@ map_datasets |>
 knitr::kable(dataset_urls)
 ```
 
-### Processing
-
-```{r}
-#| output: asis
-mdtext_string <- "Processing steps used in this map are: *%s*.\n\n"
-map_evaluation |>
-    filter(!is.na(evaluation)) |>
-    mutate(mdtext = sprintf(mdtext_string,
-        str_replace_all(processing, "[{}\"]", "") |> str_replace_all(",", "* :: *")
-    )) |>
-    pull(mdtext) |>
-    cat()
-```
-
-### Map evaluation
-
-
-```{r}
-#| output: asis
-mdtext_string <- "This map is considered to be a ***%s*** based on the following characteristics:\n\nConcept alignment is *%s*.\n\nGround observations are _%s_.\n\n The accuracy evaluation *%s*.\n\n"
-map_evaluation |>
-    filter(!is.na(evaluation)) |>
-    mutate(mdtext = sprintf(mdtext_string,
-        str_replace_all(evaluation, "[{}\"]", ""), 
-        str_replace_all(concept_alignment, "[{}\"]", ""), 
-        str_replace_all(ground_observations, "[{}\"]", ""), 
-        str_replace_all(accuracy_evaluation, "[{}\"]", "")
-   )) |>
-    pull(mdtext) |>
-    cat()
-
-```
-
-## How to use the data
-
 ### Available files
 
-```{r}
-#| output: asis
-
-if (nrow(maps_available)>1) {
-    cat(sprintf(":::{.aside}\n\nFollowing maps are considered current and valid indicative distribution maps for this ecosystem functional group. `Web navigation` maps are optimised for use in webapps, but they have similar methods and differ only in details of format and processing. \n\n"))
-
-    maps_available |>
-        mutate(mdtext = sprintf("- %s (**code: %s**, version %s) \n", 
-            map_type, map_code, map_version)) |>
-        pull(mdtext) |> 
-        cat()
-
-    cat(sprintf("\n\n:::\n\n"))
-}
-```
-
-You can download geospatial data for this map from the following sources:
+You can download geospatial data for older versions of these maps from the following sources:
 
 ```{r}
 #| results: asis
@@ -200,21 +147,7 @@ Note that you need to login to some services like [mapbox](https://www.mapbox.co
 
 Indicative maps have been released with a ![](https://zenodo.org/static/icons/licenses/cc-by-icon.svg){height=20} Creative Commons Attribution 4.0 International license. 
 
-```{r}
-#| output: asis
-license_eval <- map_evaluation |>
-    filter(!is.na(evaluation)) |>
-    pull(license)
-if (license_eval %in% "Non-commercial use") {
-    cat("Datasets used to create this map might have some restriction for commercial use, see details below.\n\n")
-} else if (license_eval %in% "Commercial use") {
-    cat("Datasets used to create this map have similar licenses, but please check the license information below.\n\n")
-} else {
-    cat("License information for some datasets used to create this map is incomplete or undocumented. Check details below.\n\n")
-
-}
-```
-
+But see details of dataset licenses below:
 
 ```{r}
 knitr::kable(dataset_licenses)
@@ -222,7 +155,7 @@ knitr::kable(dataset_licenses)
 
 ## References
 
-References used in this version of the maps.
+References used in these versions of the maps.
 
 ```{r}
 #| output: asis
