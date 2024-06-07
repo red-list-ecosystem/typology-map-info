@@ -76,7 +76,7 @@ And similar for all valid maps:
 ```{r}
 today <- format(Sys.time(), "%d %b %Y")
 template_text <- "---
-title: \"Valid map for EFG %s\"
+title: \"EFG %s -- current maps\"
 subtitle: \"%s\"
 date: %s
 params:
@@ -114,12 +114,12 @@ And the complete version history of the maps.
 
 ```{r}
 template_text <- "---
-title: \"Previous map versions for EFG %s\"
+title: \"EFG %s --  previous maps\"
 subtitle: \"%s\"
 date: %s
 params:
  efgcode: %s
- efgname: %s
+ efgname: \"%s\"
 categories:
  - %s
  - alt versions

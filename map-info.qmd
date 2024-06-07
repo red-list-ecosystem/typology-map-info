@@ -2,9 +2,15 @@
 listing: 
  contents: map-info
  type: table
- sort: "title asc"
  categories: true
- sort-ui: [title, date]
+ sort-ui: [title, subtitle]
+ fields: [title, subtitle]
+ field-display-names:
+  title: "Ecosystem functional group"
+  subtitle: "Biome"
+ sort:
+  - "subtitle"
+  - "title"
 ---
 
 # Map information
