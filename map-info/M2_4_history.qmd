@@ -1,0 +1,17 @@
+---
+title: "EFG M2.4 Abyssopelagic ocean waters --  previous maps"
+subtitle: "M2. Pelagic ocean waters biome"
+date: 07 Jun 2024
+params:
+ efgcode: M2.4
+ efgname: "M2.4 Abyssopelagic ocean waters"
+categories:
+ - M2
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

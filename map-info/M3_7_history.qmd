@@ -1,0 +1,17 @@
+---
+title: "EFG M3.7 Chemosynthetic --  previous maps"
+subtitle: "M3. Deep sea floors biome"
+date: 07 Jun 2024
+params:
+ efgcode: M3.7
+ efgname: "M3.7 Chemosynthetic"
+categories:
+ - M3
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

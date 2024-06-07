@@ -1,0 +1,17 @@
+---
+title: "EFG MT3.1 Artificial shores --  previous maps"
+subtitle: "MT3. Anthropogenic shorelines biome"
+date: 07 Jun 2024
+params:
+ efgcode: MT3.1
+ efgname: "MT3.1 Artificial shores"
+categories:
+ - MT3
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

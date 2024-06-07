@@ -1,0 +1,17 @@
+---
+title: "EFG S1.1 Aerobic caves --  previous maps"
+subtitle: "S1. Subterranean lithic biome"
+date: 07 Jun 2024
+params:
+ efgcode: S1.1
+ efgname: "S1.1 Aerobic caves"
+categories:
+ - S1
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

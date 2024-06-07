@@ -1,0 +1,17 @@
+---
+title: "EFG MT2.2 Seabird rookeries --  previous maps"
+subtitle: "MT2. Supralittoral coastal biome"
+date: 07 Jun 2024
+params:
+ efgcode: MT2.2
+ efgname: "MT2.2 Seabird rookeries"
+categories:
+ - MT2
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

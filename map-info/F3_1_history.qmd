@@ -1,0 +1,17 @@
+---
+title: "EFG F3.1 Large reservoirs --  previous maps"
+subtitle: "F3. Artificial wetlands biome"
+date: 07 Jun 2024
+params:
+ efgcode: F3.1
+ efgname: "F3.1 Large reservoirs"
+categories:
+ - F3
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

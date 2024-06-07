@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG SF2.1 Water pipes and canals"
+title: "EFG SF2.1 Water pipes and canals -- current maps"
 subtitle: "SF2. Anthropogenic subterranean freshwaters biome"
 date: 07 Jun 2024
 params:

@@ -1,0 +1,17 @@
+---
+title: "EFG F2.5 Ephemeral lakes --  previous maps"
+subtitle: "F2. Lakes biome"
+date: 07 Jun 2024
+params:
+ efgcode: F2.5
+ efgname: "F2.5 Ephemeral lakes"
+categories:
+ - F2
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

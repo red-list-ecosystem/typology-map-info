@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG SF1.2 Groundwater ecosystems"
+title: "EFG SF1.2 Groundwater ecosystems -- current maps"
 subtitle: "SF1. Subterranean freshwaters biome"
 date: 07 Jun 2024
 params:

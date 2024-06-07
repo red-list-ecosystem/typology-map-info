@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG FM1.1 Deepwater coastal inlets"
+title: "EFG FM1.1 Deepwater coastal inlets -- current maps"
 subtitle: "FM1. Semi-confined transitional waters biome"
 date: 07 Jun 2024
 params:

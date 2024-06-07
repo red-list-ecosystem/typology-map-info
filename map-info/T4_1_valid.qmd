@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG T4.1 Trophic savannas"
+title: "EFG T4.1 Trophic savannas -- current maps"
 subtitle: "T4. Savannas and grasslands biome"
 date: 07 Jun 2024
 params:

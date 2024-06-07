@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG F2.6 Perm salt lakes"
+title: "EFG F2.6 Perm salt lakes -- current maps"
 subtitle: "F2. Lakes biome"
 date: 07 Jun 2024
 params:

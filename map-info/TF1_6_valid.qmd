@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG TF1.6 Boreal/temperate bogs"
+title: "EFG TF1.6 Boreal/temperate bogs -- current maps"
 subtitle: "TF1. Palustrine wetlands biome"
 date: 07 Jun 2024
 params:

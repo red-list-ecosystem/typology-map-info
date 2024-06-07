@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG TF1.1 Trop flooded/peat forests"
+title: "EFG TF1.1 Trop flooded/peat forests -- current maps"
 subtitle: "TF1. Palustrine wetlands biome"
 date: 07 Jun 2024
 params:

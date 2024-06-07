@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG S1.2 Endolithic systems"
+title: "EFG S1.2 Endolithic systems -- current maps"
 subtitle: "S1. Subterranean lithic biome"
 date: 07 Jun 2024
 params:
@@ -7,11 +7,10 @@ params:
 categories:
  - S1
  - valid
+ - error
 format:
  html: default
 execute:
    echo: false
 ---
 
-{{< include _valid_map_info.qmd >}}
-{{< include _valid_maps_database.qmd >}}

@@ -1,0 +1,17 @@
+---
+title: "EFG S2.1 Anthropogenic subterranean voids --  previous maps"
+subtitle: "S2. Anthropogenic subterranean voids biome"
+date: 07 Jun 2024
+params:
+ efgcode: S2.1
+ efgname: "S2.1 Anthropogenic subterranean voids"
+categories:
+ - S2
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

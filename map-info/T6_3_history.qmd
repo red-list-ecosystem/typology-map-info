@@ -1,0 +1,17 @@
+---
+title: "EFG T6.3 Polar tundra --  previous maps"
+subtitle: "T6. Polar/alpine (cryogenic) biome"
+date: 07 Jun 2024
+params:
+ efgcode: T6.3
+ efgname: "T6.3 Polar tundra"
+categories:
+ - T6
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

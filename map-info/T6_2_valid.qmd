@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG T6.2 Polar/alpine rock"
+title: "EFG T6.2 Polar/alpine rock -- current maps"
 subtitle: "T6. Polar/alpine (cryogenic) biome"
 date: 07 Jun 2024
 params:

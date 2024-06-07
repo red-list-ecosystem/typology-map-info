@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG S2.1 Anthropogenic subterranean voids"
+title: "EFG S2.1 Anthropogenic subterranean voids -- current maps"
 subtitle: "S2. Anthropogenic subterranean voids biome"
 date: 07 Jun 2024
 params:

@@ -1,0 +1,17 @@
+---
+title: "EFG SF1.1 Underground streams and pools --  previous maps"
+subtitle: "SF1. Subterranean freshwaters biome"
+date: 07 Jun 2024
+params:
+ efgcode: SF1.1
+ efgname: "SF1.1 Underground streams and pools"
+categories:
+ - SF1
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

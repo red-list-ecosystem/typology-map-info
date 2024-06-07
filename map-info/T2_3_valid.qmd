@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG T2.3 Oceanic temp rainforests"
+title: "EFG T2.3 Oceanic temp rainforests -- current maps"
 subtitle: "T2. Temperate-boreal forests and woodlands biome"
 date: 07 Jun 2024
 params:

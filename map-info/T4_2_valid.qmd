@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG T4.2 Pyric tussock savannas"
+title: "EFG T4.2 Pyric tussock savannas -- current maps"
 subtitle: "T4. Savannas and grasslands biome"
 date: 07 Jun 2024
 params:

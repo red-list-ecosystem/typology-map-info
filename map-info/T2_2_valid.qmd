@@ -1,16 +1,17 @@
 ---
-title: "Valid map for EFG T2.2"
-date: 2024 May 6
+title: "EFG T2.2 Deciduous temperate forests -- current maps"
+subtitle: "T2. Temperate-boreal forests and woodlands biome"
+date: 07 Jun 2024
 params:
  efgcode: T2.2
 categories:
  - T2
  - valid
- - WIP
 format:
  html: default
-execute: 
-  echo: false
+execute:
+   echo: false
 ---
 
 {{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

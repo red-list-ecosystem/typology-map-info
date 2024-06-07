@@ -1,0 +1,17 @@
+---
+title: "EFG TF1.2 Temp forested wetlands --  previous maps"
+subtitle: "TF1. Palustrine wetlands biome"
+date: 07 Jun 2024
+params:
+ efgcode: TF1.2
+ efgname: "TF1.2 Temp forested wetlands"
+categories:
+ - TF1
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

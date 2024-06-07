@@ -205,7 +205,7 @@ Indicative maps have been released with a ![](https://zenodo.org/static/icons/li
 license_eval <- map_evaluation |>
     filter(!is.na(evaluation)) |>
     pull(license)
-if (nrow(license_eval)>0) {
+if (length(license_eval)>0) {
 
     if (license_eval %in% "Non-commercial use") {
         cat("Datasets used to create this map might have some restriction for commercial use, see details below.\n\n")

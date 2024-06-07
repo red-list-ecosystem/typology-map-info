@@ -1,0 +1,17 @@
+---
+title: "EFG T4.3 Hummock savannas --  previous maps"
+subtitle: "T4. Savannas and grasslands biome"
+date: 07 Jun 2024
+params:
+ efgcode: T4.3
+ efgname: "T4.3 Hummock savannas"
+categories:
+ - T4
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

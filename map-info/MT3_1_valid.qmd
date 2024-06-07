@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG MT3.1 Artificial shores"
+title: "EFG MT3.1 Artificial shores -- current maps"
 subtitle: "MT3. Anthropogenic shorelines biome"
 date: 07 Jun 2024
 params:

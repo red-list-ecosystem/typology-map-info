@@ -1,0 +1,17 @@
+---
+title: "EFG MT1.3 Sandy shores --  previous maps"
+subtitle: "MT1. Shorelines biome"
+date: 07 Jun 2024
+params:
+ efgcode: MT1.3
+ efgname: "MT1.3 Sandy shores"
+categories:
+ - MT1
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

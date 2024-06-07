@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG MFT1.2 Intertidal forests"
+title: "EFG MFT1.2 Intertidal forests -- current maps"
 subtitle: "MFT1. Brackish tidal biome"
 date: 07 Jun 2024
 params:

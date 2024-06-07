@@ -1,6 +1,7 @@
 ---
-title: "Valid map for EFG F2.10"
-date: 2024 May 6
+title: "EFG F2.10 Subglacial lakes -- current maps"
+subtitle: "F2. Lakes biome"
+date: 07 Jun 2024
 params:
  efgcode: F2.10
 categories:
@@ -8,8 +9,8 @@ categories:
  - valid
 format:
  html: default
-execute: 
-  echo: false
+execute:
+   echo: false
 ---
 
 {{< include _valid_map_info.qmd >}}

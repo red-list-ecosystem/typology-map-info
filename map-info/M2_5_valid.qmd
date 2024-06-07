@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG M2.5 Sea ice"
+title: "EFG M2.5 Sea ice -- current maps"
 subtitle: "M2. Pelagic ocean waters biome"
 date: 07 Jun 2024
 params:

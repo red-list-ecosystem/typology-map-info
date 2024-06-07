@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG FM1.3 Closed/open inlets"
+title: "EFG FM1.3 Closed/open inlets -- current maps"
 subtitle: "FM1. Semi-confined transitional waters biome"
 date: 07 Jun 2024
 params:

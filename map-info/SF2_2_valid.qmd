@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG SF2.2 Flooded mines"
+title: "EFG SF2.2 Flooded mines -- current maps"
 subtitle: "SF2. Anthropogenic subterranean freshwaters biome"
 date: 07 Jun 2024
 params:

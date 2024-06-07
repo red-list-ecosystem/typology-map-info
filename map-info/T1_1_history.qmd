@@ -1,13 +1,17 @@
 ---
-title: "Previous map versions for EFG T1.1"
-date: 2024 May 6
+title: "EFG T1.1 Trop lowland rainforests --  previous maps"
+subtitle: "T1. Tropical-subtropical forests biome"
+date: 07 Jun 2024
+params:
+ efgcode: T1.1
+ efgname: "T1.1 Trop lowland rainforests"
 categories:
  - T1
- - changelog
+ - alt versions
 format:
- html: 
-  code-tools:
-   source: true
+ html: default
+execute:
+   echo: false
 ---
 
-Here is a brief overview of maps generated for this Ecosystem functional group
+{{< include _alt_maps_database.qmd >}}

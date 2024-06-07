@@ -1,0 +1,17 @@
+---
+title: "EFG FM1.2 Riverine estuaries and bays --  previous maps"
+subtitle: "FM1. Semi-confined transitional waters biome"
+date: 07 Jun 2024
+params:
+ efgcode: FM1.2
+ efgname: "FM1.2 Riverine estuaries and bays"
+categories:
+ - FM1
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

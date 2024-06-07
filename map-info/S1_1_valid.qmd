@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG S1.1 Aerobic caves"
+title: "EFG S1.1 Aerobic caves -- current maps"
 subtitle: "S1. Subterranean lithic biome"
 date: 07 Jun 2024
 params:

@@ -1,0 +1,17 @@
+---
+title: "EFG T1.2 Trop dry forests --  previous maps"
+subtitle: "T1. Tropical-subtropical forests biome"
+date: 07 Jun 2024
+params:
+ efgcode: T1.2
+ efgname: "T1.2 Trop dry forests"
+categories:
+ - T1
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

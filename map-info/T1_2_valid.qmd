@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG T1.2 Trop dry forests"
+title: "EFG T1.2 Trop dry forests -- current maps"
 subtitle: "T1. Tropical-subtropical forests biome"
 date: 07 Jun 2024
 params:

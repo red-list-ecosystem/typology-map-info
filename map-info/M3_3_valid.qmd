@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG M3.3 Abyssal plains"
+title: "EFG M3.3 Abyssal plains -- current maps"
 subtitle: "M3. Deep sea floors biome"
 date: 07 Jun 2024
 params:

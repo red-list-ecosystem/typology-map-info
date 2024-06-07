@@ -1,0 +1,17 @@
+---
+title: "EFG S1.2 Endolithic systems --  previous maps"
+subtitle: "S1. Subterranean lithic biome"
+date: 07 Jun 2024
+params:
+ efgcode: S1.2
+ efgname: "S1.2 Endolithic systems"
+categories:
+ - S1
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

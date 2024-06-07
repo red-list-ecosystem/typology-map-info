@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG F1.6 Episodic arid rivers"
+title: "EFG F1.6 Episodic arid rivers -- current maps"
 subtitle: "F1. Rivers and streams biome"
 date: 07 Jun 2024
 params:

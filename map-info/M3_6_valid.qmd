@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG M3.6 Hadal"
+title: "EFG M3.6 Hadal -- current maps"
 subtitle: "M3. Deep sea floors biome"
 date: 07 Jun 2024
 params:

@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG SM1.3 Sea caves"
+title: "EFG SM1.3 Sea caves -- current maps"
 subtitle: "SM1. Subterranean tidal biome"
 date: 07 Jun 2024
 params:

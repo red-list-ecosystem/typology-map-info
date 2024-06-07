@@ -1,0 +1,17 @@
+---
+title: "EFG T3.2 Seas dry temp shrublands --  previous maps"
+subtitle: "T3. Shrublands and shrubby woodlands biome"
+date: 07 Jun 2024
+params:
+ efgcode: T3.2
+ efgname: "T3.2 Seas dry temp shrublands"
+categories:
+ - T3
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

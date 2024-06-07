@@ -1,0 +1,17 @@
+---
+title: "EFG MT2.1 Coastal shrublands and grasslands --  previous maps"
+subtitle: "MT2. Supralittoral coastal biome"
+date: 07 Jun 2024
+params:
+ efgcode: MT2.1
+ efgname: "MT2.1 Coastal shrublands and grasslands"
+categories:
+ - MT2
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

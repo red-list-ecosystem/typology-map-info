@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG F2.4 Freeze-thaw lakes"
+title: "EFG F2.4 Freeze-thaw lakes -- current maps"
 subtitle: "F2. Lakes biome"
 date: 07 Jun 2024
 params:

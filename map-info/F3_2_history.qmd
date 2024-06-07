@@ -1,0 +1,17 @@
+---
+title: "EFG F3.2 Constructed lacustrine wetlands --  previous maps"
+subtitle: "F3. Artificial wetlands biome"
+date: 07 Jun 2024
+params:
+ efgcode: F3.2
+ efgname: "F3.2 Constructed lacustrine wetlands"
+categories:
+ - F3
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}

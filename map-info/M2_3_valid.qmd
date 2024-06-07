@@ -1,5 +1,5 @@
 ---
-title: "Valid map for EFG M2.3 Bathypelagic ocean waters"
+title: "EFG M2.3 Bathypelagic ocean waters -- current maps"
 subtitle: "M2. Pelagic ocean waters biome"
 date: 07 Jun 2024
 params:
