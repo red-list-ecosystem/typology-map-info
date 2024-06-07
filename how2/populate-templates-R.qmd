@@ -50,13 +50,54 @@ execute:
    echo: false
 ---
 
-{{< include _short-description-map.qmd >}}
+{{< include _short-descriptions.qmd >}}
+{{< include _map.qmd >}}
+{{< include _profile-versions.qmd >}}
 "
 
 outdata <- profile_info |> 
     mutate(out = sprintf(template_text, 
                 name, `biome name`, code, `biome code`), 
             outfile = here::here("efg-info", sprintf("%s.qmd", gsub("\\.", "_", code)))) |>
+    select(outfile, out) 
+
+for (j in seq(along=outdata$out)) {
+    outfile <- slice(outdata,j) |> pull(outfile)
+    outtext <- slice(outdata,j) |> pull(out)
+    
+    if (!file.exists(outfile)) {
+        cat(outtext, file =  outfile)
+    }
+}
+```
+
+And similar for all valid maps:
+
+```{r}
+today <- format(Sys.time(), "%d %b %Y")
+template_text <- "---
+title: \"Valid map for EFG %s\"
+subtitle: \"%s\"
+date: %s
+params:
+ efgcode: %s
+categories:
+ - %s
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}
+"
+
+outdata <- profile_info |> 
+    mutate(out = sprintf(template_text, 
+                `short name`, `biome name`, today, code, `biome code`), 
+            outfile = here::here("map-info", sprintf("%s_valid.qmd", gsub("\\.", "_", code)))) |>
     select(outfile, out) 
 
 for (j in seq(along=outdata$out)) {

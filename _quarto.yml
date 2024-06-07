@@ -5,23 +5,39 @@ website:
   title: "IUCN GET map documentation"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - text: "Typology"
+        menu:
+        - href: index.qmd
+          text: Home
+        - href: summary.qmd
+          text: Summary
+        - href: development.qmd
+          text: Development
+        - href: feedback.qmd
+          text: Feedback
+        - href: glossary.md
+          text: Glossary
       - text: "Functional groups"
-        href: efg-info.qmd
+        menu:
+          - href: profile-structure.qmd
+            text: "Profile structure"
+          - href: efg-info.qmd
+            text: "Overview"
       - text: "Map information"
         href: map-info.qmd
     right:
+      - text: "How to..."
+        menu:
+          - how2/download-with-R.qmd
+          - how2/additional-map-details.qmd
       - text: "About"
         menu:
           - about.qmd
           - how2/this-site.qmd
-          - how2/download-with-R.qmd
-          - how2/additional-map-details.qmd
   margin-header: |
     <center>![Global Ecosystem Typology](/assets/logo_RLE.png)</center>
   page-footer:
-    left: "Created by: JR Ferrer-Paris"
+    left: "This site is maintained by: JR Ferrer-Paris"
     right:
       - icon: github
         href: https://github.com/jrfep
@@ -33,6 +49,6 @@ format:
     toc: true
 
 execute:
-  freeze: true  # never re-render during project render
+  freeze: auto  # never re-render during project render
 
 
