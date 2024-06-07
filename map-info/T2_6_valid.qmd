@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG T2.6 Temp sclerophyll forests"
+subtitle: "T2. Temperate-boreal forests and woodlands biome"
+date: 07 Jun 2024
+params:
+ efgcode: T2.6
+categories:
+ - T2
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

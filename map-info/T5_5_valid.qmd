@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG T5.5 Hyper-arid deserts"
+subtitle: "T5. Deserts and semi-deserts biome"
+date: 07 Jun 2024
+params:
+ efgcode: T5.5
+categories:
+ - T5
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

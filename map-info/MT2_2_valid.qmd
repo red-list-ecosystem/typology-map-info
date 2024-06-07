@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG MT2.2 Seabird rookeries"
+subtitle: "MT2. Supralittoral coastal biome"
+date: 07 Jun 2024
+params:
+ efgcode: MT2.2
+categories:
+ - MT2
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

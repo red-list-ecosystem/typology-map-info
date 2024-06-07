@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG MT1.1 Rocky shores"
+subtitle: "MT1. Shorelines biome"
+date: 07 Jun 2024
+params:
+ efgcode: MT1.1
+categories:
+ - MT1
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

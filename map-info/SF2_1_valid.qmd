@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG SF2.1 Water pipes and canals"
+subtitle: "SF2. Anthropogenic subterranean freshwaters biome"
+date: 07 Jun 2024
+params:
+ efgcode: SF2.1
+categories:
+ - SF2
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

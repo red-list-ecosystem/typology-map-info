@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG F3.4 Freshwater aquafarms"
+subtitle: "F3. Artificial wetlands biome"
+date: 07 Jun 2024
+params:
+ efgcode: F3.4
+categories:
+ - F3
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

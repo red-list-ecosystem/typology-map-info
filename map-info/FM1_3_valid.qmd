@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG FM1.3 Closed/open inlets"
+subtitle: "FM1. Semi-confined transitional waters biome"
+date: 07 Jun 2024
+params:
+ efgcode: FM1.3
+categories:
+ - FM1
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

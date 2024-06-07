@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG M2.5 Sea ice"
+subtitle: "M2. Pelagic ocean waters biome"
+date: 07 Jun 2024
+params:
+ efgcode: M2.5
+categories:
+ - M2
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

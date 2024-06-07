@@ -1,0 +1,41 @@
+## Raster map
+
+Locate map using map code and map version attributes:
+
+```{r}
+raster_name <- 
+    sprintf("%s_%s.tif",
+        map_attrs["map_code"],
+        map_attrs["map_version"])
+```
+
+```{r}
+#| echo: false
+
+# we use this internally to speed up some steps:
+workdir <- here::here("sandbox", "latest")
+if (!dir.exists(workdir))
+    dir.create(workdir, recursive = TRUE)
+```
+
+Extract the data here (unless it already exists)
+```{r}
+if (!raster_name %in% dir(workdir))
+    untar(rast_tar, files = raster_name, exdir = workdir)
+```
+
+
+We'll use the terra library to read the raster file
+```{r}
+selected_raster <- terra::rast(paste(workdir, raster_name, sep = "/"))
+```
+
+Summary of the raster layer according to `terra::rast`:
+
+```{r}
+selected_raster
+```
+
+```{r}
+plot(selected_raster)
+```

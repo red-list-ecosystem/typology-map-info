@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG T1.3 Trop montane rainforests"
+subtitle: "T1. Tropical-subtropical forests biome"
+date: 07 Jun 2024
+params:
+ efgcode: T1.3
+categories:
+ - T1
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

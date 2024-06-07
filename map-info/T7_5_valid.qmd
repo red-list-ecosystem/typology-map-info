@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG T7.5 Semi-natural old fields"
+subtitle: "T7. Intensive land-use biome"
+date: 07 Jun 2024
+params:
+ efgcode: T7.5
+categories:
+ - T7
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

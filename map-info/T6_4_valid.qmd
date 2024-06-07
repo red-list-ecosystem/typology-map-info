@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG T6.4 Temp alpine grasslands"
+subtitle: "T6. Polar/alpine (cryogenic) biome"
+date: 07 Jun 2024
+params:
+ efgcode: T6.4
+categories:
+ - T6
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

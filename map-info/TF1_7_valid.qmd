@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG TF1.7 Boreal/temperate fens"
+subtitle: "TF1. Palustrine wetlands biome"
+date: 07 Jun 2024
+params:
+ efgcode: TF1.7
+categories:
+ - TF1
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

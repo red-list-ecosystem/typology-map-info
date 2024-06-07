@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG M4.1 Submerged artificial structures"
+subtitle: "M4. Anthropogenic marine biome"
+date: 07 Jun 2024
+params:
+ efgcode: M4.1
+categories:
+ - M4
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

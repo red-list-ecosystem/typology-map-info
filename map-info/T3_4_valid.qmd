@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG T3.4 Rocky pavements"
+subtitle: "T3. Shrublands and shrubby woodlands biome"
+date: 07 Jun 2024
+params:
+ efgcode: T3.4
+categories:
+ - T3
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

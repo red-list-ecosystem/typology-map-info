@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG SM1.3 Sea caves"
+subtitle: "SM1. Subterranean tidal biome"
+date: 07 Jun 2024
+params:
+ efgcode: SM1.3
+categories:
+ - SM1
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}

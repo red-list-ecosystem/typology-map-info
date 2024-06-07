@@ -1,0 +1,40 @@
+
+## Vector map
+
+We follow similar steps for the vector files. 
+
+We vector archive is here:
+
+```{r}
+vect_tar <- here::here(out_folder, "all-maps-vector-geojson.tar.bz2")
+```
+
+We select the map for this functional group using the map_code and map_version from the map details xml:
+
+```{r}
+vector_name <- 
+    sprintf("%s_%s.json",
+        map_info |> xml_attr("map_code"),
+        map_info |> xml_attr("map_version"))
+```
+
+We uncompress this into the tempdir
+
+```{r}
+if (!vector_name %in% dir(workdir))
+    untar(vect_tar, files = vector_name, exdir = workdir)
+```
+
+```{r}
+selected_vector <- terra::vect(paste(workdir, vector_name, sep = "/"))
+```
+
+Summary of the raster layer according to `terra::vect`:
+
+```{r}
+selected_vector
+```
+
+```{r}
+plot(selected_vector)
+```

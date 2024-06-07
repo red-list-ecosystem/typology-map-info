@@ -1,0 +1,84 @@
+```{r versions-setup}
+#| warning: false
+#| message: false
+library(RPostgreSQL)
+library(dplyr)
+library(stringr)
+
+efg_code <- params$efgcode
+efg_code_ <- gsub("\\.","_",efg_code)
+here::i_am(sprintf("map-info/%s_valid.qmd", efg_code_))
+
+```
+
+This section provides information about the valid indicative distribution map for the ecosystem functional group [**`r efg_name`**](/efg-info/`r efg_code_`.qmd).
+
+
+```{r}
+#| label: queries
+#| message: false
+#| results: hide
+drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
+
+con <- dbConnect(drv, 
+                 dbname = Sys.getenv("DBNAME"),
+                 host = Sys.getenv("DBHOST"),
+                 port = Sys.getenv("DBPORT"),
+                 user = Sys.getenv("DBUSER"))
+
+qry <- sprintf("SELECT map_code, map_version, map_type
+    FROM map_metadata WHERE code = '%s' 
+    AND status = 'valid'
+    ORDER BY map_version DESC;", efg_code)
+
+maps_available <- dbGetQuery(con,qry) 
+
+qry <- sprintf("
+SELECT map_code, map_version, map_file, file_description, file_comments, f.map_script 
+FROM map_files f
+LEFT JOIN map_metadata
+    USING(map_code, map_version)
+WHERE code = '%s';", efg_code)
+
+map_files <- dbGetQuery(con,qry) 
+dbDisconnect(con)
+```
+
+## Available maps
+
+These maps are considered current and valid indicative distribution maps for this ecosystem functional group.
+
+```{r}
+#| output: asis
+maps_available |>
+    mutate(mdtext = sprintf("- %s (**code: %s**, version %s) \n", 
+        map_type, map_code, map_version)) |>
+    pull(mdtext) |> 
+    cat()
+```
+
+## Map files
+
+You can download geospatial data for this map from the following sources:
+
+```{r}
+#| results: asis
+#| eval: true
+for (j in seq(along = maps_available$map_code)) {
+    ma <- maps_available |>
+        slice(j)
+    maf <- ma |> left_join(map_files, by = c("map_code", "map_version")) |>
+        filter(!grepl("GrassGIS", file_description)) |>
+        mutate(link = sprintf("[%s](%s)", file_description, map_file)) |>
+        group_by(map_code,map_version) |>
+        summarise(links = paste(link, collapse = " :: "), .groups = 'keep')
+    if (nrow(maf)>0) {
+        maf |>
+            mutate(mdtext = sprintf("%s (%s){target=\"gisdata\"}: %s\n", map_code, map_version, links)) |>
+            pull(mdtext) |>
+            cat()
+    }
+}
+```
+
+Note that you need to login to some services like [mapbox](https://www.mapbox.com){target="links"} or [earthengine](https://earthengine.google.com){target="links"}, and in some cases you also need to request access to the files.

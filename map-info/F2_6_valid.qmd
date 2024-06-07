@@ -1,0 +1,17 @@
+---
+title: "Valid map for EFG F2.6 Perm salt lakes"
+subtitle: "F2. Lakes biome"
+date: 07 Jun 2024
+params:
+ efgcode: F2.6
+categories:
+ - F2
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}
