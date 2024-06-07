@@ -1,0 +1,15 @@
+{
+  "hash": "7adfe520b5b3ddcb57e7407b7f173bf0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Valid map for EFG T5.1 Semi-desert steppe\"\nsubtitle: \"T5. Deserts and semi-deserts biome\"\ndate: 07 Jun 2024\nparams:\n efgcode: T5.1\ncategories:\n - T5\n - valid\nformat:\n html: default\nexecute:\n   echo: false\n---\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\nThe current valid map is identified by **Map code and version**: T5.1.web.mix v1.0.\n\n\n> Major and minor occurrences were initially identified using consensus land-cover maps (Tuanmu et al. 2014) and then cropped to selected terrestrial ecoregions (Dinerstein et al. 2017) at 30 arc seconds spatial resolution. Ecoregions were selected if: i) their descriptions mentioned features consistent with those identified in the profile of the Ecosystem Functional Group; and ii) if their location was consistent with the ecological drivers described in the profile..\n\n::: {.cell}\n\n:::\n\n\nYou can download and use this file from the following sources:\n\n- Zenodo repository (bundle of maps) ([Includes GeoTIFF, GeoJSON and PNG versions in compressed file](http://doi.org/10.5281/zenodo.5090419))\n - Mapbox tileset ([GeoTIFF version uploaded to Mapbox](https://studio.mapbox.com/tilesets/jrfep.T5_1_web_mix))\n - Zenodo repository (EFG map) ([Includes GeoTIFF, GeoJSON and PNG files](https://doi.org/10.5281/zenodo.5091003))\n\n::: {.cell}\n\n:::\n\nThis section provides information about the valid indicative distribution map for the ecosystem functional group [**T5.1 Semi-desert steppe**](/efg-info/T5_1.qmd).\n\n\n::: {.cell}\n\n:::\n\n## Available maps\n\nThese maps are considered current and valid indicative distribution maps for this ecosystem functional group.\n\n- Web navigation (**code: T5.1.web.mix**, version v1.0) \n - Indicative Map (**code: T5.1.IM.mix**, version v1.0) \n\n## Map files\n\nYou can download geospatial data for this map from the following sources:\n\nT5.1.web.mix (v1.0){target=\"gisdata\"}: [Google Cloud bucket](gs://iucn_get_l3_im/T5.1.web.mix_v1.0.tif) :: [Zenodo repository (bundle of maps)](http://doi.org/10.5281/zenodo.5090419) :: [Zenodo repository (EFG map)](https://doi.org/10.5281/zenodo.5091003) :: [Mapbox tileset](https://studio.mapbox.com/tilesets/jrfep.T5_1_web_mix) :: [Earth Engine assets](projects/earthengine-legacy/assets/users/jrferrerparis/IUCN-GET/L3_IndMaps/)\nT5.1.IM.mix (v1.0){target=\"gisdata\"}: [Google Cloud bucket](gs://iucn_get_l3_im/T5.1.IM.mix_v1.0.tif) :: [Zenodo repository (bundle of maps)](http://doi.org/10.5281/zenodo.3958934)\n\nNote that you need to login to some services like [mapbox](https://www.mapbox.com){target=\"links\"} or [earthengine](https://earthengine.google.com){target=\"links\"}, and in some cases you also need to request access to the files.\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
