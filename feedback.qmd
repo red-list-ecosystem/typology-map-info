@@ -1,0 +1,12 @@
+---
+title: Consultation and feedback
+---
+
+The IUCN Commission on Ecosystem Management co-ordinated a [series of workshops and meetings during 2017-2019](development.qmd) to develop, review and refine the <a href="https://iucnrle.org/about-rle/ongoing-initiatives/global-ecosystem-typology/" target="_blank">Global Ecosystem Typology</a>. The framework was also presented at a number of international symposia, offering opportunities for input to a wide range of ecosystem experts.
+
+Both the IUCN report and the scientific publications were subject to peer review. Review of the profiles for each functional group is documented in the appendices of the nature paper. Review of the scientific manuscript is also available. 
+
+The global-ecosystems webapp has a feedback form.
+
+In this page we provide a simple interface to allow users to flag issues or suggest improvements through the GitHub comments features.
+

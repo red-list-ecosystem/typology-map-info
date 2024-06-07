@@ -15,8 +15,3 @@ listing:
 
 # Ecosystem functional groups
 
-## General notes on maps:
-
-The maps in each profile show areas of the world containing major or minor occurrences of the ecosystem functional group. Minor occurrences are areas where an EFG is scattered in patches within matrices of others or where they occur in substantial areas but only within a segment of a larger region.
-
-The maps were designed to be indicative of global distribution patterns and are not intended to represent fine-scale patterns. Given bounds of resolution and accuracy of source data, the maps should be used to query which EFG are likely to occur within areas, rather than which occur at particular point locations.

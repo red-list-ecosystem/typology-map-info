@@ -1,10 +1,36 @@
 ---
-title: "Ecosystem functional groups maps"
+title: "Mapping Ecosystem Functional Groups"
 subtitle: "Documentation for indicative distribution maps of the IUCN Global Ecosystem Typology"
 ---
 
-This is an information site for users of the IUCN Global Ecosystem Typology (IUCN GET). 
+This is an information site for users of the <a href="https://global-ecosystems.org" target="_blank">IUCN Global Ecosystem Typology</a> (IUCN GET). 
 
 You can explore the ecosystems of the world in our webapp [//global-ecosystems.org](https://global-ecosystems.org).
 
 In this site we share information about how we build the maps, some important technical details, and tips about how to use them in (y)our favourite GIS apps.
+
+## What is IUCN GET?
+
+The <b>IUCN Global Ecosystem Typology</b> comprises six hierarchical levels to support applications across global to local scales. The three upper levels classify ecosystems based on their functional characteristics, irrespective of species composition. The three lower levels of classification distinguish functionally similar ecosystems from one another based on compositional resemblance and enable integration of established classifications already in use and incorporated into policy infrastructure at national levels. This is crucial, as important conservation action occurs at local levels, where most expertise resides.
+
+### Versions
+
+Several versions of the IUCN Global Ecosystem Typology have been released so far.
+
+<ul>
+   <li>The <a href="https://global-ecosystems.org" target="next">official web site</a> provides the most up-to-date version. </li>
+   <li>Version v2.1 was published as an appendix to <a href='https://doi.org/10.1038/s41586-022-05318-4' target="next">Keith et al. 2022</a>.</li>
+   <li>Version v2.0 was published as an <a href='https://portals.iucn.org/library/node/49250' target="next">IUCN publication</a>.</li>
+
+   <li>Version 1.01 was completed as a IUCN technical report (currently not available).
+   <!-- <a href="https://iucnrle.org/static/media/uploads/references/research-development/keith_etal_iucnglobalecosystemtypology_v1.01.pdf" target="next"></a> -->
+ </li>
+</ul>
+
+## Navigating this site
+
+You can read more on the IUCN Global Ecosystem Typology in our [summary page](summary.qmd). We also have pages describing the [development](development.qmd) of the typology, the [consultation and feedback](feedback.qmd) processes, and a [glossary](glossary.qmd) of selected terms.
+
+We provide menus to navigate the information about the [Ecosystem Functional Groups](profile-structure.qmd) (level 3 of the typology) and their respective [indicative distribution maps](map-info.qmd).
+
+We are also developing a section with tutorials on how to use the geospatial data in different programming environments.
