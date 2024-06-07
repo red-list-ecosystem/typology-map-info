@@ -1,6 +1,7 @@
 ---
 title: "Mapping Ecosystem Functional Groups"
 subtitle: "Documentation for indicative distribution maps of the IUCN Global Ecosystem Typology"
+comments: false
 ---
 
 This is an information site for users of the <a href="https://global-ecosystems.org" target="_blank">IUCN Global Ecosystem Typology</a> (IUCN GET). 
