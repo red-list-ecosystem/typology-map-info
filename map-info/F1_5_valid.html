@@ -131,10 +131,29 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../map-info.html"> 
-<span class="menu-text">Map information</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-map-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Map information</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-map-information">    
+        <li>
+    <a class="dropdown-item" href="../map-evaluation.html">
+ <span class="dropdown-text">Map evaluation</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../map-info.html">
+ <span class="dropdown-text">Current maps</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../map-version-history.html">
+ <span class="dropdown-text">Version history</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../map-updates.html">
+ <span class="dropdown-text">Map updates</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -159,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
     <a class="dropdown-item" href="../about.html">
- <span class="dropdown-text">About</span></a>
+ <span class="dropdown-text">About this project</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how2/this-site.html">
@@ -214,11 +233,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">EFG F1.5 Season lowland rivers – current maps</h1>
 <p class="subtitle lead">F1. Rivers and streams biome</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">F1</div>
-    <div class="quarto-category">valid</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -240,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page provides information about the valid indicative distribution map for the ecosystem functional group <a href="../efg-info/F1_5.html"><strong>F1.5 Seasonal lowland rivers</strong></a>. For older or alternative maps, see <a href="../map-info/F1_5_history.html">here</a>.</p>
+<p>This page provides information about the valid indicative distribution map for the ecosystem functional group <a href="../efg-info/F1_5.html"><strong>F1.5 Seasonal lowland rivers</strong></a>. For older or alternative maps, see <a href="../altmap-info/F1_5_history.html">here</a>.</p>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <p>Here is the methods summary for <strong>Map code and version</strong>: F1.5.web.map v1.0.</p>
@@ -759,8 +774,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Repository available at:
+  </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jrfep">
+    <a class="nav-link" href="https://github.com/red-list-ecosystem/typology-map-info">
       <i class="bi bi-github" role="img">
 </i> 
     </a>

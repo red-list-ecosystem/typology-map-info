@@ -164,10 +164,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../map-info.html"> 
-<span class="menu-text">Map information</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-map-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Map information</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-map-information">    
+        <li>
+    <a class="dropdown-item" href="../map-evaluation.html">
+ <span class="dropdown-text">Map evaluation</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../map-info.html">
+ <span class="dropdown-text">Current maps</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../map-version-history.html">
+ <span class="dropdown-text">Version history</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../map-updates.html">
+ <span class="dropdown-text">Map updates</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -192,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
     <a class="dropdown-item" href="../about.html">
- <span class="dropdown-text">About</span></a>
+ <span class="dropdown-text">About this project</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how2/this-site.html">
@@ -796,8 +815,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Repository available at:
+  </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jrfep">
+    <a class="nav-link" href="https://github.com/red-list-ecosystem/typology-map-info">
       <i class="bi bi-github" role="img">
 </i> 
     </a>

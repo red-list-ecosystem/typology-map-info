@@ -130,10 +130,29 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./map-info.html"> 
-<span class="menu-text">Map information</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-map-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Map information</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-map-information">    
+        <li>
+    <a class="dropdown-item" href="./map-evaluation.html">
+ <span class="dropdown-text">Map evaluation</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./map-info.html">
+ <span class="dropdown-text">Current maps</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./map-version-history.html">
+ <span class="dropdown-text">Version history</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./map-updates.html">
+ <span class="dropdown-text">Map updates</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -158,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
     <a class="dropdown-item" href="./about.html">
- <span class="dropdown-text">About</span></a>
+ <span class="dropdown-text">About this project</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./how2/this-site.html">
@@ -246,7 +265,7 @@ ul.task-list li input[type="checkbox"] {
 
 Each profile is illustrated with a photograph that shows some of the ecological features mentioned in the text. Although representative examples were chosen for illustration, they may not represent the range of variability in features expressed within each functional group, some of which have extensive global distributions.
 //-->
-<p>A workbook with profile content for Ecosystem Functional Groups of the IUCN Global Ecosystem Typology (Level 3 units) is available in an <a href="https://osf.io/4dcea">OSF repository</a>.</p>
+<p>A workbook with profile content for Ecosystem Functional Groups of the IUCN Global Ecosystem Typology (Level 3 units) is available in an <a href="https://osf.io/4dcea" target="OSF">OSF repository</a>.</p>
 </section>
 <section id="major-ecosystem-drivers" class="level3">
 <h3 class="anchored" data-anchor-id="major-ecosystem-drivers">Major ecosystem drivers</h3>
@@ -260,7 +279,8 @@ Each profile is illustrated with a photograph that shows some of the ecological 
 <h3 class="anchored" data-anchor-id="indicative-distribution-maps">Indicative distribution maps</h3>
 <p>Maps are indicative of global distribution patterns are not intended to represent fine-scale patterns. The maps show areas of the world containing major (coloured red) or minor occurrences (coloured yellow) of each ecosystem functional group. Minor occurrences are areas where an ecosystem functional group is scattered in patches within matrices of other ecosystem functional groups or where they occur in substantial areas, but only within a segment of a larger region. Small but important occurrences are identified with an indicative black ellipse. Most maps were prepared using a coarse-scale template (e.g.&nbsp;ecoregions of Spalding et al.&nbsp;2007; Abell et al.&nbsp;2008; Dinerstein et al.&nbsp;2017), but some were compiled from higher resolution spatial data where available (see details below). Higher resolution mapping is planned in future publications.</p>
 <p>We emphasise that spatial representation of Ecosystem Functional Groups does not follow higher-order groupings described in respective ecoregion classifications (provinces of Spalding 2007; major habitat types of Abell et al.&nbsp;2008; biomes of Olsen et al.&nbsp;2001 and Dinerstein et al.&nbsp;2017). Consequently, when Ecosystem Functional Groups are aggregated into functional biomes (Level 2 of the Global Ecosystem Typology), spatial patterns may differ from those of biogeogreaphic biomes as mapped by Olsen et al (2001) and Dinerstein et al.&nbsp;(2017). Differences reflect the distinctions between functional and biogeographic interpretations of the term, “biome” (Mucina 2018).</p>
-<p>Indicative maps are available in a data repository: Keith, David A., Ferrer-Paris, Jose R., Nicholson, Emily, &amp; Kingsford, Richard T. (eds.) (2020). Indicative distribution maps for Ecosystem Functional Groups - Level 3 of IUCN Global Ecosystem Typology (Version 2.1.1) [Data set]. Zenodo. DOI: <a href="10.5281/zenodo.3546513">10.5281/zenodo.3546513</a></p>
+<p>Indicative maps are available in a data repository:</p>
+<p>Keith, David A., Ferrer-Paris, José R., Nicholson, Emily, &amp; Kingsford, Richard T. (2023). <em>Indicative distribution maps for Ecosystem Functional Groups - Level 3 of IUCN Global Ecosystem Typology (2.1.3)</em> [Data set]. <strong>Zenodo</strong>. <a href="https://doi.org/10.5281/zenodo.3546513" target="zenodo"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3546513.svg" class="img-fluid" alt="DOI"></a></p>
 </section>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>
@@ -671,8 +691,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Repository available at:
+  </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jrfep">
+    <a class="nav-link" href="https://github.com/red-list-ecosystem/typology-map-info">
       <i class="bi bi-github" role="img">
 </i> 
     </a>

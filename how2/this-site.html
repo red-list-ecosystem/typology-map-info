@@ -164,10 +164,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../map-info.html"> 
-<span class="menu-text">Map information</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-map-information" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Map information</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-map-information">    
+        <li>
+    <a class="dropdown-item" href="../map-evaluation.html">
+ <span class="dropdown-text">Map evaluation</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../map-info.html">
+ <span class="dropdown-text">Current maps</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../map-version-history.html">
+ <span class="dropdown-text">Version history</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../map-updates.html">
+ <span class="dropdown-text">Map updates</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -192,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
         <li>
     <a class="dropdown-item" href="../about.html">
- <span class="dropdown-text">About</span></a>
+ <span class="dropdown-text">About this project</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../how2/this-site.html">
@@ -244,7 +263,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="we-built-this-site" class="level1">
 <h1>We built this site…</h1>
-<p>on <a href="https://web.archive.org/web/20050124091143/http://www.blender.com/guide/articles.aspx?id=819">Rock and Roll</a>!… and <a href="https://quarto.org">Quarto</a>, <a href="https://posit.co/download/rstudio-desktop/">RStudio</a>, <a href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a>, <a href="https://git-scm.com">git</a>, <a href="https://www.zsh.org">zsh</a>/<a href="https://www.gnu.org/software/bash/Rstudio">bash</a> lots of packages and modules, and immoderate amounts of coffee.</p>
+<p>on <a href="https://www.gq.com/story/oral-history-we-built-this-city-worst-song-of-all-time" target="external">Rock and Roll</a>!… and <a href="https://quarto.org" target="external">Quarto</a>, <a href="https://posit.co/download/rstudio-desktop/" target="external">RStudio</a>, <a href="https://jupyterlab.readthedocs.io/en/stable/" target="external">JupyterLab</a>, <a href="https://git-scm.com" target="external">git</a>, <a href="https://www.zsh.org" target="external">zsh</a>/<a href="https://www.gnu.org/software/bash/Rstudio" target="external">bash</a> lots of packages and modules, and immoderate amounts of coffee.</p>
 <p>Here are the basics to get started. Once this site is up and running, you can follow the git log history to see all the additional steps went into creating this amazing and wonderful website.</p>
 <section id="create-quarto-website-project" class="level2">
 <h2 class="anchored" data-anchor-id="create-quarto-website-project">Create quarto website project</h2>
@@ -713,8 +732,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ Repository available at:
+  </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/jrfep">
+    <a class="nav-link" href="https://github.com/red-list-ecosystem/typology-map-info">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
