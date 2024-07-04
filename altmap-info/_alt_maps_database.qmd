@@ -7,7 +7,7 @@ library(stringr)
 
 efg_code <- params$efgcode
 efg_code_ <- gsub("\\.","_",efg_code)
-here::i_am(sprintf("map-info/%s_history.qmd", efg_code_))
+here::i_am(sprintf("altmap-info/%s_history.qmd", efg_code_))
 ```
 
 ```{r}

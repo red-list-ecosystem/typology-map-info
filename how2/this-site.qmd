@@ -4,7 +4,7 @@ execute:
 ---
 # We built this site...
 
-on [Rock and Roll](https://web.archive.org/web/20050124091143/http://www.blender.com/guide/articles.aspx?id=819)!... and [Quarto](https://quarto.org), [RStudio](https://posit.co/download/rstudio-desktop/), [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/), [git](https://git-scm.com), [zsh](https://www.zsh.org)/[bash](https://www.gnu.org/software/bash/Rstudio) lots of packages and modules, and immoderate amounts of coffee.
+on [Rock and Roll](https://www.gq.com/story/oral-history-we-built-this-city-worst-song-of-all-time){target='external'}!... and [Quarto](https://quarto.org){target='external'}, [RStudio](https://posit.co/download/rstudio-desktop/){target='external'}, [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/){target='external'}, [git](https://git-scm.com){target='external'}, [zsh](https://www.zsh.org){target='external'}/[bash](https://www.gnu.org/software/bash/Rstudio){target='external'} lots of packages and modules, and immoderate amounts of coffee.
 
 Here are the basics to get started. 
 Once this site is up and running, you can follow the git log history to see all the additional steps  went into creating this amazing and wonderful website.
