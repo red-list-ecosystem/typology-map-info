@@ -1,0 +1,135 @@
+---
+title: "Map updates"
+subtitle: "Priorities for map updates"
+format: html
+execute: 
+  echo: false
+---
+
+As part of our data curation process we consider updates and improvements to all the maps. This is currently done in an irregular basis depending on time and resource availability.
+
+We have set up some priorities for map development and updates, but we also consider issues raised by users. Please add your comments and suggestions using the dialogue boxes below each page, or go directly to our GitHub repository.
+
+
+```{r}
+#| message: false
+#| warning: false
+#library(ggplot2)
+library(dplyr)
+#library(DT)
+#library(igraph)
+#library(stringr)
+#library(tidyr)
+#library(lubridate)
+library(RPostgreSQL)
+
+# load("Map-evaluation-data.rda")
+here::i_am("map-updates.qmd")
+
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| results: false
+drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
+
+con <- dbConnect(drv, 
+                 dbname = Sys.getenv("DBNAME"),
+                 host = Sys.getenv("DBHOST"),
+                 port = Sys.getenv("DBPORT"),
+                 user = Sys.getenv("DBUSER"))
+
+qry <- "
+select license, count(*) as n 
+ from map_evaluation 
+ left join map_metadata  USING(map_code,map_version) 
+ where status = 'valid' and map_type = 'Indicative Map'
+ GROUP BY license;
+"
+maps_licenses <- dbGetQuery(con,qry)
+
+qry <- "
+SELECT license, evaluation[1] as evaluation, count(*) as N
+FROM map_evaluation 
+LEFT JOIN map_metadata  USING (map_code, map_version) 
+WHERE status = 'valid' AND map_type = 'Indicative Map'
+GROUP BY license, evaluation
+ORDER BY license, evaluation;
+"
+
+license_evaluation <- dbGetQuery(con,qry)
+dbDisconnect(con)
+```
+
+
+## Checking dataset licenses
+
+First we check the dataset licenses and aim to replace datasets that have any restrictions of use. 
+
+```{r}
+license_evaluation_summary <- 
+    license_evaluation |> 
+        transmute(`datasets used` = case_when(
+            license %in% 'Non-commercial use' ~ "restricted use",
+            license %in% c(NA, 'Undocumented', 'See contact info') ~ "unclear/undocumented",
+            TRUE ~ "commercial use allowed"
+            ),
+            `Evaluation` = case_when(
+                evaluation %in% c("Medium quality map", "Medium quality map series") ~ "Good enough",
+                evaluation %in% "Coarse quality map" ~ "Unsatisfactory",
+                evaluation %in% c("Fine quality map", "Fine quality map series") ~ "Best",
+                TRUE ~ evaluation
+            ),
+            n
+        ) 
+```
+
+```{r}
+license_evaluation_summary |>
+    group_by(`datasets used`) |>
+    summarise(total =  sum(n), .groups = "drop") |>
+    knitr::kable()
+
+```
+
+## Improving quality
+
+The second step is to review map quality as we aim to create higher quality maps with better overall evaluation:
+
+```{r}
+license_evaluation_summary |>
+    filter(`datasets used` %in% "commercial use allowed") |>
+    group_by(`Evaluation`) |>
+    summarise(total =  sum(n), .groups = "drop") |>
+    knitr::kable()
+
+```
+
+## Next steps
+
+
+```{mermaid}
+%%| theme: forest
+%%| label: priorities
+%%| fig-cap: |
+%%|   Summary of license and evaluation of EFG maps to identify 
+%%|   priorities for map updates.
+flowchart TB
+    check1(["Check datasets used:\n license?"]):::checks
+    check2(["Check:\n - spatial resolution\n- validation\n- concept match\n(uncertainty)"]):::checks
+    step1(["Search\navailable/new\n datasets"]):::checks
+    ready(["Hurray!"]):::done
+    almostready([Best possible version\nflag any issues]):::done
+    
+    classDef checks fill:#d0e9fa,stroke:#000
+    classDef steps fill:#d0d93a,stroke:#000
+    classDef done fill:#c6fc9c,stroke:#000
+   
+    check1 -->|n=37 allows\ncommercial use| check2
+    check1 -->|n=62 restricted use| step1
+    check1 -.->|n=7 unclear/undocumented| step1
+    check2 -->|n=14 golden standard| ready
+    check2 -->|n=5 not perfect\nbut close enough| almostready
+    check2 -->|n=18 unsatisfactory| step1
+```

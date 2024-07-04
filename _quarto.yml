@@ -24,7 +24,15 @@ website:
           - href: efg-info.qmd
             text: "Overview"
       - text: "Map information"
-        href: map-info.qmd
+        menu:
+          - text: "Map evaluation"
+            href: map-evaluation.qmd
+          - text: "Current maps"
+            href: map-info.qmd
+          - text: "Version history"
+            href: map-version-history.qmd
+          - text: "Map updates"
+            href: map-updates.qmd
     right:
       - text: "How to..."
         menu:

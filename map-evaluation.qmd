@@ -1,0 +1,9 @@
+---
+title: "Map evaluation"
+subtitle: "Information on map quality"
+format: html
+execute: 
+  echo: false
+---
+
+We will add here information about map quality as evaluated by our expert's group.

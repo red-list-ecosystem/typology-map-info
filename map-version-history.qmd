@@ -1,6 +1,5 @@
 ---
-title: "Map information"
-subtitle: "Current (valid) maps"
+title: "Map version history"
 execute: 
   echo: false
   warning: false
@@ -13,13 +12,9 @@ The maps in each profile show areas of the world containing major or minor occur
 
 The maps were designed to be indicative of global distribution patterns and are not intended to represent fine-scale patterns. Given bounds of resolution and accuracy of source data, the maps should be used to query which EFG are likely to occur within areas, rather than which occur at particular point locations.
 
-## List of maps
+## Version history
 
-:::{.callout-tip}
-## Valid maps
-These links will show the current or valid maps for each functional group. Please check that the map code and version information matches the data you are using. If you are working with a different version of the map, you can look at the version history [here](map-version-history.qmd).
-:::
-
+Please follow the links in the following table to review the version history for a particular functional group. You can filter by biome name or functional group name.
 
 ```{r}
 library(readxl)
@@ -40,7 +35,10 @@ profile_info <- read_excel(dest_file, sheet = 2) |>
     left_join(biome_names, by = "biome code")
 
 altmap_table <- profile_info |>
-    transmute(Biome = `biome name`, `Ecosystem functional group` = sprintf("<a href='map-info/%2$s_valid.html'>%1$s</a>", `name`, str_replace(`code`,"\\.", "_")))
+    transmute(Biome = `biome name`, `Ecosystem functional group` = name,
+    `Links` = sprintf("<a href='map-info/%1$s_valid.html'>Current version</a> / <a href='altmap-info/%1$s_history.html'>Version history</a>", str_replace(`code`,"\\.", "_")))
 DT::datatable(altmap_table, rownames = FALSE, escape = FALSE, filter = 'top',
-    options = list(dom = 'tpl', pageLength = 25))
+    options = list(dom = 'tpl', pageLength = 25,
+        columnDefs = list(list(targets = 2, searchable = FALSE))
+    ))
 ```

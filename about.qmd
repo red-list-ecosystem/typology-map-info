@@ -1,9 +1,32 @@
 ---
-title: "About"
+title: "About this project"
+author: 
+  - name: 
+      given: "José R."
+      family: "Ferrer-Paris"
+    email: j.ferrer@unsw.edu.au
+    orcid: 0000-0002-9554-3395
+    url: https://github.com/jrfep
+    affiliations:
+      - id: ces
+        name: Centre for Ecosystem Science, UNSW
+        city: Sydney
+        country: Australia
+        url: https://www.unsw.edu.au/research/ecosystem
+      - id: udash
+        name: UNSW Data Science Hub, UNSW
+        city: Sydney
+        country: Australia
+        url: https://www.unsw.edu.au/research/udash
+      - id: iucn
+        name: IUCN Commission on Ecosystem Management
+        city: Gland
+        country: Switzerland 
+        url: https://www.iucn.org/our-union/commissions/group/iucn-cem-red-list-ecosystems-thematic-group
 ---
 
 # Contact
-This page is maintained by [José R. Ferrer-Paris](https://github.com/jrfep), [IUCN Red List of Ecosystems Science Team](https://github.com/red-list-ecosystem), [University of New South Wales, Australia](https://github.com/unsw-edu-au)
+This page is maintained by José R. Ferrer-Paris on behalf of the [IUCN Red List of Ecosystems Science Team](https://github.com/red-list-ecosystem).
 
 # Citation
 This page is part of the publication:
@@ -61,7 +84,7 @@ Richard T. Kingsford
 
 * [Context of the Global Ecosystem Typology](https://iucnrle.org/global-eco-typo)
 
-* Keith, David A., Ferrer-Paris, José R., Nicholson, Emily, & Kingsford, Richard T. (2021). *Indicative distribution maps for Ecosystem Functional Groups - Level 3 of IUCN Global Ecosystem Typology (2.1.1)* [Data set]. **Zenodo**. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5090419.svg)](https://doi.org/10.5281/zenodo.5090419)
+* Keith, David A., Ferrer-Paris, José R., Nicholson, Emily, & Kingsford, Richard T. (2023). *Indicative distribution maps for Ecosystem Functional Groups - Level 3 of IUCN Global Ecosystem Typology (2.1.3)* [Data set]. **Zenodo**. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3546513.svg)](https://doi.org/10.5281/zenodo.3546513){target='zenodo'}
 
 
 

@@ -31,7 +31,7 @@ The text describes key ecological traits diagnosed from literature and expert kn
 Each profile is illustrated with a photograph that shows some of the ecological features mentioned in the text. Although representative examples were chosen for illustration, they may not represent the range of variability in features expressed within each functional group, some of which have extensive global distributions.
 //-->
 
-A workbook with profile content for Ecosystem Functional Groups of the IUCN Global Ecosystem Typology (Level 3 units) is available in an [OSF repository](https://osf.io/4dcea).
+A workbook with profile content for Ecosystem Functional Groups of the IUCN Global Ecosystem Typology (Level 3 units) is available in an [OSF repository](https://osf.io/4dcea){target="OSF"}.
 
 ### Major ecosystem drivers
 
@@ -48,7 +48,9 @@ Maps are indicative of global distribution patterns are not intended to represen
 We emphasise that spatial representation of Ecosystem Functional Groups does not follow higher-order groupings described in respective ecoregion classifications (provinces of Spalding 2007; major habitat types of Abell et al. 2008; biomes of Olsen et al. 2001 and Dinerstein et al. 2017). Consequently, when Ecosystem Functional Groups are aggregated into functional biomes (Level 2 of the Global Ecosystem Typology), spatial patterns may differ from those of biogeogreaphic biomes as mapped by Olsen et al (2001) and Dinerstein et al. (2017). Differences reflect the distinctions between functional and biogeographic interpretations of the term, “biome” (Mucina 2018).
 
 Indicative maps are available in a data repository:
-Keith, David A., Ferrer-Paris, Jose R., Nicholson, Emily, & Kingsford, Richard T. (eds.) (2020). Indicative distribution maps for Ecosystem Functional Groups - Level 3 of IUCN Global Ecosystem Typology (Version 2.1.1) [Data set]. Zenodo. DOI: [10.5281/zenodo.3546513](10.5281/zenodo.3546513)
+
+Keith, David A., Ferrer-Paris, José R., Nicholson, Emily, & Kingsford, Richard T. (2023). *Indicative distribution maps for Ecosystem Functional Groups - Level 3 of IUCN Global Ecosystem Typology (2.1.3)* [Data set]. **Zenodo**. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3546513.svg)](https://doi.org/10.5281/zenodo.3546513){target='zenodo'}
+
 
 ### References
 
