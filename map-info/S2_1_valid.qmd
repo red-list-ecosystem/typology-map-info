@@ -4,9 +4,6 @@ subtitle: "S2. Anthropogenic subterranean voids biome"
 date: 07 Jun 2024
 params:
  efgcode: S2.1
-categories:
- - S2
- - valid
 format:
  html: default
 execute:

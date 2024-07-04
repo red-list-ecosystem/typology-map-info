@@ -1,0 +1,17 @@
+{
+  "hash": "acaf9f3dfdfd8cefd898462adda14f49",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"TestMermaid\"\nformat: pdf\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(quarto)\nlibrary(DiagrammeR)\nknitr::opts_chunk$set(echo = F)\n```\n:::\n\n\n\n## Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.\n\n\nAttempt #1\n\n\n```{mermaid}\nflowchart LR\n  A[Hard edge] --> B(Round edge)\n  B --> C{Decision}\n  C --> D[Result one]\n  C --> E[Result two]\n```\n\n\nAttempt #2\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](test_files/figure-pdf/attempt2-1.pdf)\n:::\n:::",
+    "supporting": [
+      "test_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}

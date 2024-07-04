@@ -27,7 +27,7 @@ downloaded_copy <- here::here("gisdata", "indicative-maps", ds_doi)
 efg_details <- read_xml(dir(downloaded_copy, "xml", full.names = TRUE))
 ```
 
-This page provides information about the valid indicative distribution map for the ecosystem functional group [**`r efg_name`**](/efg-info/`r efg_code_`.qmd). For older or alternative maps, see [here](/map-info/`r efg_code_`_history.qmd).
+This page provides information about the valid indicative distribution map for the ecosystem functional group [**`r efg_name`**](/efg-info/`r efg_code_`.qmd). For older or alternative maps, see [here](/altmap-info/`r efg_code_`_history.qmd).
 
 ## Methods
 

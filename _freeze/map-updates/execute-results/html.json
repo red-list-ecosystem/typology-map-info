@@ -1,0 +1,15 @@
+{
+  "hash": "c144b5b5c9a12e1e58e25719832f1fa6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Map updates\"\nsubtitle: \"Priorities for map updates\"\nformat: html\nexecute: \n  echo: false\n---\n\n\nAs part of our data curation process we consider updates and improvements to all the maps. This is currently done in an irregular basis depending on time and resource availability.\n\nWe have set up some priorities for map development and updates, but we also consider issues raised by users. Please add your comments and suggestions using the dialogue boxes below each page, or go directly to our GitHub repository.\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n\n## Checking dataset licenses\n\nFirst we check the dataset licenses and aim to replace datasets that have any restrictions of use. \n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n|datasets used          | total|\n|:----------------------|-----:|\n|commercial use allowed |    37|\n|restricted use         |    62|\n|unclear/undocumented   |     9|\n\n\n:::\n:::\n\n\n## Improving quality\n\nThe second step is to review map quality as we aim to create higher quality maps with better overall evaluation:\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n|Evaluation     | total|\n|:--------------|-----:|\n|Best           |    14|\n|Good enough    |     5|\n|Unsatisfactory |    18|\n\n\n:::\n:::\n\n\n## Next steps\n\n\n\n```{mermaid}\n%%| theme: forest\n%%| label: priorities\n%%| fig-cap: |\n%%|   Summary of license and evaluation of EFG maps to identify\n%%|   priorities for map updates.\nflowchart TB\n    check1([\"Check datasets used:\\n license?\"]):::checks\n    check2([\"Check:\\n - spatial resolution\\n- validation\\n- concept match\\n(uncertainty)\"]):::checks\n    step1([\"Search\\navailable/new\\n datasets\"]):::checks\n    ready([\"Hurray!\"]):::done\n    almostready([Best possible version\\nflag any issues]):::done\n    \n    classDef checks fill:#d0e9fa,stroke:#000\n    classDef steps fill:#d0d93a,stroke:#000\n    classDef done fill:#c6fc9c,stroke:#000\n   \n    check1 -->|n=37 allows\\ncommercial use| check2\n    check1 -->|n=62 restricted use| step1\n    check1 -.->|n=7 unclear/undocumented| step1\n    check2 -->|n=14 golden standard| ready\n    check2 -->|n=5 not perfect\\nbut close enough| almostready\n    check2 -->|n=18 unsatisfactory| step1\n```",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
