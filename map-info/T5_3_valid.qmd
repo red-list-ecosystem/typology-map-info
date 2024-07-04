@@ -4,9 +4,6 @@ subtitle: "T5. Deserts and semi-deserts biome"
 date: 07 Jun 2024
 params:
  efgcode: T5.3
-categories:
- - T5
- - valid
 format:
  html: default
 execute:

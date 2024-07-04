@@ -4,9 +4,6 @@ subtitle: "S1. Subterranean lithic biome"
 date: 07 Jun 2024
 params:
  efgcode: S1.1
-categories:
- - S1
- - valid
 format:
  html: default
 execute:

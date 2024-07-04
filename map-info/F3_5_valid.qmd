@@ -4,9 +4,6 @@ subtitle: "F3. Artificial wetlands biome"
 date: 07 Jun 2024
 params:
  efgcode: F3.5
-categories:
- - F3
- - valid
 format:
  html: default
 execute:

@@ -4,9 +4,6 @@ subtitle: "TF1. Palustrine wetlands biome"
 date: 07 Jun 2024
 params:
  efgcode: TF1.5
-categories:
- - TF1
- - valid
 format:
  html: default
 execute:

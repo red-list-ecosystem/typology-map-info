@@ -47,8 +47,9 @@ website:
   page-footer:
     left: "This site is maintained by: JR Ferrer-Paris"
     right:
+      - text: "Repository available at:"
       - icon: github
-        href: https://github.com/jrfep
+        href: https://github.com/red-list-ecosystem/typology-map-info
   comments:
     utterances:
       repo: red-list-ecosystem/typology-map-info

@@ -4,9 +4,6 @@ subtitle: "FM1. Semi-confined transitional waters biome"
 date: 07 Jun 2024
 params:
  efgcode: FM1.2
-categories:
- - FM1
- - valid
 format:
  html: default
 execute:

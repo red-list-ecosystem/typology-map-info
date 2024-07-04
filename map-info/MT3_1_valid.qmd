@@ -4,9 +4,6 @@ subtitle: "MT3. Anthropogenic shorelines biome"
 date: 07 Jun 2024
 params:
  efgcode: MT3.1
-categories:
- - MT3
- - valid
 format:
  html: default
 execute:

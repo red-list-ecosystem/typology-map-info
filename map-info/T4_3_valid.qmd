@@ -4,9 +4,6 @@ subtitle: "T4. Savannas and grasslands biome"
 date: 07 Jun 2024
 params:
  efgcode: T4.3
-categories:
- - T4
- - valid
 format:
  html: default
 execute:

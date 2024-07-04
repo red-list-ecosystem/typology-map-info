@@ -4,9 +4,6 @@ subtitle: "T6. Polar/alpine (cryogenic) biome"
 date: 07 Jun 2024
 params:
  efgcode: T6.3
-categories:
- - T6
- - valid
 format:
  html: default
 execute:

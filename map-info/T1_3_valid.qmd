@@ -4,9 +4,6 @@ subtitle: "T1. Tropical-subtropical forests biome"
 date: 07 Jun 2024
 params:
  efgcode: T1.3
-categories:
- - T1
- - valid
 format:
  html: default
 execute:

@@ -4,9 +4,6 @@ subtitle: "M1. Marine shelf biome"
 date: 07 Jun 2024
 params:
  efgcode: M1.1
-categories:
- - M1
- - valid
 format:
  html: default
 execute:
