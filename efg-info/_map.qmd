@@ -22,7 +22,7 @@ efg_details <- read_xml(dir(downloaded_copy, "xml", full.names = TRUE))
 ## Map description
 ```{r}
 #| output: asis
-markdown_text <- sprintf("%1$s.\n\n **Map code and version**: %2$s %3$s. [![DOI](https://zenodo.org/badge/DOI/%4$s.svg)](https://doi.org/%4$s)",
+markdown_text <- sprintf("%1$s.\n\n **Map code and version**: %2$s %3$s, available at [![DOI](https://zenodo.org/badge/DOI/%4$s.svg)](https://doi.org/%4$s){target='zenodo'}",
     map_info |> xml_find_first("Description") |> xml_text(),
         map_attrs["map_code"],
         map_attrs["map_version"],

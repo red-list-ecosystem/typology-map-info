@@ -6,4 +6,51 @@ execute:
   echo: false
 ---
 
-We will add here information about map quality as evaluated by our expert's group.
+Assessment of map quality, initially included in [appendix S4](https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-022-05318-4/MediaObjects/41586_2022_5318_MOESM7_ESM.pdf){target="docs"} (table S4.1) of the publication: Keith et al. (2022) A function-based typology for Earth’s ecosystems Nature 610, 513–518. DOI:[10.1038/s41586-022-05318-4](https://doi.org/10.1038/s41586-022-05318-4){target="docs"}.
+
+```{r}
+#| message: false
+#| warning: false
+#library(ggplot2)
+library(dplyr)
+library(RPostgreSQL)
+library(DT)
+
+# load("Map-evaluation-data.rda")
+here::i_am("map-evaluation.qmd")
+
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| results: false
+drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
+
+con <- dbConnect(drv, 
+                 dbname = Sys.getenv("DBNAME"),
+                 host = Sys.getenv("DBHOST"),
+                 port = Sys.getenv("DBPORT"),
+                 user = Sys.getenv("DBUSER"))
+
+
+qry <- "
+SELECT code, map_code, map_version, evaluation[1] as evaluation
+FROM map_evaluation 
+LEFT JOIN map_metadata  USING (map_code, map_version) 
+WHERE map_type = 'Indicative Map' and status = 'valid';
+"
+
+evaluation <- dbGetQuery(con,qry)
+dbDisconnect(con)
+```
+
+
+```{r}
+#| tbl-cap: "Map quality as evaluated by our expert's group"
+#| label: tbl-quality
+DT::datatable(evaluation, rownames = FALSE, escape = FALSE, filter = 'top',
+    options = list(dom = 'tpl', pageLength = 25,
+        columnDefs = list(list(targets = c(1,2), searchable = FALSE))
+    ))
+```

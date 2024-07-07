@@ -1,12 +1,10 @@
 ---
 title: "EFG MFT1.1 River deltas -- current maps"
 subtitle: "MFT1. Brackish tidal biome"
-date: 07 Jun 2024
+date: 07 Jul 2024
+date-modified: 7 Jul 2024
 params:
  efgcode: MFT1.1
-categories:
- - MFT1
- - valid
 format:
  html: default
 execute:

@@ -1,6 +1,7 @@
 ---
 title: "F2.2 Small permanent freshwater lakes"
 subtitle: "F2. Lakes biome"
+date-modified: 5 Jul 2024
 params:
  efgcode: F2.2
 categories:
