@@ -7,10 +7,12 @@ params:
 categories:
  - M1
  - valid
- - error
 format:
  html: default
 execute:
    echo: false
 ---
 
+{{< include _valid_map_info.qmd >}}
+
+{{< include _valid_maps_database.qmd >}}
