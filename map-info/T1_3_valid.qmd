@@ -12,3 +12,5 @@ execute:
 
 {{< include _valid_map_info.qmd >}}
 {{< include _valid_maps_database.qmd >}}
+
+<script src="https://gist.github.com/jrfep/0ec53645edaf7c14de7b847e2856e353.js"></script>
