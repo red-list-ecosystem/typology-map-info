@@ -2,6 +2,7 @@
 title: "EFG T1.3 Trop montane rainforests -- current maps"
 subtitle: "T1. Tropical-subtropical forests biome"
 date: 07 Jun 2024
+date-modified: today
 params:
  efgcode: T1.3
 format:
@@ -12,5 +13,3 @@ execute:
 
 {{< include _valid_map_info.qmd >}}
 {{< include _valid_maps_database.qmd >}}
-
-<script src="https://gist.github.com/jrfep/0ec53645edaf7c14de7b847e2856e353.js"></script>

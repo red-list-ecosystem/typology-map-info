@@ -1,0 +1,97 @@
+---
+title: Update information in database
+execute: 
+ eval: true
+---
+
+Some updates in the database and repositories are not reflected automatically.
+
+Here we try to do some checks and updates to keep this page as accurate as possible.
+
+
+## Set up work directory
+
+We use library `here` to define relative paths
+```{r}
+here::i_am("how2/update-database-info.qmd")
+```
+## Zenodo
+
+First, we will use the `zen4R` package to query Zenodo depositions.
+
+We store the Zenodo API credentials in the `_environment.local` file in the project directory. See file `_environment.required` for the format. 
+
+```{r}
+library(zen4R)
+library(dplyr)
+library(stringr)
+zenodo <- ZenodoManager$new(
+   token = Sys.getenv("ZENODO_TOKEN"), 
+   logger = "INFO" 
+)
+my_zenodo_records <- zenodo$getDepositions(size=1000,all_version=TRUE)
+```
+
+Now we create a table with the dois, titles and map codes:
+
+```{r}
+map_repos <- lapply(my_zenodo_records, function(x) {
+    tibble(doi = x$doi, title=x$metadata$title, version=x$metadata$version)
+}) |> 
+    bind_rows() |>
+    filter(grepl("Indicative distribution map for Ecosystem Functional Group", 
+        title)) |>
+    mutate(
+        map_code = str_split_fixed(version," ", n=2)[,1],
+        map_version = str_split_fixed(version," ", n=2)[,2]
+    )
+```
+
+## Database
+
+### Database connection
+
+We store databse credentials in the `_environment.local` file in the project directory. See file `_environment.required` for the format. 
+
+```{r}
+#| warning: false
+#| message: false
+
+library("RPostgreSQL")
+
+drv <- dbDriver("PostgreSQL") ## remember to update .pgpass file
+
+con <- dbConnect(drv, 
+                 dbname = Sys.getenv("DBNAME"),
+                 host = Sys.getenv("DBHOST"),
+                 port = Sys.getenv("DBPORT"),
+                 user = Sys.getenv("DBUSER"))
+
+```
+ 
+### Queries
+
+Update `map_doi` in table `map_metadata` for EFG maps:
+
+```{r}
+queries <- map_repos |>
+    transmute(queries=sprintf("UPDATE map_metadata SET map_doi='%s' WHERE map_code='%s' AND map_version='%s' AND map_doi IS NULL;", doi, map_code, map_version)) |>
+    pull(queries)
+
+for (upd in queries) {
+    res <- dbGetQuery(con,upd)
+}
+```
+
+Check results
+
+```{r}
+qry <- "select count(*) from map_metadata where map_doi is NOT NULL;"
+dbGetQuery(con,qry)
+```
+
+
+### Close connection
+```{r}
+dbDisconnect(con)
+```

@@ -58,11 +58,17 @@ WHERE ref_code IN
 
 maps_refs <- dbGetQuery(con,qry) 
 
-qry <- sprintf("SELECT map_code, map_version, status, map_type
+zenodo_badge <- "[![DOI](https://zenodo.org/badge/DOI/%1$s.svg)](http://doi.org/%1$s){target='zenodo'}"
+
+qry <- sprintf("SELECT map_code, map_version, status, map_type, map_doi
     FROM map_metadata WHERE code = '%s' 
     ORDER BY map_version DESC;", efg_code)
 
-maps_available <- dbGetQuery(con,qry) 
+maps_available <- dbGetQuery(con,qry) |>
+    mutate(
+        map_url_md = if_else(is.na(map_doi), "",
+            sprintf(zenodo_badge, map_doi)
+        ))
 
 dbDisconnect(con)
 ```
@@ -89,22 +95,25 @@ Read more details about the current map versions [here](/map-info/`r efg_code_`_
 
 ```{r}
 #| output: asis
+
 maps_available |>
     filter(status %in% "valid") |>
-    mutate(mdtext = sprintf("- %s (**code: %s**, version %s) \n", 
-        map_type, map_code, map_version)) |>
+    mutate(
+        mdtext = sprintf("- %s (**code: %s**, version %s) %s\n", 
+            map_type, map_code, map_version,
+            map_url_md)) |>
     pull(mdtext) |> 
     cat()
 ```
 
-Read more details about [older or alternative versions](/map-info/`r efg_code_`_history.qmd) of maps for this functional group.
+Read more details about [older or alternative versions](/altmap-info/`r efg_code_`_history.qmd) of maps for this functional group.
 
 ```{r}
 #| output: asis
 maps_available |>
     filter(!status %in% "valid") |>
-    mutate(mdtext = sprintf("- %s: %s (*code: %s*, version %s) \n", 
-        map_type, status, map_code, map_version)) |>
+    mutate(mdtext = sprintf("- %s: %s (*code: %s*, version %s) %s\n", 
+        map_type, status, map_code, map_version, map_url_md)) |>
     pull(mdtext) |> 
     cat()
 ```
