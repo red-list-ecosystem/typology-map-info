@@ -1,6 +1,8 @@
 ---
 title: "F1.6 Episodic arid rivers"
 subtitle: "F1. Rivers and streams biome"
+date: 01 Jun 2024
+date-modified: last-modified
 params:
  efgcode: F1.6
 categories:

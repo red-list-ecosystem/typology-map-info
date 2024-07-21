@@ -1,6 +1,8 @@
 ---
 title: "M1.10 Rhodolith/Maërl beds"
 subtitle: "M1. Marine shelf biome"
+date: 01 Jun 2024
+date-modified: last-modified
 params:
  efgcode: M1.10
 categories:
