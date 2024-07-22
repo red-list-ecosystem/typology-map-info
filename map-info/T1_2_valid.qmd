@@ -2,6 +2,7 @@
 title: "EFG T1.2 Trop dry forests -- current maps"
 subtitle: "T1. Tropical-subtropical forests biome"
 date: 07 Jun 2024
+date-modified: today
 params:
  efgcode: T1.2
 format:
