@@ -220,6 +220,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#how-to-use-the-data" id="toc-how-to-use-the-data" class="nav-link" data-scroll-target="#how-to-use-the-data">How to use the data</a>
   <ul class="collapse">
   <li><a href="#available-files" id="toc-available-files" class="nav-link" data-scroll-target="#available-files">Available files</a></li>
+  <li><a href="#reproducible-code" id="toc-reproducible-code" class="nav-link" data-scroll-target="#reproducible-code">Reproducible code</a></li>
   <li><a href="#license-information" id="toc-license-information" class="nav-link" data-scroll-target="#license-information">License information</a></li>
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -233,11 +234,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">EFG T1.3 Trop montane rainforests – current maps</h1>
 <p class="subtitle lead">T1. Tropical-subtropical forests biome</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">T1</div>
-    <div class="quarto-category">valid</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -251,6 +248,12 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">July 24, 2024</p>
+    </div>
+  </div>
     
   </div>
   
@@ -259,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page provides information about the valid indicative distribution map for the ecosystem functional group <a href="../efg-info/T1_3.html"><strong>T1.3 Tropical/Subtropical montane rainforests</strong></a>. For older or alternative maps, see <a href="../map-info/T1_3_history.qmd">here</a>.</p>
+<p>This page provides information about the valid indicative distribution map for the ecosystem functional group <a href="../efg-info/T1_3.html"><strong>T1.3 Tropical/Subtropical montane rainforests</strong></a>. For older or alternative maps, see <a href="../altmap-info/T1_3_history.html">here</a>.</p>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <p>Here is the methods summary for <strong>Map code and version</strong>: T1.3.WM.nwx v1.0.</p>
@@ -269,9 +272,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="datasets" class="level3">
 <h3 class="anchored" data-anchor-id="datasets">Datasets</h3>
 <p><strong>EarthEnv-Cloud-v1.0</strong> (Wilson and Jetz 2016):</p>
-<p>Source of <em>NA</em>. Resolution: ca. 1km2, static. Accuracy evaluation: quantitative (variable).</p>
+<p>Source of <em>modelled distribution</em>. Resolution: ca. 1km2, static. Accuracy evaluation: quantitative (variable).</p>
 <p><strong>TCF-2021</strong> (Karger et al.&nbsp;2021):</p>
-<p>Source of <em>NA</em>. Resolution: ca. 1km2, time series. Accuracy evaluation: &gt;80%.</p>
+<p>Source of <em>suitable areas</em>. Resolution: ca. 1km2, time series. Accuracy evaluation: &gt;80%.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table table-sm table-striped small">
@@ -297,13 +300,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="processing" class="level3">
 <h3 class="anchored" data-anchor-id="processing">Processing</h3>
-<p>Processing steps used in this map are: <em>Thresholds</em> :: <em>Aggregation</em>.</p>
+<p>Processing steps used in this map are: <em>Thresholds</em>.</p>
 </section>
 <section id="map-evaluation" class="level3">
 <h3 class="anchored" data-anchor-id="map-evaluation">Map evaluation</h3>
 <p>This map is considered to be a <strong><em>Fine quality map series</em></strong> based on the following characteristics:</p>
 <p>Concept alignment is <em>Direct</em>.</p>
-<p>Ground observations are <em>NA</em>.</p>
+<p>Ground observations are <em>Indirect</em>.</p>
 <p>The accuracy evaluation <em>Quantitative accuracy assessment</em>.</p>
 </section>
 </section>
@@ -316,12 +319,21 @@ ul.task-list li input[type="checkbox"] {
 <p>Following maps are considered current and valid indicative distribution maps for this ecosystem functional group. <code>Web navigation</code> maps are optimised for use in webapps, but they have similar methods and differ only in details of format and processing.</p>
 <ul>
 <li>Web navigation (<strong>code: T1.3.web.alt</strong>, version v2.1)</li>
-<li>Indicative Map (<strong>code: T1.3.WM.nwx</strong>, version v1.0)</li>
+<li>Indicative Map (<strong>code: T1.3.WM.nwx</strong>, version v1.1)</li>
 </ul>
-</div></div><p>You can download geospatial data for this map from the following sources:</p>
+</div></div><p>You can download geospatial data for this map from the following repositories:</p>
+<ul>
+<li>Web navigation (<strong>code: T1.3.web.alt</strong>, version v2.1) <a href="http://doi.org/10.5281/zenodo.5091125" target="zenodo"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5091125.svg" class="img-fluid" alt="DOI"></a></li>
+<li>Indicative Map (<strong>code: T1.3.WM.nwx</strong>, version v1.1) <a href="http://doi.org/10.5281/zenodo.12787359" target="zenodo"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.12787359.svg" class="img-fluid" alt="DOI"></a></li>
+</ul>
+<p>Alternative links for accessing the maps in different formats:</p>
 <p><strong>T1.3.web.alt</strong> (v2.1): <a href="gs://iucn_get_l3_im/T1.3.web.alt_v2.1.tif" target="gisdata">Google Cloud bucket</a> :: <a href="http://doi.org/10.5281/zenodo.5090419" target="gisdata">Zenodo repository (bundle of maps)</a> :: <a href="https://doi.org/10.5281/zenodo.5091125" target="gisdata">Zenodo repository (EFG map)</a> :: <a href="https://studio.mapbox.com/tilesets/jrfep.T1_3_web_alt" target="gisdata">Mapbox tileset</a> :: <a href="layers/T1.3.web.alt_v2.1_topo.json" target="gisdata">GitHub repository</a> :: <a href="projects/earthengine-legacy/assets/users/jrferrerparis/IUCN-GET/L3_IndMaps/" target="gisdata">Earth Engine assets</a> :: <a href="T1.3.web.alt_v2.1_topo.json" target="gisdata">GitHub repository</a></p>
-<p><strong>T1.3.WM.nwx</strong> (v1.0): <a href="gs://iucn_get_l3_im/T1.3.WM.nwx_v1.0.tif" target="gisdata">Google Cloud bucket</a> :: <a href="https://studio.mapbox.com/tilesets/jrfep.T1_3_WM_nwx" target="gisdata">Mapbox tileset</a></p>
 <p>Note that you need to login to some services like <a href="https://www.mapbox.com" target="links">mapbox</a> or <a href="https://earthengine.google.com" target="links">earthengine</a>, and in some cases you also need to request access to the files.</p>
+</section>
+<section id="reproducible-code" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-code">Reproducible code</h3>
+<p>Code to reproduce the maps from the source datasets is available in following gist:</p>
+<script src="https://gist.github.com/jrfep/0ec53645edaf7c14de7b847e2856e353.js"></script>
 </section>
 <section id="license-information" class="level3">
 <h3 class="anchored" data-anchor-id="license-information">License information</h3>

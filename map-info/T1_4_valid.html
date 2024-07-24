@@ -220,6 +220,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#how-to-use-the-data" id="toc-how-to-use-the-data" class="nav-link" data-scroll-target="#how-to-use-the-data">How to use the data</a>
   <ul class="collapse">
   <li><a href="#available-files" id="toc-available-files" class="nav-link" data-scroll-target="#available-files">Available files</a></li>
+  <li><a href="#reproducible-code" id="toc-reproducible-code" class="nav-link" data-scroll-target="#reproducible-code">Reproducible code</a></li>
   <li><a href="#license-information" id="toc-license-information" class="nav-link" data-scroll-target="#license-information">License information</a></li>
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -233,11 +234,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">EFG T1.4 Trop heath forests – current maps</h1>
 <p class="subtitle lead">T1. Tropical-subtropical forests biome</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">T1</div>
-    <div class="quarto-category">valid</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -251,6 +248,12 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">July 24, 2024</p>
+    </div>
+  </div>
     
   </div>
   
@@ -259,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page provides information about the valid indicative distribution map for the ecosystem functional group <a href="../efg-info/T1_4.html"><strong>T1.4 Tropical heath forests</strong></a>. For older or alternative maps, see <a href="../map-info/T1_4_history.qmd">here</a>.</p>
+<p>This page provides information about the valid indicative distribution map for the ecosystem functional group <a href="../efg-info/T1_4.html"><strong>T1.4 Tropical heath forests</strong></a>. For older or alternative maps, see <a href="../altmap-info/T1_4_history.html">here</a>.</p>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
 <p>Here is the methods summary for <strong>Map code and version</strong>: T1.4.web.orig v2.0.</p>
@@ -268,6 +271,8 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <section id="datasets" class="level3">
 <h3 class="anchored" data-anchor-id="datasets">Datasets</h3>
+<p><strong>Resolve-Ecoregions-2017</strong> (Dinerstein et al.&nbsp;2017):</p>
+<p>Source of <em>biogeographical range</em>. Resolution: variable (polygons), static. Accuracy evaluation: qualitative (experts judgement).</p>
 <p><strong>Resolve-Ecoregions-2017</strong> (Dinerstein et al.&nbsp;2017):</p>
 <p>Source of <em>biogeographical range</em>. Resolution: variable (polygons), static. Accuracy evaluation: qualitative (experts judgement).</p>
 <div class="cell">
@@ -312,10 +317,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Indicative Map (<strong>code: T1.4.IM.orig</strong>, version v2.0)</li>
 <li>Web navigation (<strong>code: T1.4.web.orig</strong>, version v2.0)</li>
 </ul>
-</div></div><p>You can download geospatial data for this map from the following sources:</p>
+</div></div><p>You can download geospatial data for this map from the following repositories:</p>
+<ul>
+<li>Indicative Map (<strong>code: T1.4.IM.orig</strong>, version v2.0)</li>
+<li>Web navigation (<strong>code: T1.4.web.orig</strong>, version v2.0) <a href="http://doi.org/10.5281/zenodo.10030952" target="zenodo"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.10030952.svg" class="img-fluid" alt="DOI"></a></li>
+</ul>
+<p>Alternative links for accessing the maps in different formats:</p>
 <p><strong>T1.4.IM.orig</strong> (v2.0): <a href="gs://iucn_get_l3_im/T1.4.IM.orig_v2.0.tif" target="gisdata">Google Cloud bucket</a> :: <a href="http://doi.org/10.5281/zenodo.3958934" target="gisdata">Zenodo repository (bundle of maps)</a></p>
 <p><strong>T1.4.web.orig</strong> (v2.0): <a href="gs://iucn_get_l3_im/T1.4.web.orig_v2.0.tif" target="gisdata">Google Cloud bucket</a> :: <a href="http://doi.org/10.5281/zenodo.5090419" target="gisdata">Zenodo repository (bundle of maps)</a> :: <a href="https://doi.org/10.5281/zenodo.5091127" target="gisdata">Zenodo repository (EFG map)</a> :: <a href="https://github.com/red-list-ecosystem/typology-map-data/blob/master/data/layers/T1.4.web.orig_v2.0_topo.json" target="gisdata">GitHub repository</a> :: <a href="layers/T1.4.web.orig_v2.0_topo.json" target="gisdata">GitHub repository</a> :: <a href="projects/earthengine-legacy/assets/users/jrferrerparis/IUCN-GET/L3_IndMaps/" target="gisdata">Earth Engine assets</a> :: <a href="T1.4.web.orig_v2.0_topo.json" target="gisdata">GitHub repository</a></p>
 <p>Note that you need to login to some services like <a href="https://www.mapbox.com" target="links">mapbox</a> or <a href="https://earthengine.google.com" target="links">earthengine</a>, and in some cases you also need to request access to the files.</p>
+</section>
+<section id="reproducible-code" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-code">Reproducible code</h3>
+<p>Code to reproduce the maps from the source datasets is not available at the moment.</p>
 </section>
 <section id="license-information" class="level3">
 <h3 class="anchored" data-anchor-id="license-information">License information</h3>
