@@ -1,0 +1,236 @@
+---
+title: Download data with Python
+execute: 
+ eval: true
+---
+
+### Set up required libraries
+
+
+```{python}
+import pandas as pd
+import os
+import rasterio
+from matplotlib import pyplot as plt
+from PIL import Image
+import numpy as np
+import tarfile
+import pyprojroot
+import requests
+import xml.etree.ElementTree as ET
+```
+### Set up work and output directories
+
+We use library `pyprojroot` to define relative paths from our repository root folder:
+
+```{python}
+repodir = pyprojroot.find_root(pyprojroot.has_dir(".git"))
+```
+
+## Profile information from OSF
+
+Workbook with profile content for Ecosystem Functional Groups of the IUCN Global Ecosystem Typology (Level 3 units) available at <https://osf.io/4dcea>
+
+We can read this workbook directly from the url using `pandas`:
+
+```{python}
+#| eval: true
+profiles_url='https://osf.io/download/4dcea/'
+EFG_profiles = pd.read_excel(profiles_url, sheet_name = 'Short description')
+```
+
+Here is a peak of the downloaded file:
+
+```{python}
+#| eval: true
+EFG_profiles[['name','short description', 'url']].head()
+```
+
+## Indicative map data download from zenodo
+
+Indicative maps are available from different Zenodo repositories.
+
+### Bundle of indicative maps
+
+One repository holds the bundle of maps in compressed tar archives. This record id automatically resolves to the latest version:
+
+```{python}
+#| eval: true
+record_url = 'https://zenodo.org/api/records/3546513'
+r = requests.get(record_url)
+```
+
+Check the difference between the `id` and `conceptid`, and the two DOI (digital object identifier):
+```{python}
+#| eval: true
+response = r.json()
+print((response['id'],
+    response['conceptrecid'],
+    response['doi'],
+    response['conceptdoi']))
+```
+
+
+We will create a folder for this direct download from zenodo for the latest version of the bundle:
+
+```{python}
+#| eval: true
+datadir = repodir / "gisdata" / "indicative-maps-bundle" / "latest"
+datadir.mkdir(parents=True, exist_ok=True)
+```
+
+The zenodo record has four different files:
+
+```{python}
+#| eval: true
+response['files']
+```
+
+
+We want to download three of them:
+
+```{python}
+#| eval: true
+for i in range(len(response['files'])):
+    zenodo_url = response['files'][i]['links']['self']
+    outputfile = datadir / response['files'][i]['key']
+    if not outputfile.exists():
+        zdownload = requests.get(zenodo_url)
+        if zdownload.ok:
+            with open(outputfile, mode="wb") as file:
+                file.write(zdownload.content)
+```
+
+
+We extract maps from the tar archives in a sandbox folder:
+
+
+```{python}
+#| eval: true
+sandbox = repodir / "sandbox" / "latest"
+sandbox.mkdir(parents=True, exist_ok=True)
+```
+
+```{python}
+#| eval: true
+maps_tar = datadir / 'all-maps-raster-geotiff.tar.bz2'
+with tarfile.open(maps_tar) as my_tarfile:
+    if hasattr(tarfile, 'data_filter'):
+        my_tarfile.extractall(path=sandbox,filter='data')
+    else:
+        # remove this when no longer needed, see https://docs.python.org/3/library/tarfile.html#tarfile-extraction-filter
+        print('Extracting may be unsafe; consider updating Python')
+        my_tarfile.extractall(path=sandbox)
+```
+
+### Repositories for single EFG maps
+
+Map details are stored in a xml file that is part of the map bundle zenodo download.
+
+Check the file was downloaded:
+
+```{python}
+#| eval: true
+map_details_file = datadir / "map-details.xml"
+map_details_file.exists()
+```
+
+We'll use the `xml2` library to read the xml file
+
+```{python}
+#| eval: true
+tree = ET.parse(map_details_file)
+#maplist_root = tree.getroot()
+
+```
+
+We can query map details for an specific map:
+```{python}
+#| eval: true
+node=tree.find(".//Map[@efg_code='T1.1']")
+for child in node.iter():
+    print(ET.tostring(child))
+```
+
+The field with doi for the individual map are stored in the `Dataset-doi` tag. We can run a query for all elements containing this tag and summarise this using list comprehension:
+
+```{python}
+#| eval: true
+all_dois = [doi.text for doi in tree.findall( ".//Dataset-doi")]
+```
+
+Now we use this list of DOIs to download a copy of each of the repositories containing files for each ecosystem functional group:
+
+```{python}
+#| eval: true
+for doi in all_dois:
+    out_folder = repodir / "gisdata" / "indicative-maps" / doi
+    out_folder.mkdir(parents=True, exist_ok=True)
+    if len(os.listdir(out_folder)) ==0:
+        # query doi to get the corresponding zenodo API url
+        r = requests.get('https://doi.org/'+doi, allow_redirects=True) 
+        parsed_uri = urlparse(r.url) 
+        zenodo_url = '{uri.scheme}://{uri.netloc}/api{uri.path}'.format(uri=parsed_uri)
+        r.close()
+        # now query the API
+        r = requests.get(zenodo_url)
+        response = r.json()
+        for i in range(len(response['files'])):
+            zenodo_url = response['files'][i]['links']['self']
+            outputfile = out_folder / response['files'][i]['key']
+            if not outputfile.exists():
+                zdownload = requests.get(zenodo_url)
+                if zdownload.ok:
+                    with open(outputfile, mode="wb") as file:
+                        file.write(zdownload.content)
+```
+
+### Compare downloaded files
+
+Now we have two copies of each map file, one in the sandbox folder (extracted from the map bundle), and one downloaded directly from the corresponding record.
+
+Map code and version are described in the map attributes in the xml file:
+
+```{python}
+#| eval: true
+node=tree.find(".//Map[@efg_code='T1.3']")
+node.attrib
+```
+
+The file extracted from the tar archive uses the same code and version combination for the file name:
+```{python}
+#| eval: true
+for k in sandbox.glob("%s*.tif" % node.attrib['efg_code']):
+    print(k.name)
+```
+
+As well as the file downloaded from the specific repository:
+```{python}
+#| eval: true
+out_folder = repodir / "gisdata" / "indicative-maps" / node.find('Dataset-doi').text
+for k in out_folder.glob("%s*.tif" % node.attrib['efg_code']):
+    print(k.name)
+```
+
+#### Raster maps
+
+
+We'll use the `rasterio` to read and plot the raster file
+
+```{python }
+#| eval: true
+src = rasterio.open(k)
+plt.imshow(src.read(1), cmap='pink')
+plt.show()
+```
+
+Compare this with the thumbnail downloaded from Zenodo: 
+
+```{python}
+#| eval: true
+
+pngfile = [x for x in out_folder.glob("*.png")]
+img = np.asarray(Image.open(pngfile[0]))
+plt.imshow(img)
+```
+

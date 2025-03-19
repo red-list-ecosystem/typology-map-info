@@ -30,8 +30,8 @@ Several versions of the IUCN Global Ecosystem Typology have been released so far
 
 ## Navigating this site
 
-You can read more on the IUCN Global Ecosystem Typology in our [summary page](summary.qmd). We also have pages describing the [development](development.qmd) of the typology, the [consultation and feedback](feedback.qmd) processes, and a [glossary](glossary.qmd) of selected terms.
+You can read more on the IUCN Global Ecosystem Typology in our [summary page](summary.qmd). We also have pages describing the [development](development.qmd) of the typology, the [consultation and feedback](feedback.qmd) processes, and a [glossary](glossary.md) of selected terms.
 
 We provide menus to navigate the information about the [Ecosystem Functional Groups](profile-structure.qmd) (level 3 of the typology) and their respective [indicative distribution maps](map-info.qmd).
 
-We are also developing a section with tutorials on how to use the geospatial data in different programming environments.
+We are also developing a section with tutorials on how to use the geospatial data in different programming environments. You can check how to download the maps for use in [Python](how2/download-with-python.qmd) and [R](how2/download-with-R.qmd).

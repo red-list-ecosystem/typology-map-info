@@ -1,0 +1,159 @@
+---
+title: Populate templates with R
+execute: 
+ eval: false
+---
+
+This instructions are only needed in the initial set up or when we need to make changes in the structure of the profiles or map info pages. 
+
+If we need to update content (but not the template structure), then we need to remove files from the freeze directory and run:
+
+```sh
+quarto render
+```
+
+
+
+## Set up work directory
+
+We use library `here` to define relative paths
+```{r}
+here::i_am("how2/populate-templates-R.qmd")
+```
+
+## Read profile information
+
+We read the profile information from the workbook downloaded from OSF and complement this with information about the biomes.
+
+```{r setup}
+#| warning: false
+#| message: false
+library(readxl)
+library(dplyr)
+library(readr)
+
+out_folder <- here::here("gisdata", "profiles")
+dest_file <- here::here(out_folder,  "biome-names.csv")
+biome_names <- read_csv(dest_file, show_col_types = FALSE) |>
+    rename("biome code" = "biome_code" , "biome name" = "name") 
+
+dest_file <- here::here(out_folder,  "IUCN-GET-profiles-exported.xlsx")
+profile_info <- read_excel(dest_file, sheet = 2) |> 
+    left_join(biome_names, by = "biome code")
+```
+
+## Output initial qmd file
+
+Now we can export this information into a template `qmd` file to show the results for all functional groups.
+
+```{r}
+template_text <- "---
+title: \"%s\"
+subtitle: \"%s\"
+params:
+ efgcode: %s
+categories:
+ - %s
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _short-descriptions.qmd >}}
+{{< include _map.qmd >}}
+{{< include _profile-versions.qmd >}}
+"
+
+outdata <- profile_info |> 
+    mutate(out = sprintf(template_text, 
+                name, `biome name`, code, `biome code`), 
+            outfile = here::here("efg-info", sprintf("%s.qmd", gsub("\\.", "_", code)))) |>
+    select(outfile, out) 
+
+for (j in seq(along=outdata$out)) {
+    outfile <- slice(outdata,j) |> pull(outfile)
+    outtext <- slice(outdata,j) |> pull(out)
+    
+    if (!file.exists(outfile)) {
+        cat(outtext, file =  outfile)
+    }
+}
+```
+
+And similar for all valid maps:
+
+```{r}
+today <- format(Sys.time(), "%d %b %Y")
+template_text <- "---
+title: \"EFG %s -- current maps\"
+subtitle: \"%s\"
+date: %s
+params:
+ efgcode: %s
+categories:
+ - %s
+ - valid
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _valid_map_info.qmd >}}
+{{< include _valid_maps_database.qmd >}}
+"
+
+outdata <- profile_info |> 
+    mutate(out = sprintf(template_text, 
+                `short name`, `biome name`, today, code, `biome code`), 
+            outfile = here::here("map-info", sprintf("%s_valid.qmd", gsub("\\.", "_", code)))) |>
+    select(outfile, out) 
+
+for (j in seq(along=outdata$out)) {
+    outfile <- slice(outdata,j) |> pull(outfile)
+    outtext <- slice(outdata,j) |> pull(out)
+    
+    if (!file.exists(outfile)) {
+        cat(outtext, file =  outfile)
+    }
+}
+```
+
+And the complete version history of the maps.
+
+```{r}
+template_text <- "---
+title: \"EFG %s --  previous maps\"
+subtitle: \"%s\"
+date: %s
+params:
+ efgcode: %s
+ efgname: \"%s\"
+categories:
+ - %s
+ - alt versions
+format:
+ html: default
+execute:
+   echo: false
+---
+
+{{< include _alt_maps_database.qmd >}}
+"
+
+outdata <- profile_info |> 
+    mutate(out = sprintf(template_text, 
+                `short name`, `biome name`, today, code, `short name`, `biome code`), 
+            outfile = here::here("map-info", sprintf("%s_history.qmd", gsub("\\.", "_", code)))) |>
+    select(outfile, out) 
+
+for (j in seq(along=outdata$out)) {
+    outfile <- slice(outdata,j) |> pull(outfile)
+    outtext <- slice(outdata,j) |> pull(out)
+    
+    if (!file.exists(outfile)) {
+        cat(outtext, file =  outfile)
+    }
+}
+```

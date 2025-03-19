@@ -37,6 +37,7 @@ website:
       - text: "How to..."
         menu:
           - how2/download-with-R.qmd
+          - how2/download-with-python.qmd
           - how2/additional-map-details.qmd
       - text: "About"
         menu:
