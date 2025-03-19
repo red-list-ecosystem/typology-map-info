@@ -1,0 +1,15 @@
+{
+  "hash": "1c6bcec614bda5e07225e69319d06648",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"EFG TF1.6 Boreal/temperate bogs --  previous maps\"\nsubtitle: \"TF1. Palustrine wetlands biome\"\ndate: 07 Jun 2024\nparams:\n efgcode: TF1.6\n efgname: \"TF1.6 Boreal/temperate bogs\"\ncategories:\n - TF1\n - alt versions\nformat:\n html: default\nexecute:\n   echo: false\n---\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n### Version history\n\nThis page provides information about older or alternative versions of  indicative distribution map for this ecosystem functional group [**{{< meta params.efgname >}}**](/efg-info/TF1_6.qmd).\nCheck the current maps [here](/map-info/TF1_6_valid.qmd).\n\n- Web navigation (**code: TF1.6.WM.nwx**, version v1.0) in preparation \n\n### Datasets\n\nDatasets considered for previous versions of the indicative map\n\n- **Tropical-Wetlands-v2** (Gumbricht et al. 2017).\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n|dataset              |url                                                                                                                                                                                       |\n|:--------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n|Tropical-Wetlands-v2 |<http://www.cifor.org/global-wetlands/>{target='links'} :: <https://www.cifor.org/knowledge/dataset/1614/>{target='links'} :: <https://doi.org/10.17528/CIFOR/DATA.00058>{target='links'} |\n\n\n:::\n:::\n\n### Available files\n\nYou can download geospatial data for older versions of these maps from the following sources:\n\n\n\nNote that you need to login to some services like [mapbox](https://www.mapbox.com){target=\"links\"} or [earthengine](https://earthengine.google.com){target=\"links\"}, and in some cases you also need to request access to the files.\n\n###  License information\n\nIndicative maps have been released with a ![](https://zenodo.org/static/icons/licenses/cc-by-icon.svg){height=20} Creative Commons Attribution 4.0 International license. \n\nBut see details of dataset licenses below:\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n|dataset |license_info |\n|:-------|:------------|\n\n\n:::\n:::\n\n## References\n\nReferences used in these versions of the maps.\n\n- Thomas Gumbricht Rosa Maria Roman‐Cuesta Louis Verchot Martin Herold Florian Wittmann Ethan Householder Nadine Herold Daniel Murdiyarso (2017) *An expert system model for mapping tropical wetlands and peatlands reveals South America as the largest contributor* **Glob Change Biol.** 23: 3581– 3599 [DOI:10.1111/gcb.13689](http:dx.doi.org/10.1111/gcb.13689) \n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
